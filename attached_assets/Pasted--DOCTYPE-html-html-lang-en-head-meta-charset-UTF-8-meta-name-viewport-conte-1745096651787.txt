@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Lot Estimator</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 2rem; }
+    input, button { display: block; margin: 0.5rem 0; padding: 0.5rem; width: 100%; }
+    label { margin: 0.5rem 0; display: block; }
+    #quoteResult { margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Get a Parking Lot Line Striping Quote</h2>
+
+  <form id="quoteForm">
+    <input type="text" id="address" placeholder="Enter lot address" required />
+
+    <label>
+      <input type="checkbox" id="newLayout" />
+      New Layout (vs. Re-stripe)
+    </label>
+
+    <label>
+      <input type="checkbox" id="includeADA" />
+      Include ADA Spaces
+    </label>
+
+    <input type="text" id="contactName" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <input type="tel" id="phone" placeholder="Phone Number (optional)" />
+
+    <button type="submit">Get Instant Quote</button>
+  </form>
+
+  <div id="quoteResult"></div>
+
+  <script>
+    document.getElementById("quoteForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const basePrice = 800;
+      let quote = basePrice;
+
+      if (document.getElementById("newLayout").checked) quote += 300;
+      if (document.getElementById("includeADA").checked) quote += 200;
+
+      const rangeLow = quote * 0.9;
+      const rangeHigh = quote * 1.1;
+
+      document.getElementById("quoteResult").innerText = 
+        `Estimated Price: $${Math.round(rangeLow)}–$${Math.round(rangeHigh)}. We'll connect you with a local pro soon!`;
+
+      sendLeadToBackend();
+    });
+
+    function sendLeadToBackend() {
+      const lead = {
+        address: document.getElementById("address").value,
+        newLayout: document.getElementById("newLayout").checked,
+        includeADA: document.getElementById("includeADA").checked,
+        name: document.getElementById("contactName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        timestamp: new Date().toISOString()
+      };
+
+      console.log("Sending lead:", lead);
+      // TODO: Replace this with Firebase/Supabase/Backend call
+    }
+  </script>
+</body>
+</html>

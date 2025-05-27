@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - dark asphalt with sealcoat -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Light texture overlay to show sealcoat shine -->
+  <rect width="800" height="600" fill="url(#sealcoat)" opacity="0.1"/>
+  
+  <!-- Parking lot layout -->
+  <g transform="translate(50, 50)">
+    <!-- Parking spaces - first row -->
+    <g id="parking-spaces-row1">
+      <rect x="0" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="100" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="200" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="300" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="400" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="500" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      
+      <!-- ADA space -->
+      <rect x="600" y="0" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="627" y="70" width="36" height="36" fill="#1259b1"/>
+      <path d="M645,75 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0 M645,75 v30 M639,90 h12" stroke="white" stroke-width="4" fill="none"/>
+    </g>
+    
+    <!-- Driving lane -->
+    <rect x="0" y="190" width="700" height="100" fill="#1a1a1a"/>
+    
+    <!-- Parking spaces - second row -->
+    <g id="parking-spaces-row2">
+      <rect x="0" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="100" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="200" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="300" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="400" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="500" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+      <rect x="600" y="300" width="90" height="180" fill="#1a1a1a" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    
+    <!-- Yellow lines for directional arrows -->
+    <g id="directional-arrows" fill="#ffff00">
+      <!-- Arrow 1 -->
+      <polygon points="300,240 330,220 330,230 370,230 370,250 330,250 330,260" />
+      
+      <!-- Arrow 2 -->
+      <polygon points="500,240 470,220 470,230 430,230 430,250 470,250 470,260" />
+    </g>
+    
+    <!-- Crosswalk -->
+    <g id="crosswalk" stroke="#ffffff" stroke-width="5">
+      <line x1="50" y1="200" x2="50" y2="280" />
+      <line x1="65" y1="200" x2="65" y2="280" />
+      <line x1="80" y1="200" x2="80" y2="280" />
+      <line x1="95" y1="200" x2="95" y2="280" />
+      <line x1="110" y1="200" x2="110" y2="280" />
+      <line x1="125" y1="200" x2="125" y2="280" />
+    </g>
+    
+    <!-- Centerline -->
+    <g id="centerline">
+      <line x1="0" y1="240" x2="250" y2="240" stroke="#ffff00" stroke-width="4" stroke-dasharray="20,10"/>
+      <line x1="380" y1="240" x2="700" y2="240" stroke="#ffff00" stroke-width="4" stroke-dasharray="20,10"/>
+    </g>
+  </g>
+  
+  <!-- Shine and texture definitions -->
+  <defs>
+    <pattern id="sealcoat" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#ffffff" opacity="0.05"/>
+      <circle cx="0" cy="0" r="50" fill="#ffffff" opacity="0.02"/>
+      <circle cx="50" cy="50" r="50" fill="#ffffff" opacity="0.02"/>
+      <circle cx="100" cy="0" r="50" fill="#ffffff" opacity="0.02"/>
+      <circle cx="0" cy="100" r="50" fill="#ffffff" opacity="0.02"/>
+      <circle cx="100" cy="100" r="50" fill="#ffffff" opacity="0.02"/>
+    </pattern>
+  </defs>
+  
+  <!-- Light overlay to simulate fresh sealcoat shine -->
+  <rect width="800" height="600" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+</svg>

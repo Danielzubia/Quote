@@ -1,0 +1,3710 @@
+2025-02-27 15:56:56,414 - DEBUG - Received input data
+2025-02-27 15:56:56,414 - ERROR - An error occurred: 'imageData'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 74, in <module>
+    result = process_screenshot(data['imageData'], polygon_coordinates)
+                                ~~~~^^^^^^^^^^^^^
+KeyError: 'imageData'
+2025-02-27 15:59:41,175 - DEBUG - Received input data
+2025-02-27 15:59:41,176 - ERROR - An error occurred: 'image'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 74, in <module>
+    result = process_screenshot(data['image'], polygon_coordinates)
+                                ~~~~^^^^^^^^^
+KeyError: 'image'
+2025-02-27 16:02:23,990 - DEBUG - Received input data
+2025-02-27 16:02:23,990 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:02:23,991 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-02-27 16:02:23,991 - DEBUG - Starting image processing...
+2025-02-27 16:02:23,993 - DEBUG - Image decoded successfully.
+2025-02-27 16:02:23,998 - DEBUG - Image converted to numpy array.
+2025-02-27 16:02:23,998 - DEBUG - Image dimensions: 640x598
+2025-02-27 16:02:23,998 - DEBUG - Drew polygon with 3 points
+2025-02-27 16:02:24,002 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:02:24,002 - DEBUG - Polygon coordinates received: [{'x': 310.85714285714283, 'y': 299.99666666666667}, {'x': 189.2173913043478, 'y': 410.62666666666667}, {'x': 539.031055900621, 'y': 384.71333333333337}]
+2025-02-27 16:02:46,668 - DEBUG - Received input data
+2025-02-27 16:02:46,668 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:02:46,670 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-02-27 16:02:46,670 - DEBUG - Starting image processing...
+2025-02-27 16:02:46,672 - DEBUG - Image decoded successfully.
+2025-02-27 16:02:46,678 - DEBUG - Image converted to numpy array.
+2025-02-27 16:02:46,678 - DEBUG - Image dimensions: 640x598
+2025-02-27 16:02:46,678 - DEBUG - Drew polygon with 3 points
+2025-02-27 16:02:46,682 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:02:46,682 - DEBUG - Polygon coordinates received: [{'x': 310.85714285714283, 'y': 299.99666666666667}, {'x': 189.2173913043478, 'y': 410.62666666666667}, {'x': 539.031055900621, 'y': 384.71333333333337}]
+2025-02-27 16:06:49,479 - DEBUG - Received input data
+2025-02-27 16:06:49,481 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:06:49,482 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-02-27 16:06:49,482 - DEBUG - Starting image processing...
+2025-02-27 16:06:49,484 - DEBUG - Image decoded successfully.
+2025-02-27 16:06:49,488 - DEBUG - Image converted to numpy array.
+2025-02-27 16:06:49,489 - DEBUG - Image dimensions: 640x598
+2025-02-27 16:06:49,489 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:06:49,493 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:06:49,493 - DEBUG - Polygon coordinates received: [{'x': 270.3105590062112, 'y': 166.44333333333333}, {'x': 223.40372670807452, 'y': 268.10333333333335}, {'x': 422.1614906832298, 'y': 290.03000000000003}, {'x': 422.1614906832298, 'y': 182.39000000000001}]
+2025-02-27 16:10:43,730 - DEBUG - Received input data
+2025-02-27 16:10:43,730 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:10:43,732 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:10:43,732 - DEBUG - Starting image processing...
+2025-02-27 16:10:43,734 - DEBUG - Image decoded successfully.
+2025-02-27 16:10:43,741 - DEBUG - Image converted to numpy array.
+2025-02-27 16:10:43,741 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:10:43,741 - DEBUG - Drew polygon with 3 points
+2025-02-27 16:10:43,745 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:10:43,745 - DEBUG - Polygon coordinates received: [{'x': 373.59486986043004, 'y': 209.3}, {'x': 163.38548975229475, 'y': 284.05}, {'x': 428.3887841066265, 'y': 372.75333333333333}]
+2025-02-27 16:12:31,999 - DEBUG - Received input data
+2025-02-27 16:12:32,000 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:12:32,001 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAAC9FBMVEUUDwcaFAUcFAseGAccGQweHBMdGxkiGw0kHREgHx4oHxEmIA8mIBIiIBspIRMsJRkvKB0xKRsgIyMkJC8oJSArJy8uKSErKywnJDMrJzQuKzYvKzs...
+2025-02-27 16:12:32,001 - DEBUG - Starting image processing...
+2025-02-27 16:12:32,003 - DEBUG - Image decoded successfully.
+2025-02-27 16:12:32,008 - DEBUG - Image converted to numpy array.
+2025-02-27 16:12:32,008 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:12:32,008 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:12:32,012 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:12:32,012 - DEBUG - Polygon coordinates received: [{'x': 181.31804350559537, 'y': 267.1066666666667}, {'x': 144.4566830126996, 'y': 378.73333333333335}, {'x': 346.6960392304791, 'y': 418.6}, {'x': 419.42250722997613, 'y': 249.16666666666669}]
+2025-02-27 16:14:38,705 - DEBUG - Received input data
+2025-02-27 16:14:38,705 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:14:38,707 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:14:38,707 - DEBUG - Starting image processing...
+2025-02-27 16:14:38,708 - DEBUG - Image decoded successfully.
+2025-02-27 16:14:38,713 - DEBUG - Image converted to numpy array.
+2025-02-27 16:14:38,713 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:14:38,713 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:14:38,716 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:14:38,716 - DEBUG - Polygon coordinates received: [{'x': 369.6098579152521, 'y': 199.33333333333334}, {'x': 123.53537030051554, 'y': 290.03000000000003}, {'x': 405.4749654218534, 'y': 402.65333333333336}, {'x': 498.12649314724007, 'y': 251.16}]
+2025-02-27 16:17:42,286 - DEBUG - Received input data
+2025-02-27 16:17:42,286 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:17:42,287 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:17:42,287 - DEBUG - Starting image processing...
+2025-02-27 16:17:42,289 - DEBUG - Image decoded successfully.
+2025-02-27 16:17:42,293 - DEBUG - Image converted to numpy array.
+2025-02-27 16:17:42,293 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:17:42,293 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:17:42,296 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:17:42,296 - DEBUG - Polygon coordinates received: [{'x': 176.33677857412297, 'y': 127.57333333333334}, {'x': 101.61780460203697, 'y': 344.8466666666667}, {'x': 394.5161825726141, 'y': 442.52000000000004}, {'x': 488.1639632842953, 'y': 261.12666666666667}]
+2025-02-27 16:19:59,579 - DEBUG - Received input data
+2025-02-27 16:19:59,580 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:19:59,581 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:19:59,582 - DEBUG - Starting image processing...
+2025-02-27 16:19:59,584 - DEBUG - Image decoded successfully.
+2025-02-27 16:19:59,588 - DEBUG - Image converted to numpy array.
+2025-02-27 16:19:59,589 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:19:59,589 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:19:59,593 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:19:59,593 - DEBUG - Polygon coordinates received: [{'x': 342.71102728530116, 'y': 199.33333333333334}, {'x': 193.27307934112915, 'y': 320.9266666666667}, {'x': 434.36630202439335, 'y': 380.7266666666667}, {'x': 496.1339871746511, 'y': 270.0966666666667}]
+2025-02-27 16:20:15,973 - DEBUG - Received input data
+2025-02-27 16:20:15,973 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:20:15,975 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:20:15,975 - DEBUG - Starting image processing...
+2025-02-27 16:20:15,976 - DEBUG - Image decoded successfully.
+2025-02-27 16:20:15,981 - DEBUG - Image converted to numpy array.
+2025-02-27 16:20:15,981 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:20:15,981 - DEBUG - Drew polygon with 4 points
+2025-02-27 16:20:15,984 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:20:15,984 - DEBUG - Polygon coordinates received: [{'x': 325.774726518295, 'y': 213.28666666666666}, {'x': 378.57613479190246, 'y': 317.93666666666667}, {'x': 304.8534138061109, 'y': 381.72333333333336}, {'x': 179.3255375330064, 'y': 307.97}]
+2025-02-27 16:22:46,185 - DEBUG - Received input data
+2025-02-27 16:22:46,185 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:22:46,186 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAAC91BMVEUNDA0ODREPERIRDhISEgscFQYaFQwcGQsTEhUVFBgYFxkcGxwfHiIhGg0kHRImIQ8nIBIlJhwpIhUtJRkuKRsyKBwkIyQkIC8pJCwuLicrLigoJDQ...
+2025-02-27 16:22:46,186 - DEBUG - Starting image processing...
+2025-02-27 16:22:46,188 - DEBUG - Image decoded successfully.
+2025-02-27 16:22:46,192 - DEBUG - Image converted to numpy array.
+2025-02-27 16:22:46,192 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:22:46,193 - DEBUG - Drew polygon with 5 points
+2025-02-27 16:22:46,196 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:22:46,196 - DEBUG - Polygon coordinates received: [{'x': 252.05200553250347, 'y': 246.17666666666668}, {'x': 216.1868980259022, 'y': 320.9266666666667}, {'x': 368.61360492895767, 'y': 342.85333333333335}, {'x': 394.5161825726141, 'y': 260.13}, {'x': 276.9583301898655, 'y': 241.19333333333333}]
+2025-02-27 16:26:38,547 - DEBUG - Received input data
+2025-02-27 16:26:38,549 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:26:38,550 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:26:38,550 - DEBUG - Starting image processing...
+2025-02-27 16:26:38,551 - DEBUG - Image decoded successfully.
+2025-02-27 16:26:38,556 - DEBUG - Image converted to numpy array.
+2025-02-27 16:26:38,556 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:26:38,559 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:26:52,302 - DEBUG - Received input data
+2025-02-27 16:26:52,302 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:26:52,303 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:26:52,303 - DEBUG - Starting image processing...
+2025-02-27 16:26:52,305 - DEBUG - Image decoded successfully.
+2025-02-27 16:26:52,310 - DEBUG - Image converted to numpy array.
+2025-02-27 16:26:52,310 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:26:52,311 - DEBUG - Drew polygon with 8 points
+2025-02-27 16:26:52,314 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:26:52,314 - DEBUG - Polygon coordinates received: [{'x': 259.02577643656485, 'y': 196.34333333333333}, {'x': 191.2805733685402, 'y': 265.11333333333334}, {'x': 311.8271847101723, 'y': 269.1}, {'x': 294.8908839431661, 'y': 197.34}, {'x': 218.17940399849115, 'y': 373.75}, {'x': 207.22062114925185, 'y': 423.58333333333337}, {'x': 382.5611467370804, 'y': 396.67333333333335}, {'x': 355.6623161071294, 'y': 337.87}]
+2025-02-27 16:30:31,161 - DEBUG - Received input data
+2025-02-27 16:30:31,164 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:30:31,165 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:30:31,166 - DEBUG - Starting image processing...
+2025-02-27 16:30:31,168 - DEBUG - Image decoded successfully.
+2025-02-27 16:30:31,202 - DEBUG - Image converted to numpy array.
+2025-02-27 16:30:31,202 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:30:31,202 - DEBUG - Drew 1 polygons
+2025-02-27 16:30:31,216 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:30:31,216 - DEBUG - Polygon coordinates received: [[{'x': 224.15692191625803, 'y': 238.20333333333335}, {'x': 182.31429649188985, 'y': 294.01666666666665}, {'x': 306.84591977869985, 'y': 319.93}, {'x': 292.89837797057714, 'y': 234.21666666666667}]]
+2025-02-27 16:30:38,806 - DEBUG - Received input data
+2025-02-27 16:30:38,808 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:30:38,810 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:30:38,810 - DEBUG - Starting image processing...
+2025-02-27 16:30:38,813 - DEBUG - Image decoded successfully.
+2025-02-27 16:30:38,821 - DEBUG - Image converted to numpy array.
+2025-02-27 16:30:38,821 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:30:38,822 - DEBUG - Drew 2 polygons
+2025-02-27 16:30:38,828 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:30:38,829 - DEBUG - Polygon coordinates received: [[{'x': 224.15692191625803, 'y': 238.20333333333335}, {'x': 182.31429649188985, 'y': 294.01666666666665}, {'x': 306.84591977869985, 'y': 319.93}, {'x': 292.89837797057714, 'y': 234.21666666666667}], [{'x': 381.56489375078587, 'y': 260.13}, {'x': 376.5836288193135, 'y': 307.97}, {'x': 460.2688796680498, 'y': 313.95}, {'x': 464.2538916132277, 'y': 256.1433333333333}, {'x': 413.44498931220926, 'y': 239.20000000000002}]]
+2025-02-27 16:31:42,056 - DEBUG - Received input data
+2025-02-27 16:31:42,057 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:31:42,058 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAAC/VBMVEUAAAAFBQ0NDQ0JCRkdGQAVFRERER0aGhsVGSUdHSUdIS0lKQk0NAA2OhklJSEhJSklKS0oJyYpKCYsKSkhJTElKTQrLTQpLTotMT0wLi02Miw7NS4...
+2025-02-27 16:31:42,058 - DEBUG - Starting image processing...
+2025-02-27 16:31:42,059 - DEBUG - Image decoded successfully.
+2025-02-27 16:31:42,065 - DEBUG - Image converted to numpy array.
+2025-02-27 16:31:42,066 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:31:42,066 - DEBUG - Drew 2 polygons
+2025-02-27 16:31:42,073 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:31:42,074 - DEBUG - Polygon coordinates received: [[{'x': 419.42250722997613, 'y': 182.39000000000001}, {'x': 228.14193386143594, 'y': 368.76666666666665}, {'x': 326.7709795045895, 'y': 449.49666666666667}, {'x': 495.1377341883566, 'y': 239.20000000000002}], [{'x': 384.55365270966934, 'y': 147.50666666666666}, {'x': 213.19813906701876, 'y': 327.90333333333336}, {'x': 116.56159939645417, 'y': 262.12333333333333}, {'x': 255.0407644913869, 'y': 106.64333333333333}]]
+2025-02-27 16:39:12,844 - DEBUG - Received input data
+2025-02-27 16:39:12,845 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-02-27 16:39:12,846 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUBAQEMCAcMCg4NDBAQDhITEwAREgwSEhQVFBgYFxsZGRweHSEnGxcgGy0lIx4kIyQkIS4nJykqJSItLiArKi0nIzIkKDwoIzIoJjIoJjQtJjItJjQ...
+2025-02-27 16:39:12,846 - DEBUG - Starting image processing...
+2025-02-27 16:39:12,848 - DEBUG - Image decoded successfully.
+2025-02-27 16:39:12,854 - DEBUG - Image converted to numpy array.
+2025-02-27 16:39:12,854 - DEBUG - Image dimensions: 619x598
+2025-02-27 16:39:12,855 - DEBUG - Drew 1 polygons
+2025-02-27 16:39:12,861 - DEBUG - Image saved to out_image.jpg
+2025-02-27 16:39:12,861 - DEBUG - Polygon coordinates received: [[{'x': 279.9470891487489, 'y': 289.03333333333336}, {'x': 189.28806739595123, 'y': 370.76}, {'x': 418.4262542436816, 'y': 393.68333333333334}, {'x': 412.44873632591475, 'y': 306.97333333333336}]]
+2025-03-01 14:39:11,847 - DEBUG - Received input data
+2025-03-01 14:39:11,850 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:39:11,851 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJWCAMAAAAwdjClAAADAFBMVEUEAAAFBQkADQ0MDAsNDRUVFQoTExMVFRkYFhUZFRkbGRcbGxsRFSUVGSEdHSUdIS0gHh0lJQUjIR0xNREkJCElJSklKS0oJyUoJygpKCUsLCkhJTE...
+2025-03-01 14:39:11,851 - DEBUG - Starting image processing...
+2025-03-01 14:39:11,853 - DEBUG - Image decoded successfully.
+2025-03-01 14:39:11,876 - DEBUG - Image converted to numpy array.
+2025-03-01 14:39:11,876 - DEBUG - Image dimensions: 619x598
+2025-03-01 14:39:11,877 - DEBUG - Drew 1 polygons
+2025-03-01 14:39:11,893 - DEBUG - Image saved to out_image.jpg
+2025-03-01 14:39:11,893 - DEBUG - Polygon coordinates received: [[{'x': 512.0740349553628, 'y': 198.33666666666667}, {'x': 334.7410033949453, 'y': 395.6766666666667}, {'x': 413.44498931220926, 'y': 468.43333333333334}, {'x': 585.7967559411543, 'y': 280.06333333333333}]]
+2025-03-01 14:54:16,054 - DEBUG - Received input data
+2025-03-01 14:54:16,056 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:54:16,057 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC+lBMVEUhISEnJiUpKSYqKSgsKyksKywtLCstLSwwLy0wMC4xMTA0MzE1NDI1NTU4NzU5ODc9OTU7Ojg8Ojg9PDpAPj1CQT9BQUBFQ0FFREFGRURJRUVJSEZ...
+2025-03-01 14:54:16,057 - DEBUG - Starting image processing...
+2025-03-01 14:54:16,058 - DEBUG - Image decoded successfully.
+2025-03-01 14:54:16,068 - ERROR - An error occurred during image processing: name 'img' is not defined
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 41, in process_screenshot
+    height, width = img.shape[:2]
+                    ^^^
+NameError: name 'img' is not defined
+2025-03-01 14:55:30,283 - DEBUG - Received input data
+2025-03-01 14:55:30,283 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:55:30,284 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 14:55:30,284 - DEBUG - Starting image processing...
+2025-03-01 14:55:30,286 - DEBUG - Image decoded successfully.
+2025-03-01 14:55:30,292 - ERROR - An error occurred during image processing: name 'image_path' is not defined
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 59, in process_screenshot
+    image_path, [])
+    ^^^^^^^^^^
+NameError: name 'image_path' is not defined
+2025-03-01 14:57:09,743 - DEBUG - Received input data
+2025-03-01 14:57:09,744 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:57:09,745 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 14:57:09,745 - DEBUG - Starting image processing...
+2025-03-01 14:57:09,746 - DEBUG - Image decoded successfully.
+2025-03-01 14:57:09,901 - ERROR - An error occurred during image processing: [Errno 2] No such file or directory: 'parklot_finder_03012025.pt'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 58, in process_screenshot
+    class_counts, class_coordinates, class_confidences = process_image_yolo(
+                                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/server/yolo_inference.py", line 7, in process_image_yolo
+    model = YOLO('parklot_finder_03012025.pt')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/models/yolo/model.py", line 23, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/engine/model.py", line 145, in __init__
+    self._load(model, task=task)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/engine/model.py", line 285, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/nn/tasks.py", line 910, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/nn/tasks.py", line 837, in torch_safe_load
+    ckpt = torch.load(file, map_location="cpu")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ultralytics/utils/patches.py", line 86, in torch_load
+    return _torch_load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'parklot_finder_03012025.pt'
+2025-03-01 14:57:47,368 - DEBUG - Received input data
+2025-03-01 14:57:47,368 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:57:47,369 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC+lBMVEUMDAUMCgwODRAQDhESEA8aFQMZFQ0dGQoUExEWFRkYFhoeGhEcGRwdHSAiHAwlHhEiHhogHyEhHS0mIA8oJA8kIRMiIR0qIxQuJRkpKBEuKR8xKRs...
+2025-03-01 14:57:47,370 - DEBUG - Starting image processing...
+2025-03-01 14:57:47,371 - DEBUG - Image decoded successfully.
+2025-03-01 14:57:51,855 - ERROR - An error occurred during image processing: name 'image_path' is not defined
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 76, in process_screenshot
+    output_filename = f'processed_{os.path.basename(image_path)}'
+                                                    ^^^^^^^^^^
+NameError: name 'image_path' is not defined
+2025-03-01 14:58:57,590 - DEBUG - Received input data
+2025-03-01 14:58:57,590 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 14:58:57,591 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 14:58:57,591 - DEBUG - Starting image processing...
+2025-03-01 14:58:57,593 - DEBUG - Image decoded successfully.
+2025-03-01 15:00:01,764 - DEBUG - Received input data
+2025-03-01 15:00:01,764 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:00:01,766 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUAAAgMDAoNDRAOERUTFBQXGRwdHRUdHR0UGCAaHCAdICEcJCwiHxojIyInKSkoKCAsLCwkKDQkLDwsLDQvMC0gNDgqMjwwMC0/Pyg1NjM1Nzk3ODc...
+2025-03-01 15:00:01,766 - DEBUG - Starting image processing...
+2025-03-01 15:00:01,768 - DEBUG - Image decoded successfully.
+2025-03-01 15:14:29,088 - DEBUG - Received input data
+2025-03-01 15:14:29,089 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:14:29,090 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:14:29,090 - DEBUG - Starting image processing...
+2025-03-01 15:14:29,092 - DEBUG - Image decoded successfully.
+2025-03-01 15:17:36,115 - DEBUG - Received input data
+2025-03-01 15:17:36,115 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:17:36,117 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:17:36,117 - DEBUG - Starting image processing...
+2025-03-01 15:17:36,118 - DEBUG - Image decoded successfully.
+2025-03-01 15:19:51,922 - DEBUG - Received input data
+2025-03-01 15:19:51,923 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:19:51,925 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:19:51,925 - DEBUG - Starting image processing...
+2025-03-01 15:19:51,926 - DEBUG - Image decoded successfully.
+2025-03-01 15:21:28,859 - DEBUG - Received input data
+2025-03-01 15:21:28,860 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:21:28,861 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUEAAAODQ8IBBgODxMIGAgPFRwZHw0VFBUYFhoZHRAbGhwQFCQdHSMcHCsXIAUYJwAWIxIYJhMYJyccIDMgHyEhJBUjLhQlKRsnNwgrMRoxNRsjIyQ...
+2025-03-01 15:21:28,861 - DEBUG - Starting image processing...
+2025-03-01 15:21:28,862 - DEBUG - Image decoded successfully.
+2025-03-01 15:28:38,708 - DEBUG - Received input data
+2025-03-01 15:28:38,708 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:28:38,710 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:28:38,710 - DEBUG - Starting image processing...
+2025-03-01 15:28:38,711 - DEBUG - Image decoded successfully.
+2025-03-01 15:28:38,719 - DEBUG - Saved processed image to tmp/output_image_e83be9e9-0288-4933-ae22-466e1faeddd6.jpg
+2025-03-01 15:29:09,851 - DEBUG - Received input data
+2025-03-01 15:29:09,851 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:29:09,852 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC+lBMVEUAAAAABAwMAAQMDAwDBRMECBwUHAQQFBgVGB8bGxwMECQXGyIdHSUYGCgYKBgeIiUcJCgYKD8gHx8kJBwoNAgoOBw0PBQgICYjJCskKywrKCgkIDQ...
+2025-03-01 15:29:09,852 - DEBUG - Starting image processing...
+2025-03-01 15:29:09,854 - DEBUG - Image decoded successfully.
+2025-03-01 15:29:09,862 - DEBUG - Saved processed image to tmp/output_image_c70d707b-8358-4f53-90b2-211b6824bb46.jpg
+2025-03-01 15:33:23,291 - DEBUG - Received input data
+2025-03-01 15:33:23,292 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:33:23,293 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:33:23,293 - DEBUG - Starting image processing...
+2025-03-01 15:33:23,295 - DEBUG - Image decoded successfully.
+2025-03-01 15:34:26,217 - DEBUG - Received input data
+2025-03-01 15:34:26,217 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:34:26,218 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:34:26,218 - DEBUG - Starting image processing...
+2025-03-01 15:34:26,220 - DEBUG - Image decoded successfully.
+2025-03-01 15:34:26,289 - DEBUG - processing image
+2025-03-01 15:35:57,300 - DEBUG - Received input data
+2025-03-01 15:35:57,300 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:35:57,301 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:35:57,301 - DEBUG - Starting image processing...
+2025-03-01 15:35:57,303 - DEBUG - Image decoded successfully.
+2025-03-01 15:35:57,368 - DEBUG - inferencing image...
+2025-03-01 15:38:01,718 - DEBUG - Received input data
+2025-03-01 15:38:01,718 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:38:01,720 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUEAAALCg4NDBEXCAQQDhMWFRMUExgbGhUbGhseHSEgHyMgGykjIx0pKRMhICMkIC0pIC4pKScsLCkkIzIpIzIpJDIpJDYpJDopKTIpKTYtKTYtLTE...
+2025-03-01 15:38:01,720 - DEBUG - Starting image processing...
+2025-03-01 15:38:01,724 - DEBUG - Image decoded successfully.
+2025-03-01 15:38:01,865 - DEBUG - inferencing image...
+2025-03-01 15:39:53,080 - DEBUG - Starting image processing...
+2025-03-01 15:39:53,082 - DEBUG - Image decoded successfully.
+2025-03-01 15:39:53,090 - DEBUG - Saved processed image to tmp/output_image_d071051a-7f63-4f74-878d-039da7d2e3a0.jpg
+2025-03-01 15:41:36,515 - DEBUG - Starting image processing...
+2025-03-01 15:41:36,517 - DEBUG - Image decoded successfully.
+2025-03-01 15:41:36,526 - DEBUG - Saved processed image to tmp/output_image_98f943a1-3669-41f6-924d-2b073827dd6f.jpg
+2025-03-01 15:44:37,536 - DEBUG - Starting image processing...
+2025-03-01 15:44:37,539 - DEBUG - Image decoded successfully.
+2025-03-01 15:44:37,548 - DEBUG - Saved processed image to tmp/output_image_2e4543a6-70e5-4a67-af2b-c51cb4e83ee6.jpg
+2025-03-01 15:48:14,024 - DEBUG - Received input data
+2025-03-01 15:48:14,025 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:48:14,027 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC+lBMVEUMDAUKCQwMCxAQDREXFAQTEgwaFgUZFAsbGQYcGQoTExUVFBgbFxEYFBgeHBUbGxweHiAhHAsiHRAgHx8gHCAgHCwnIA4lIRAjIRwrJBQsJhsoKBA...
+2025-03-01 15:48:14,027 - DEBUG - Starting image processing...
+2025-03-01 15:48:14,030 - DEBUG - Image decoded successfully.
+2025-03-01 15:48:14,037 - DEBUG - Sending image for inference.
+2025-03-01 15:48:14,166 - DEBUG - inferencing image...
+2025-03-01 15:48:17,852 - DEBUG - back from inference.
+2025-03-01 15:49:47,126 - DEBUG - Received input data
+2025-03-01 15:49:47,126 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:49:47,127 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUMDAUMDA0PDhISDw8RDxMVEQwaFAcaFwoaGgYeGgsTEBEWFRgZFREYFxoaGhUbGxseHSAjHQwkHxIgHiAgHCwkIQ8oIQ4hIR0qIxQtJRkoKBAuKR8...
+2025-03-01 15:49:47,127 - DEBUG - Starting image processing...
+2025-03-01 15:49:47,128 - DEBUG - Image decoded successfully.
+2025-03-01 15:49:47,133 - DEBUG - Sending image for inference.
+2025-03-01 15:49:47,204 - DEBUG - inferencing image...
+2025-03-01 15:49:49,015 - DEBUG - back from inference.
+2025-03-01 15:49:49,015 - DEBUG - Storing at: tmp/output_image_46d88d5a-e077-4402-b851-d144cc6e7117.jpg
+2025-03-01 15:50:28,177 - DEBUG - Received input data
+2025-03-01 15:50:28,177 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:50:28,178 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUXEwQREQoaFgUbFgscGQYeGAkYFBgfGxIfHxoiHAwlHhAoHhUkHCAgHCwlIAwrJA8jIhwqIxMtJhgtKBUsKRwwJxI1LBcxKhs5LxUkJCMkICskLCg...
+2025-03-01 15:50:28,178 - DEBUG - Starting image processing...
+2025-03-01 15:50:28,180 - DEBUG - Image decoded successfully.
+2025-03-01 15:50:28,186 - DEBUG - Sending image for inference.
+2025-03-01 15:50:28,246 - DEBUG - inferencing image...
+2025-03-01 15:50:29,638 - DEBUG - back from inference.
+2025-03-01 15:50:29,639 - DEBUG - Storing at: tmp/output_image_5944ce81-74ab-45f7-9617-2af95248c0f6.jpg
+2025-03-01 15:52:16,757 - DEBUG - Received input data
+2025-03-01 15:52:16,757 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:52:16,759 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC+lBMVEUUEgESEgoXGAobFQYcFggdGQsSEhQWFRgfGxEZGRsaFyIiGwwkHREoHxIiHiokIQ8sIQ8kIRQjIhsqIhUtJBgvKRoyJxQwJRkxKhExKR04LRskIyQ...
+2025-03-01 15:52:16,759 - DEBUG - Starting image processing...
+2025-03-01 15:52:16,761 - DEBUG - Image decoded successfully.
+2025-03-01 15:52:16,767 - DEBUG - Sending image for inference.
+2025-03-01 15:52:16,852 - DEBUG - inferencing image...
+2025-03-01 15:52:19,926 - DEBUG - back from inference.
+2025-03-01 15:52:19,930 - DEBUG - Storing at: tmp/output_image_aeb7ca5e-af59-4939-9868-6d0df708d07b.jpg
+2025-03-01 15:52:19,941 - DEBUG - composing response
+2025-03-01 15:52:19,941 - DEBUG - composing response2
+2025-03-01 15:52:19,942 - DEBUG - composing response3
+2025-03-01 15:52:59,745 - DEBUG - Received input data
+2025-03-01 15:52:59,746 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:52:59,747 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC9FBMVEUKCAoWFQEUEgsZFQUZFgwdGQUdGgkTEBAWFhgYFxseGxQbGhohHgciHQwpHg4kHREgHCAgHCwlIQ4iIh0qIxQtJhgsKBYtKRkxKRsjIyIkICskKCg...
+2025-03-01 15:52:59,747 - DEBUG - Starting image processing...
+2025-03-01 15:52:59,748 - DEBUG - Image decoded successfully.
+2025-03-01 15:52:59,753 - DEBUG - Sending image for inference.
+2025-03-01 15:52:59,856 - DEBUG - inferencing image...
+2025-03-01 15:53:01,943 - DEBUG - back from inference.
+2025-03-01 15:53:01,944 - DEBUG - Storing at: tmp/output_image_c470ea22-480f-4d90-98ed-1dbb36a79f28.jpg
+2025-03-01 15:53:01,948 - DEBUG - composing response
+2025-03-01 15:53:01,948 - DEBUG - composing response2
+2025-03-01 15:53:01,948 - DEBUG - composing response3
+2025-03-01 15:54:15,975 - DEBUG - Received input data
+2025-03-01 15:54:15,975 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:54:15,976 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUMDBIREA4UExUWFhkYFxgeGhYbGxweHiEfISIlHg4jHRMhHhkhHyEmIhcjIRwrIhQtJBkwJRkxKBsjIyQlJignKCkoJSEoJygoKCAqKiokIDAgKDw...
+2025-03-01 15:54:15,976 - DEBUG - Starting image processing...
+2025-03-01 15:54:15,979 - DEBUG - Image decoded successfully.
+2025-03-01 15:54:15,983 - DEBUG - Sending image for inference.
+2025-03-01 15:54:16,042 - DEBUG - inferencing image...
+2025-03-01 15:54:17,223 - DEBUG - back from inference.
+2025-03-01 15:54:17,223 - DEBUG - Storing at: tmp/output_image_db9c1330-a760-40cc-956d-e2dc1919d33a.jpg
+2025-03-01 15:54:17,226 - DEBUG - composing response
+2025-03-01 15:54:17,226 - DEBUG - composing response2
+2025-03-01 15:54:17,226 - DEBUG - composing response3
+2025-03-01 15:54:17,226 - DEBUG - response: {"width": 640, "height": 598, "status": "success", "polygons_processed": 0}
+2025-03-01 15:55:15,800 - DEBUG - Received input data
+2025-03-01 15:55:15,801 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:55:15,802 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC9FBMVEUFBgYMCwoODBAQDgwQDxEUEAATEA0bFgYcFw4eHAUdGAkRFBQWFRkYFxscGRwiHAsjHRMhHS0lIQ0nIREjIh0qIxQuJhguKRsyKRslJCMlISwpJSE...
+2025-03-01 15:55:15,802 - DEBUG - Starting image processing...
+2025-03-01 15:55:15,804 - DEBUG - Image decoded successfully.
+2025-03-01 15:55:15,811 - DEBUG - Sending image for inference.
+2025-03-01 15:55:15,911 - DEBUG - inferencing image...
+2025-03-01 15:55:17,793 - DEBUG - back from inference.
+2025-03-01 15:55:17,794 - DEBUG - Storing at: tmp/output_image_2e3f915d-e608-435f-a131-e2dd1f68466c.jpg
+2025-03-01 15:55:17,812 - DEBUG - composing response
+2025-03-01 15:55:17,812 - DEBUG - composing response2
+2025-03-01 15:55:17,812 - DEBUG - composing response3
+2025-03-01 15:55:17,813 - DEBUG - response: {"width": 640, "height": 598, "status": "success", "polygons_processed": 0}
+2025-03-01 15:56:50,430 - DEBUG - Received input data
+2025-03-01 15:56:50,431 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:56:50,432 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUMDA0ODRISDw8RDxMUEg0ZFQYZFwsbGgYeGgsQEBQVFBgZGhEbGRQbGxsfHiEiHAslHxIhHx8gHiEgHCwlIQ4oIQ8mIxspIxMuJRkoKBAxKRs4Lh8...
+2025-03-01 15:56:50,432 - DEBUG - Starting image processing...
+2025-03-01 15:56:50,434 - DEBUG - Image decoded successfully.
+2025-03-01 15:56:50,438 - DEBUG - Sending image for inference.
+2025-03-01 15:56:50,495 - DEBUG - inferencing image...
+2025-03-01 15:56:51,813 - DEBUG - results
+2025-03-01 15:56:51,814 - DEBUG - results2
+2025-03-01 15:56:51,814 - DEBUG - results3
+2025-03-01 15:56:51,814 - DEBUG - results3
+2025-03-01 15:56:51,814 - DEBUG - results3
+2025-03-01 15:56:51,815 - DEBUG - results3
+2025-03-01 15:56:51,815 - DEBUG - results3
+2025-03-01 15:56:51,815 - DEBUG - results3
+2025-03-01 15:56:51,816 - DEBUG - results3
+2025-03-01 15:56:51,816 - DEBUG - results3
+2025-03-01 15:56:51,816 - DEBUG - results3
+2025-03-01 15:56:51,816 - DEBUG - results3
+2025-03-01 15:56:51,816 - DEBUG - results3
+2025-03-01 15:56:51,817 - DEBUG - results3
+2025-03-01 15:56:51,817 - DEBUG - results3
+2025-03-01 15:56:51,817 - DEBUG - results3
+2025-03-01 15:56:51,817 - DEBUG - back from inference.
+2025-03-01 15:56:51,817 - DEBUG - Storing at: tmp/output_image_df8e2fab-301e-4eb7-a4b8-d9a35381e3aa.jpg
+2025-03-01 15:56:51,820 - DEBUG - composing response
+2025-03-01 15:56:51,820 - DEBUG - composing response2
+2025-03-01 15:56:51,820 - DEBUG - composing response3
+2025-03-01 15:56:51,820 - DEBUG - response: {"width": 640, "height": 598, "status": "success", "polygons_processed": 0}
+2025-03-01 15:58:28,783 - DEBUG - Received input data
+2025-03-01 15:58:28,784 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 15:58:28,785 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAAC91BMVEUMDAYLCg0NDBAQDQwQDhIXFA0bFQUdGgoSERQVFRgYFxoYGBAaGhweHSAiHAwiHxMgHCwlIA0qIA4mIBEkIBsqIhMvJhgoKBQvKB8xKRo5Lx8jIyQ...
+2025-03-01 15:58:28,786 - DEBUG - Starting image processing...
+2025-03-01 15:58:28,788 - DEBUG - Image decoded successfully.
+2025-03-01 15:58:28,794 - DEBUG - Sending image for inference.
+2025-03-01 15:58:28,862 - DEBUG - inferencing image...
+2025-03-01 15:58:30,246 - DEBUG - results
+2025-03-01 15:58:30,246 - DEBUG - results2
+2025-03-01 15:58:30,246 - DEBUG - results3
+2025-03-01 15:58:30,246 - DEBUG - results3
+2025-03-01 15:58:30,247 - DEBUG - results3
+2025-03-01 15:58:30,247 - DEBUG - results3
+2025-03-01 15:58:30,247 - DEBUG - results3
+2025-03-01 15:58:30,247 - DEBUG - results4
+2025-03-01 15:58:30,247 - DEBUG - back from inference.
+2025-03-01 15:58:30,248 - DEBUG - back from inference2.
+2025-03-01 15:58:30,248 - DEBUG - back from inference3.
+2025-03-01 15:58:30,248 - DEBUG - back from inference4.
+2025-03-01 15:58:30,248 - DEBUG - back from inference5.
+2025-03-01 15:58:30,248 - DEBUG - Storing at: tmp/output_image_11ce5ded-6d5f-41f0-8a3a-ac112a845820.jpg
+2025-03-01 15:58:30,251 - DEBUG - composing response
+2025-03-01 15:58:30,251 - DEBUG - composing response2
+2025-03-01 15:58:30,251 - DEBUG - composing response3
+2025-03-01 15:58:30,252 - DEBUG - response: {"width": 640, "height": 598, "status": "success", "polygons_processed": 0}
+2025-03-01 16:06:35,685 - DEBUG - Received input data
+2025-03-01 16:06:35,686 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 16:06:35,688 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAJWCAMAAAD/dMYjAAADAFBMVEUGBgUIBwoMCg0NDBAOEA4QDRETExEWFRkZFxQYFhoZGRYbGxwcGCAhHx8gHSIgHCwhIR0oKBApKR4jIiQkICssJCAoJCwrKywkITAoIDAoJDAoJDQ...
+2025-03-01 16:06:35,688 - DEBUG - Starting image processing...
+2025-03-01 16:06:35,689 - DEBUG - Image decoded successfully.
+2025-03-01 16:06:35,696 - DEBUG - Sending image for inference.
+2025-03-01 16:06:35,771 - DEBUG - inferencing image...
+2025-03-01 16:06:37,813 - DEBUG - results
+2025-03-01 16:06:37,813 - DEBUG - results2
+2025-03-01 16:06:37,813 - DEBUG - results3
+2025-03-01 16:06:37,813 - DEBUG - results3
+2025-03-01 16:06:37,814 - DEBUG - results3
+2025-03-01 16:06:37,814 - DEBUG - results3
+2025-03-01 16:06:37,814 - DEBUG - results4
+2025-03-01 16:06:37,814 - DEBUG - back from inference.
+2025-03-01 16:06:37,814 - DEBUG - back from inference2.
+2025-03-01 16:06:37,815 - DEBUG - back from inference3.
+2025-03-01 16:06:37,815 - DEBUG - back from inference4.
+2025-03-01 16:06:37,815 - DEBUG - back from inference5.
+2025-03-01 16:06:37,815 - DEBUG - Storing at: tmp/output_image_fcc5be95-0368-4c10-bb48-3c1511464c60.jpg
+2025-03-01 16:06:37,819 - DEBUG - composing response
+2025-03-01 16:06:37,820 - DEBUG - composing response2
+2025-03-01 16:06:37,820 - DEBUG - composing response3
+2025-03-01 16:06:37,820 - DEBUG - response: {"width": 640, "height": 598, "status": "success", "polygons_processed": 0, "image_path": "tmp/output_image_fcc5be95-0368-4c10-bb48-3c1511464c60.jpg"}
+2025-03-01 16:09:25,607 - DEBUG - Starting image processing...
+2025-03-01 16:09:25,609 - DEBUG - Image decoded successfully.
+2025-03-01 16:09:25,620 - DEBUG - Saved processed image to tmp/output_image_8e29e2cf-172f-4e89-8847-0ad971317367.jpg
+2025-03-01 16:10:15,717 - DEBUG - Starting image processing...
+2025-03-01 16:10:15,719 - DEBUG - Image decoded successfully.
+2025-03-01 16:10:15,727 - DEBUG - Saved processed image to tmp/output_image_34e96700-da1b-474a-b14c-7985e704d227.jpg
+2025-03-01 16:12:10,984 - DEBUG - Received input data
+2025-03-01 16:12:10,984 - DEBUG - Keys in received data: ['image', 'polygonCoordinates']
+2025-03-01 16:12:10,986 - DEBUG - Data content: {"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnQAAAJWCAMAAADm0+rAAAAC+lBMVEUBAQEMCAcMCg0ODBETDAAQDxMSEhMVFBgaGRwdHSEnGxcgHyMgGyojIyAkIigkIC4mJSopJyQoJystLSArKiwnIzInIzYnJDInJD4qJTIqJzYtJzY...
+2025-03-01 16:12:10,986 - DEBUG - Starting image processing...
+2025-03-01 16:12:10,988 - DEBUG - Image decoded successfully.
+2025-03-01 16:12:10,993 - DEBUG - Image decoded successfully2.
+2025-03-01 16:12:10,993 - DEBUG - Image decoded successfully3.
+2025-03-01 16:12:10,993 - DEBUG - Image decoded successfully4.
+2025-03-01 16:12:10,994 - DEBUG - Sending image for inference.
+2025-03-01 16:12:11,049 - DEBUG - inferencing image...
+2025-03-01 16:12:12,671 - DEBUG - results
+2025-03-01 16:12:12,671 - DEBUG - results2
+2025-03-01 16:12:12,671 - DEBUG - results3
+2025-03-01 16:12:12,671 - DEBUG - results3
+2025-03-01 16:12:12,672 - DEBUG - results4
+2025-03-01 16:12:12,672 - DEBUG - back from inference.
+2025-03-01 16:12:12,672 - DEBUG - back from inference2.
+2025-03-01 16:12:12,672 - DEBUG - back from inference3.
+2025-03-01 16:12:12,672 - DEBUG - back from inference4.
+2025-03-01 16:12:12,672 - DEBUG - back from inference5.
+2025-03-01 16:12:12,672 - DEBUG - Storing at: tmp/output_image_546f24e0-042a-4b44-beba-9e4761489203.jpg
+2025-03-01 16:12:12,675 - DEBUG - composing response
+2025-03-01 16:12:12,675 - DEBUG - composing response2
+2025-03-01 16:12:12,676 - DEBUG - composing response3
+2025-03-01 16:12:12,676 - DEBUG - response: {"width": 628, "height": 598, "status": "success", "polygons_processed": 0, "image_path": "tmp/output_image_546f24e0-042a-4b44-beba-9e4761489203.jpg"}
+2025-03-01 16:15:02,634 - DEBUG - Starting image processing...
+2025-03-01 16:15:02,636 - DEBUG - Image decoded successfully.
+2025-03-01 16:15:02,644 - DEBUG - Saved processed image to tmp/output_image_a6400bcd-40c0-40f3-90b4-72a28c0ea1b1.jpg
+2025-03-01 16:18:49,285 - DEBUG - Starting image processing...
+2025-03-01 16:18:49,287 - DEBUG - Image decoded successfully.
+2025-03-01 16:18:49,292 - DEBUG - Numpy array created successfully.
+2025-03-01 16:18:49,292 - DEBUG - Processing image with YOLO.
+2025-03-01 16:18:49,292 - ERROR - An error occurred during image processing: process_image_yolo() missing 1 required positional argument: 'logging'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 67, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(image, [])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() missing 1 required positional argument: 'logging'
+2025-03-01 16:19:58,896 - DEBUG - Starting image processing...
+2025-03-01 16:19:58,898 - DEBUG - Image decoded successfully.
+2025-03-01 16:19:58,903 - DEBUG - Numpy array created successfully.
+2025-03-01 16:19:58,903 - DEBUG - Processing image with YOLO.
+2025-03-01 16:19:58,966 - DEBUG - inferencing image...
+2025-03-01 16:20:00,284 - DEBUG - results
+2025-03-01 16:20:00,284 - DEBUG - results2
+2025-03-01 16:20:00,284 - DEBUG - results3
+2025-03-01 16:20:00,284 - DEBUG - results3
+2025-03-01 16:20:00,284 - DEBUG - results4
+2025-03-01 16:20:00,288 - DEBUG - Saved processed image to tmp/output_image_d9bf73df-9442-4a59-931b-06d9f92fe98c.jpg
+2025-03-01 16:22:43,864 - DEBUG - Starting image processing...
+2025-03-01 16:22:43,868 - DEBUG - Image decoded successfully.
+2025-03-01 16:22:43,874 - DEBUG - Numpy array created successfully.
+2025-03-01 16:22:43,874 - DEBUG - Processing image with YOLO.
+2025-03-01 16:22:43,874 - ERROR - An error occurred during image processing: process_image_yolo() missing 1 required positional argument: 'logging'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 66, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(image, [])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() missing 1 required positional argument: 'logging'
+2025-03-01 16:24:32,929 - DEBUG - Starting image processing...
+2025-03-01 16:24:32,932 - DEBUG - Image decoded successfully.
+2025-03-01 16:24:32,938 - DEBUG - Numpy array created successfully.
+2025-03-01 16:24:32,938 - DEBUG - Processing image with YOLO.
+2025-03-01 16:24:32,938 - ERROR - An error occurred during image processing: process_image_yolo() missing 1 required positional argument: 'logging'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 66, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(image, [])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() missing 1 required positional argument: 'logging'
+2025-03-01 16:28:47,123 - DEBUG - Starting image processing...
+2025-03-01 16:28:47,124 - DEBUG - Image decoded successfully.
+2025-03-01 16:28:47,130 - DEBUG - Numpy array created successfully.
+2025-03-01 16:28:47,130 - DEBUG - Processing image with YOLO.
+2025-03-01 16:28:47,188 - DEBUG - inferencing image...
+2025-03-01 16:28:48,852 - DEBUG - results
+2025-03-01 16:28:48,852 - DEBUG - results2
+2025-03-01 16:28:48,852 - DEBUG - results3
+2025-03-01 16:28:48,852 - DEBUG - results3
+2025-03-01 16:28:48,853 - DEBUG - results4
+2025-03-01 16:28:48,856 - DEBUG - Saved processed image to tmp/output_image_d8e3ff69-d2ef-4021-b987-bb187e974073.jpg
+2025-03-01 16:30:58,233 - DEBUG - Starting image processing...
+2025-03-01 16:30:58,236 - DEBUG - Image decoded successfully.
+2025-03-01 16:30:58,241 - DEBUG - Processing image with YOLO.
+2025-03-01 16:30:58,241 - ERROR - An error occurred during image processing: process_image_yolo() missing 1 required positional argument: 'logging'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 64, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(image, [])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() missing 1 required positional argument: 'logging'
+2025-03-01 16:33:24,370 - DEBUG - Starting image processing...
+2025-03-01 16:33:24,372 - DEBUG - Image decoded successfully.
+2025-03-01 16:33:24,376 - DEBUG - Processing image with YOLO.
+2025-03-01 16:33:24,376 - ERROR - An error occurred during image processing: process_image_yolo() missing 1 required positional argument: 'logging'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 64, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(image, [])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() missing 1 required positional argument: 'logging'
+2025-03-01 16:34:12,200 - DEBUG - Starting image processing...
+2025-03-01 16:34:12,202 - DEBUG - Image decoded successfully.
+2025-03-01 16:34:12,208 - DEBUG - Processing image with YOLO.
+2025-03-01 16:34:12,283 - DEBUG - inferencing image...
+2025-03-01 16:34:13,607 - DEBUG - results
+2025-03-01 16:34:13,607 - DEBUG - results2
+2025-03-01 16:34:13,607 - DEBUG - results3
+2025-03-01 16:34:13,607 - DEBUG - results3
+2025-03-01 16:34:13,608 - DEBUG - results4
+2025-03-01 16:34:13,616 - DEBUG - Saved processed image to tmp/output_image_88e40dec-d38d-4b62-923f-f8b79f8f902c.jpg
+2025-03-01 16:37:44,197 - DEBUG - Starting image processing...
+2025-03-01 16:37:44,199 - DEBUG - Image decoded successfully.
+2025-03-01 16:37:44,207 - DEBUG - Processing image with YOLO.
+2025-03-01 16:37:44,347 - DEBUG - inferencing image...
+2025-03-01 16:37:48,887 - DEBUG - results
+2025-03-01 16:37:48,887 - DEBUG - results2
+2025-03-01 16:37:48,887 - DEBUG - results3
+2025-03-01 16:37:48,888 - DEBUG - results3
+2025-03-01 16:37:48,888 - DEBUG - results4
+2025-03-01 16:37:48,891 - DEBUG - Saved processed image to tmp/output_image_4d00f204-45e9-4fb4-8e34-c67faa033294.jpg
+2025-03-01 16:38:51,472 - DEBUG - Starting image processing...
+2025-03-01 16:38:51,474 - DEBUG - Image decoded successfully.
+2025-03-01 16:38:51,480 - DEBUG - Processing image with YOLO.
+2025-03-01 16:38:51,547 - DEBUG - inferencing image...
+2025-03-01 16:38:53,068 - DEBUG - results
+2025-03-01 16:38:53,068 - DEBUG - results2
+2025-03-01 16:38:53,069 - DEBUG - results3
+2025-03-01 16:38:53,069 - DEBUG - results3
+2025-03-01 16:38:53,069 - DEBUG - results3
+2025-03-01 16:38:53,069 - DEBUG - results3
+2025-03-01 16:38:53,070 - DEBUG - results3
+2025-03-01 16:38:53,070 - DEBUG - results3
+2025-03-01 16:38:53,070 - DEBUG - results3
+2025-03-01 16:38:53,070 - DEBUG - results3
+2025-03-01 16:38:53,070 - DEBUG - results3
+2025-03-01 16:38:53,071 - DEBUG - results3
+2025-03-01 16:38:53,071 - DEBUG - results3
+2025-03-01 16:38:53,071 - DEBUG - results3
+2025-03-01 16:38:53,071 - DEBUG - results3
+2025-03-01 16:38:53,071 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,072 - DEBUG - results3
+2025-03-01 16:38:53,073 - DEBUG - results3
+2025-03-01 16:38:53,073 - DEBUG - results3
+2025-03-01 16:38:53,073 - DEBUG - results3
+2025-03-01 16:38:53,073 - DEBUG - results3
+2025-03-01 16:38:53,073 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,074 - DEBUG - results3
+2025-03-01 16:38:53,075 - DEBUG - results3
+2025-03-01 16:38:53,075 - DEBUG - results3
+2025-03-01 16:38:53,075 - DEBUG - results3
+2025-03-01 16:38:53,075 - DEBUG - results3
+2025-03-01 16:38:53,075 - DEBUG - results3
+2025-03-01 16:38:53,076 - DEBUG - results3
+2025-03-01 16:38:53,076 - DEBUG - results3
+2025-03-01 16:38:53,076 - DEBUG - results3
+2025-03-01 16:38:53,076 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,077 - DEBUG - results3
+2025-03-01 16:38:53,078 - DEBUG - results3
+2025-03-01 16:38:53,078 - DEBUG - results3
+2025-03-01 16:38:53,078 - DEBUG - results4
+2025-03-01 16:38:53,082 - DEBUG - Saved processed image to tmp/output_image_83cc8027-410e-4b88-8898-11cea2253262.jpg
+2025-03-01 16:41:28,134 - DEBUG - Starting image processing...
+2025-03-01 16:41:28,135 - DEBUG - Image decoded successfully.
+2025-03-01 16:41:28,139 - DEBUG - Processing image with YOLO.
+2025-03-01 16:41:28,201 - DEBUG - inferencing image...
+2025-03-01 16:41:29,619 - DEBUG - results
+2025-03-01 16:41:29,620 - DEBUG - results2
+2025-03-01 16:41:29,620 - DEBUG - results3
+2025-03-01 16:41:29,620 - DEBUG - results3
+2025-03-01 16:41:29,620 - DEBUG - results3
+2025-03-01 16:41:29,621 - DEBUG - results3
+2025-03-01 16:41:29,621 - DEBUG - results3
+2025-03-01 16:41:29,621 - DEBUG - results3
+2025-03-01 16:41:29,621 - DEBUG - results3
+2025-03-01 16:41:29,622 - DEBUG - results3
+2025-03-01 16:41:29,622 - DEBUG - results3
+2025-03-01 16:41:29,622 - DEBUG - results3
+2025-03-01 16:41:29,623 - DEBUG - results3
+2025-03-01 16:41:29,623 - DEBUG - results3
+2025-03-01 16:41:29,623 - DEBUG - results3
+2025-03-01 16:41:29,623 - DEBUG - results3
+2025-03-01 16:41:29,624 - DEBUG - results3
+2025-03-01 16:41:29,624 - DEBUG - results3
+2025-03-01 16:41:29,624 - DEBUG - results3
+2025-03-01 16:41:29,624 - DEBUG - results3
+2025-03-01 16:41:29,624 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,625 - DEBUG - results3
+2025-03-01 16:41:29,626 - DEBUG - results3
+2025-03-01 16:41:29,626 - DEBUG - results3
+2025-03-01 16:41:29,626 - DEBUG - results3
+2025-03-01 16:41:29,626 - DEBUG - results3
+2025-03-01 16:41:29,626 - DEBUG - results3
+2025-03-01 16:41:29,627 - DEBUG - results3
+2025-03-01 16:41:29,627 - DEBUG - results3
+2025-03-01 16:41:29,627 - DEBUG - results3
+2025-03-01 16:41:29,627 - DEBUG - results3
+2025-03-01 16:41:29,627 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,628 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,629 - DEBUG - results3
+2025-03-01 16:41:29,630 - DEBUG - results3
+2025-03-01 16:41:29,630 - DEBUG - results3
+2025-03-01 16:41:29,630 - DEBUG - results3
+2025-03-01 16:41:29,630 - DEBUG - results3
+2025-03-01 16:41:29,630 - DEBUG - results3
+2025-03-01 16:41:29,631 - DEBUG - results3
+2025-03-01 16:41:29,631 - DEBUG - results3
+2025-03-01 16:41:29,631 - DEBUG - results3
+2025-03-01 16:41:29,631 - DEBUG - results3
+2025-03-01 16:41:29,631 - DEBUG - results3
+2025-03-01 16:41:29,632 - DEBUG - results3
+2025-03-01 16:41:29,632 - DEBUG - results3
+2025-03-01 16:41:29,632 - DEBUG - results3
+2025-03-01 16:41:29,632 - DEBUG - results3
+2025-03-01 16:41:29,632 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,633 - DEBUG - results3
+2025-03-01 16:41:29,634 - DEBUG - results3
+2025-03-01 16:41:29,634 - DEBUG - results3
+2025-03-01 16:41:29,635 - DEBUG - results3
+2025-03-01 16:41:29,635 - DEBUG - results3
+2025-03-01 16:41:29,635 - DEBUG - results3
+2025-03-01 16:41:29,635 - DEBUG - results3
+2025-03-01 16:41:29,636 - DEBUG - results3
+2025-03-01 16:41:29,636 - DEBUG - results3
+2025-03-01 16:41:29,636 - DEBUG - results3
+2025-03-01 16:41:29,636 - DEBUG - results3
+2025-03-01 16:41:29,637 - DEBUG - results3
+2025-03-01 16:41:29,637 - DEBUG - results3
+2025-03-01 16:41:29,637 - DEBUG - results3
+2025-03-01 16:41:29,638 - DEBUG - results3
+2025-03-01 16:41:29,638 - DEBUG - results3
+2025-03-01 16:41:29,638 - DEBUG - results3
+2025-03-01 16:41:29,638 - DEBUG - results3
+2025-03-01 16:41:29,638 - DEBUG - results3
+2025-03-01 16:41:29,639 - DEBUG - results3
+2025-03-01 16:41:29,639 - DEBUG - results3
+2025-03-01 16:41:29,639 - DEBUG - results3
+2025-03-01 16:41:29,640 - DEBUG - results3
+2025-03-01 16:41:29,640 - DEBUG - results3
+2025-03-01 16:41:29,640 - DEBUG - results3
+2025-03-01 16:41:29,640 - DEBUG - results3
+2025-03-01 16:41:29,640 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,641 - DEBUG - results3
+2025-03-01 16:41:29,642 - DEBUG - results3
+2025-03-01 16:41:29,642 - DEBUG - results3
+2025-03-01 16:41:29,642 - DEBUG - results3
+2025-03-01 16:41:29,642 - DEBUG - results3
+2025-03-01 16:41:29,642 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,643 - DEBUG - results3
+2025-03-01 16:41:29,644 - DEBUG - results3
+2025-03-01 16:41:29,644 - DEBUG - results3
+2025-03-01 16:41:29,644 - DEBUG - results3
+2025-03-01 16:41:29,644 - DEBUG - results3
+2025-03-01 16:41:29,644 - DEBUG - results3
+2025-03-01 16:41:29,645 - DEBUG - results3
+2025-03-01 16:41:29,645 - DEBUG - results3
+2025-03-01 16:41:29,645 - DEBUG - results3
+2025-03-01 16:41:29,645 - DEBUG - results3
+2025-03-01 16:41:29,646 - DEBUG - results3
+2025-03-01 16:41:29,646 - DEBUG - results3
+2025-03-01 16:41:29,647 - DEBUG - results3
+2025-03-01 16:41:29,647 - DEBUG - results3
+2025-03-01 16:41:29,647 - DEBUG - results3
+2025-03-01 16:41:29,647 - DEBUG - results3
+2025-03-01 16:41:29,647 - DEBUG - results3
+2025-03-01 16:41:29,648 - DEBUG - results3
+2025-03-01 16:41:29,648 - DEBUG - results3
+2025-03-01 16:41:29,648 - DEBUG - results3
+2025-03-01 16:41:29,648 - DEBUG - results3
+2025-03-01 16:41:29,648 - DEBUG - results3
+2025-03-01 16:41:29,649 - DEBUG - results3
+2025-03-01 16:41:29,649 - DEBUG - results3
+2025-03-01 16:41:29,649 - DEBUG - results3
+2025-03-01 16:41:29,649 - DEBUG - results3
+2025-03-01 16:41:29,650 - DEBUG - results4
+2025-03-01 16:41:29,653 - DEBUG - Saved processed image to tmp/output_image_725768a9-91d6-43fe-83a6-f938129a1ce3.jpg
+2025-03-02 02:30:22,049 - DEBUG - Starting image processing...
+2025-03-02 02:30:22,051 - DEBUG - Image decoded successfully.
+2025-03-02 02:30:22,075 - DEBUG - Processing image with YOLO.
+2025-03-02 02:30:22,075 - ERROR - An error occurred during image processing: process_image_yolo() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 51, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(
+                                         ^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() takes 2 positional arguments but 3 were given
+2025-03-02 02:35:44,930 - DEBUG - Starting image processing...
+2025-03-02 02:35:44,932 - DEBUG - Image decoded successfully.
+2025-03-02 02:35:44,937 - DEBUG - Processing image with YOLO.
+2025-03-02 02:35:44,937 - ERROR - An error occurred during image processing: process_image_yolo() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 51, in process_screenshot
+    class_counts, class_coordinates, _ = process_image_yolo(
+                                         ^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() takes 2 positional arguments but 3 were given
+2025-03-02 02:37:03,436 - DEBUG - Starting image processing...
+2025-03-02 02:37:03,438 - DEBUG - Image decoded successfully.
+2025-03-02 02:37:03,444 - DEBUG - Processing image with YOLO.
+2025-03-02 02:37:03,444 - ERROR - An error occurred during image processing: process_image_yolo() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 65, in process_screenshot
+    class_counts, class_coordinates, class_confidences = process_image_yolo(
+                                                         ^^^^^^^^^^^^^^^^^^^
+TypeError: process_image_yolo() takes 2 positional arguments but 3 were given
+2025-03-02 02:37:52,348 - DEBUG - Starting image processing...
+2025-03-02 02:37:52,350 - DEBUG - Image decoded successfully.
+2025-03-02 02:37:52,354 - DEBUG - Processing image with YOLO.
+2025-03-02 02:37:52,537 - DEBUG - inferencing image...
+2025-03-02 02:37:55,085 - DEBUG - results
+2025-03-02 02:37:55,085 - DEBUG - results2
+2025-03-02 02:37:55,085 - DEBUG - results3
+2025-03-02 02:37:55,085 - DEBUG - results3
+2025-03-02 02:37:55,086 - DEBUG - results4
+2025-03-02 02:37:56,125 - DEBUG - Saved processed image to tmp/output_image_00944811-c9ec-427d-9d95-0b4fd0c8b6ff.jpg
+2025-03-02 02:38:53,871 - DEBUG - Starting image processing...
+2025-03-02 02:38:53,873 - DEBUG - Image decoded successfully.
+2025-03-02 02:38:53,878 - DEBUG - Processing image with YOLO.
+2025-03-02 02:38:53,937 - DEBUG - inferencing image...
+2025-03-02 02:38:55,348 - DEBUG - results
+2025-03-02 02:38:55,348 - DEBUG - results2
+2025-03-02 02:38:55,348 - DEBUG - results3
+2025-03-02 02:38:55,349 - DEBUG - results3
+2025-03-02 02:38:55,349 - DEBUG - results3
+2025-03-02 02:38:55,349 - DEBUG - results3
+2025-03-02 02:38:55,349 - DEBUG - results3
+2025-03-02 02:38:55,349 - DEBUG - results3
+2025-03-02 02:38:55,350 - DEBUG - results3
+2025-03-02 02:38:55,350 - DEBUG - results3
+2025-03-02 02:38:55,350 - DEBUG - results3
+2025-03-02 02:38:55,350 - DEBUG - results3
+2025-03-02 02:38:55,350 - DEBUG - results3
+2025-03-02 02:38:55,351 - DEBUG - results3
+2025-03-02 02:38:55,351 - DEBUG - results3
+2025-03-02 02:38:55,351 - DEBUG - results3
+2025-03-02 02:38:55,351 - DEBUG - results3
+2025-03-02 02:38:55,351 - DEBUG - results3
+2025-03-02 02:38:55,352 - DEBUG - results3
+2025-03-02 02:38:55,352 - DEBUG - results3
+2025-03-02 02:38:55,352 - DEBUG - results3
+2025-03-02 02:38:55,352 - DEBUG - results3
+2025-03-02 02:38:55,352 - DEBUG - results3
+2025-03-02 02:38:55,353 - DEBUG - results3
+2025-03-02 02:38:55,353 - DEBUG - results3
+2025-03-02 02:38:55,353 - DEBUG - results3
+2025-03-02 02:38:55,353 - DEBUG - results3
+2025-03-02 02:38:55,354 - DEBUG - results3
+2025-03-02 02:38:55,354 - DEBUG - results3
+2025-03-02 02:38:55,354 - DEBUG - results3
+2025-03-02 02:38:55,354 - DEBUG - results3
+2025-03-02 02:38:55,355 - DEBUG - results3
+2025-03-02 02:38:55,355 - DEBUG - results3
+2025-03-02 02:38:55,355 - DEBUG - results3
+2025-03-02 02:38:55,355 - DEBUG - results3
+2025-03-02 02:38:55,355 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,356 - DEBUG - results3
+2025-03-02 02:38:55,357 - DEBUG - results3
+2025-03-02 02:38:55,357 - DEBUG - results3
+2025-03-02 02:38:55,357 - DEBUG - results3
+2025-03-02 02:38:55,357 - DEBUG - results3
+2025-03-02 02:38:55,357 - DEBUG - results3
+2025-03-02 02:38:55,358 - DEBUG - results3
+2025-03-02 02:38:55,358 - DEBUG - results3
+2025-03-02 02:38:55,358 - DEBUG - results3
+2025-03-02 02:38:55,358 - DEBUG - results3
+2025-03-02 02:38:55,359 - DEBUG - results3
+2025-03-02 02:38:55,359 - DEBUG - results3
+2025-03-02 02:38:55,359 - DEBUG - results3
+2025-03-02 02:38:55,359 - DEBUG - results3
+2025-03-02 02:38:55,359 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,360 - DEBUG - results3
+2025-03-02 02:38:55,361 - DEBUG - results3
+2025-03-02 02:38:55,361 - DEBUG - results3
+2025-03-02 02:38:55,361 - DEBUG - results3
+2025-03-02 02:38:55,361 - DEBUG - results3
+2025-03-02 02:38:55,362 - DEBUG - results3
+2025-03-02 02:38:55,362 - DEBUG - results3
+2025-03-02 02:38:55,362 - DEBUG - results3
+2025-03-02 02:38:55,362 - DEBUG - results3
+2025-03-02 02:38:55,362 - DEBUG - results3
+2025-03-02 02:38:55,363 - DEBUG - results3
+2025-03-02 02:38:55,363 - DEBUG - results3
+2025-03-02 02:38:55,363 - DEBUG - results3
+2025-03-02 02:38:55,363 - DEBUG - results3
+2025-03-02 02:38:55,364 - DEBUG - results3
+2025-03-02 02:38:55,364 - DEBUG - results3
+2025-03-02 02:38:55,364 - DEBUG - results3
+2025-03-02 02:38:55,364 - DEBUG - results3
+2025-03-02 02:38:55,364 - DEBUG - results3
+2025-03-02 02:38:55,365 - DEBUG - results3
+2025-03-02 02:38:55,365 - DEBUG - results3
+2025-03-02 02:38:55,365 - DEBUG - results3
+2025-03-02 02:38:55,365 - DEBUG - results3
+2025-03-02 02:38:55,365 - DEBUG - results3
+2025-03-02 02:38:55,366 - DEBUG - results3
+2025-03-02 02:38:55,366 - DEBUG - results3
+2025-03-02 02:38:55,366 - DEBUG - results3
+2025-03-02 02:38:55,366 - DEBUG - results3
+2025-03-02 02:38:55,366 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,367 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,368 - DEBUG - results3
+2025-03-02 02:38:55,369 - DEBUG - results3
+2025-03-02 02:38:55,369 - DEBUG - results3
+2025-03-02 02:38:55,369 - DEBUG - results3
+2025-03-02 02:38:55,369 - DEBUG - results3
+2025-03-02 02:38:55,369 - DEBUG - results3
+2025-03-02 02:38:55,370 - DEBUG - results3
+2025-03-02 02:38:55,370 - DEBUG - results3
+2025-03-02 02:38:55,370 - DEBUG - results3
+2025-03-02 02:38:55,370 - DEBUG - results3
+2025-03-02 02:38:55,370 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,371 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,372 - DEBUG - results3
+2025-03-02 02:38:55,373 - DEBUG - results3
+2025-03-02 02:38:55,373 - DEBUG - results3
+2025-03-02 02:38:55,373 - DEBUG - results3
+2025-03-02 02:38:55,373 - DEBUG - results3
+2025-03-02 02:38:55,373 - DEBUG - results3
+2025-03-02 02:38:55,374 - DEBUG - results3
+2025-03-02 02:38:55,374 - DEBUG - results3
+2025-03-02 02:38:55,374 - DEBUG - results3
+2025-03-02 02:38:55,374 - DEBUG - results3
+2025-03-02 02:38:55,374 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,375 - DEBUG - results3
+2025-03-02 02:38:55,376 - DEBUG - results3
+2025-03-02 02:38:55,376 - DEBUG - results3
+2025-03-02 02:38:55,376 - DEBUG - results3
+2025-03-02 02:38:55,376 - DEBUG - results3
+2025-03-02 02:38:55,376 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,377 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,378 - DEBUG - results3
+2025-03-02 02:38:55,379 - DEBUG - results3
+2025-03-02 02:38:55,379 - DEBUG - results3
+2025-03-02 02:38:55,379 - DEBUG - results3
+2025-03-02 02:38:55,379 - DEBUG - results3
+2025-03-02 02:38:55,379 - DEBUG - results3
+2025-03-02 02:38:55,380 - DEBUG - results3
+2025-03-02 02:38:55,380 - DEBUG - results3
+2025-03-02 02:38:55,380 - DEBUG - results3
+2025-03-02 02:38:55,380 - DEBUG - results3
+2025-03-02 02:38:55,380 - DEBUG - results3
+2025-03-02 02:38:55,381 - DEBUG - results3
+2025-03-02 02:38:55,381 - DEBUG - results3
+2025-03-02 02:38:55,381 - DEBUG - results3
+2025-03-02 02:38:55,381 - DEBUG - results3
+2025-03-02 02:38:55,381 - DEBUG - results3
+2025-03-02 02:38:55,382 - DEBUG - results3
+2025-03-02 02:38:55,382 - DEBUG - results3
+2025-03-02 02:38:55,382 - DEBUG - results3
+2025-03-02 02:38:55,382 - DEBUG - results3
+2025-03-02 02:38:55,382 - DEBUG - results3
+2025-03-02 02:38:55,383 - DEBUG - results3
+2025-03-02 02:38:55,383 - DEBUG - results3
+2025-03-02 02:38:55,383 - DEBUG - results3
+2025-03-02 02:38:55,383 - DEBUG - results3
+2025-03-02 02:38:55,383 - DEBUG - results3
+2025-03-02 02:38:55,384 - DEBUG - results3
+2025-03-02 02:38:55,384 - DEBUG - results3
+2025-03-02 02:38:55,384 - DEBUG - results3
+2025-03-02 02:38:55,384 - DEBUG - results3
+2025-03-02 02:38:55,384 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,385 - DEBUG - results3
+2025-03-02 02:38:55,386 - DEBUG - results3
+2025-03-02 02:38:55,386 - DEBUG - results3
+2025-03-02 02:38:55,386 - DEBUG - results3
+2025-03-02 02:38:55,386 - DEBUG - results3
+2025-03-02 02:38:55,386 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,387 - DEBUG - results3
+2025-03-02 02:38:55,388 - DEBUG - results3
+2025-03-02 02:38:55,388 - DEBUG - results3
+2025-03-02 02:38:55,388 - DEBUG - results3
+2025-03-02 02:38:55,388 - DEBUG - results3
+2025-03-02 02:38:55,388 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,389 - DEBUG - results3
+2025-03-02 02:38:55,390 - DEBUG - results3
+2025-03-02 02:38:55,390 - DEBUG - results3
+2025-03-02 02:38:55,390 - DEBUG - results3
+2025-03-02 02:38:55,390 - DEBUG - results3
+2025-03-02 02:38:55,390 - DEBUG - results3
+2025-03-02 02:38:55,391 - DEBUG - results3
+2025-03-02 02:38:55,391 - DEBUG - results3
+2025-03-02 02:38:55,391 - DEBUG - results3
+2025-03-02 02:38:55,391 - DEBUG - results3
+2025-03-02 02:38:55,392 - DEBUG - results4
+2025-03-02 02:38:56,409 - DEBUG - Saved processed image to tmp/output_image_55d54ab4-a26d-4ac5-947e-41544b9c6e21.jpg
+2025-03-02 02:40:35,262 - DEBUG - Starting image processing...
+2025-03-02 02:40:35,265 - DEBUG - Image decoded successfully.
+2025-03-02 02:40:35,270 - DEBUG - Processing image with YOLO.
+2025-03-02 02:40:35,343 - DEBUG - inferencing image...
+2025-03-02 02:40:36,922 - DEBUG - results
+2025-03-02 02:40:36,923 - DEBUG - results2
+2025-03-02 02:40:36,923 - DEBUG - results3
+2025-03-02 02:40:36,923 - DEBUG - results3
+2025-03-02 02:40:36,923 - DEBUG - results3
+2025-03-02 02:40:36,923 - DEBUG - results3
+2025-03-02 02:40:36,924 - DEBUG - results3
+2025-03-02 02:40:36,924 - DEBUG - results3
+2025-03-02 02:40:36,924 - DEBUG - results3
+2025-03-02 02:40:36,924 - DEBUG - results3
+2025-03-02 02:40:36,924 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,925 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,926 - DEBUG - results3
+2025-03-02 02:40:36,927 - DEBUG - results3
+2025-03-02 02:40:36,927 - DEBUG - results3
+2025-03-02 02:40:36,927 - DEBUG - results3
+2025-03-02 02:40:36,927 - DEBUG - results3
+2025-03-02 02:40:36,927 - DEBUG - results3
+2025-03-02 02:40:36,928 - DEBUG - results3
+2025-03-02 02:40:36,928 - DEBUG - results3
+2025-03-02 02:40:36,928 - DEBUG - results3
+2025-03-02 02:40:36,928 - DEBUG - results3
+2025-03-02 02:40:36,928 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,929 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,930 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,931 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,932 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,933 - DEBUG - results3
+2025-03-02 02:40:36,934 - DEBUG - results3
+2025-03-02 02:40:36,934 - DEBUG - results3
+2025-03-02 02:40:36,934 - DEBUG - results3
+2025-03-02 02:40:36,934 - DEBUG - results3
+2025-03-02 02:40:36,934 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,935 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,936 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,937 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,938 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,939 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,940 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,941 - DEBUG - results3
+2025-03-02 02:40:36,942 - DEBUG - results3
+2025-03-02 02:40:36,942 - DEBUG - results3
+2025-03-02 02:40:36,942 - DEBUG - results3
+2025-03-02 02:40:36,942 - DEBUG - results3
+2025-03-02 02:40:36,942 - DEBUG - results3
+2025-03-02 02:40:36,943 - DEBUG - results3
+2025-03-02 02:40:36,943 - DEBUG - results3
+2025-03-02 02:40:36,943 - DEBUG - results3
+2025-03-02 02:40:36,943 - DEBUG - results3
+2025-03-02 02:40:36,943 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,944 - DEBUG - results3
+2025-03-02 02:40:36,945 - DEBUG - results3
+2025-03-02 02:40:36,945 - DEBUG - results3
+2025-03-02 02:40:36,945 - DEBUG - results3
+2025-03-02 02:40:36,945 - DEBUG - results3
+2025-03-02 02:40:36,945 - DEBUG - results3
+2025-03-02 02:40:36,946 - DEBUG - results3
+2025-03-02 02:40:36,946 - DEBUG - results3
+2025-03-02 02:40:36,946 - DEBUG - results3
+2025-03-02 02:40:36,946 - DEBUG - results3
+2025-03-02 02:40:36,947 - DEBUG - results3
+2025-03-02 02:40:36,947 - DEBUG - results3
+2025-03-02 02:40:36,947 - DEBUG - results3
+2025-03-02 02:40:36,947 - DEBUG - results3
+2025-03-02 02:40:36,947 - DEBUG - results3
+2025-03-02 02:40:36,948 - DEBUG - results3
+2025-03-02 02:40:36,948 - DEBUG - results3
+2025-03-02 02:40:36,948 - DEBUG - results3
+2025-03-02 02:40:36,948 - DEBUG - results3
+2025-03-02 02:40:36,948 - DEBUG - results3
+2025-03-02 02:40:36,949 - DEBUG - results3
+2025-03-02 02:40:36,949 - DEBUG - results3
+2025-03-02 02:40:36,949 - DEBUG - results3
+2025-03-02 02:40:36,949 - DEBUG - results3
+2025-03-02 02:40:36,949 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,950 - DEBUG - results3
+2025-03-02 02:40:36,951 - DEBUG - results3
+2025-03-02 02:40:36,951 - DEBUG - results3
+2025-03-02 02:40:36,951 - DEBUG - results3
+2025-03-02 02:40:36,951 - DEBUG - results3
+2025-03-02 02:40:36,951 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,952 - DEBUG - results3
+2025-03-02 02:40:36,953 - DEBUG - results3
+2025-03-02 02:40:36,953 - DEBUG - results3
+2025-03-02 02:40:36,953 - DEBUG - results3
+2025-03-02 02:40:36,953 - DEBUG - results3
+2025-03-02 02:40:36,953 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,954 - DEBUG - results3
+2025-03-02 02:40:36,955 - DEBUG - results3
+2025-03-02 02:40:36,955 - DEBUG - results3
+2025-03-02 02:40:36,955 - DEBUG - results3
+2025-03-02 02:40:36,955 - DEBUG - results3
+2025-03-02 02:40:36,955 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,956 - DEBUG - results3
+2025-03-02 02:40:36,957 - DEBUG - results3
+2025-03-02 02:40:36,957 - DEBUG - results3
+2025-03-02 02:40:36,957 - DEBUG - results3
+2025-03-02 02:40:36,957 - DEBUG - results3
+2025-03-02 02:40:36,957 - DEBUG - results3
+2025-03-02 02:40:36,958 - DEBUG - results3
+2025-03-02 02:40:36,958 - DEBUG - results3
+2025-03-02 02:40:36,958 - DEBUG - results3
+2025-03-02 02:40:36,958 - DEBUG - results3
+2025-03-02 02:40:36,958 - DEBUG - results3
+2025-03-02 02:40:36,959 - DEBUG - results3
+2025-03-02 02:40:36,959 - DEBUG - results3
+2025-03-02 02:40:36,959 - DEBUG - results3
+2025-03-02 02:40:36,959 - DEBUG - results3
+2025-03-02 02:40:36,959 - DEBUG - results3
+2025-03-02 02:40:36,960 - DEBUG - results3
+2025-03-02 02:40:36,960 - DEBUG - results3
+2025-03-02 02:40:36,960 - DEBUG - results3
+2025-03-02 02:40:36,960 - DEBUG - results3
+2025-03-02 02:40:36,960 - DEBUG - results3
+2025-03-02 02:40:36,961 - DEBUG - results3
+2025-03-02 02:40:36,961 - DEBUG - results3
+2025-03-02 02:40:36,961 - DEBUG - results3
+2025-03-02 02:40:36,961 - DEBUG - results3
+2025-03-02 02:40:36,961 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,962 - DEBUG - results3
+2025-03-02 02:40:36,963 - DEBUG - results3
+2025-03-02 02:40:36,963 - DEBUG - results3
+2025-03-02 02:40:36,963 - DEBUG - results3
+2025-03-02 02:40:36,963 - DEBUG - results3
+2025-03-02 02:40:36,963 - DEBUG - results3
+2025-03-02 02:40:36,964 - DEBUG - results3
+2025-03-02 02:40:36,964 - DEBUG - results3
+2025-03-02 02:40:36,964 - DEBUG - results3
+2025-03-02 02:40:36,964 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,965 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,966 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,967 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,968 - DEBUG - results3
+2025-03-02 02:40:36,969 - DEBUG - results3
+2025-03-02 02:40:36,969 - DEBUG - results3
+2025-03-02 02:40:36,969 - DEBUG - results3
+2025-03-02 02:40:36,969 - DEBUG - results3
+2025-03-02 02:40:36,969 - DEBUG - results3
+2025-03-02 02:40:36,970 - DEBUG - results3
+2025-03-02 02:40:36,970 - DEBUG - results3
+2025-03-02 02:40:36,971 - DEBUG - results3
+2025-03-02 02:40:36,972 - DEBUG - results3
+2025-03-02 02:40:36,972 - DEBUG - results3
+2025-03-02 02:40:36,972 - DEBUG - results3
+2025-03-02 02:40:36,972 - DEBUG - results3
+2025-03-02 02:40:36,972 - DEBUG - results3
+2025-03-02 02:40:36,973 - DEBUG - results3
+2025-03-02 02:40:36,973 - DEBUG - results3
+2025-03-02 02:40:36,973 - DEBUG - results3
+2025-03-02 02:40:36,973 - DEBUG - results3
+2025-03-02 02:40:36,973 - DEBUG - results3
+2025-03-02 02:40:36,974 - DEBUG - results3
+2025-03-02 02:40:36,974 - DEBUG - results3
+2025-03-02 02:40:36,974 - DEBUG - results3
+2025-03-02 02:40:36,974 - DEBUG - results3
+2025-03-02 02:40:36,974 - DEBUG - results3
+2025-03-02 02:40:36,975 - DEBUG - results3
+2025-03-02 02:40:36,975 - DEBUG - results3
+2025-03-02 02:40:36,975 - DEBUG - results3
+2025-03-02 02:40:36,975 - DEBUG - results3
+2025-03-02 02:40:36,975 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,976 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,977 - DEBUG - results3
+2025-03-02 02:40:36,978 - DEBUG - results3
+2025-03-02 02:40:36,978 - DEBUG - results3
+2025-03-02 02:40:36,978 - DEBUG - results3
+2025-03-02 02:40:36,978 - DEBUG - results3
+2025-03-02 02:40:36,978 - DEBUG - results4
+2025-03-02 02:40:37,042 - DEBUG - inferencing image...
+2025-03-02 02:40:37,852 - DEBUG - results
+2025-03-02 02:40:37,852 - DEBUG - results2
+2025-03-02 02:40:37,853 - DEBUG - results3
+2025-03-02 02:40:37,853 - DEBUG - results3
+2025-03-02 02:40:37,853 - DEBUG - results3
+2025-03-02 02:40:37,853 - DEBUG - results3
+2025-03-02 02:40:37,854 - DEBUG - results3
+2025-03-02 02:40:37,854 - DEBUG - results3
+2025-03-02 02:40:37,854 - DEBUG - results3
+2025-03-02 02:40:37,854 - DEBUG - results3
+2025-03-02 02:40:37,855 - DEBUG - results3
+2025-03-02 02:40:37,855 - DEBUG - results3
+2025-03-02 02:40:37,855 - DEBUG - results3
+2025-03-02 02:40:37,855 - DEBUG - results3
+2025-03-02 02:40:37,855 - DEBUG - results3
+2025-03-02 02:40:37,856 - DEBUG - results3
+2025-03-02 02:40:37,856 - DEBUG - results3
+2025-03-02 02:40:37,856 - DEBUG - results3
+2025-03-02 02:40:37,856 - DEBUG - results3
+2025-03-02 02:40:37,857 - DEBUG - results3
+2025-03-02 02:40:37,857 - DEBUG - results3
+2025-03-02 02:40:37,857 - DEBUG - results3
+2025-03-02 02:40:37,857 - DEBUG - results3
+2025-03-02 02:40:37,857 - DEBUG - results3
+2025-03-02 02:40:37,858 - DEBUG - results3
+2025-03-02 02:40:37,858 - DEBUG - results3
+2025-03-02 02:40:37,858 - DEBUG - results3
+2025-03-02 02:40:37,858 - DEBUG - results3
+2025-03-02 02:40:37,859 - DEBUG - results3
+2025-03-02 02:40:37,859 - DEBUG - results3
+2025-03-02 02:40:37,859 - DEBUG - results3
+2025-03-02 02:40:37,859 - DEBUG - results3
+2025-03-02 02:40:37,859 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,860 - DEBUG - results3
+2025-03-02 02:40:37,861 - DEBUG - results3
+2025-03-02 02:40:37,861 - DEBUG - results3
+2025-03-02 02:40:37,861 - DEBUG - results3
+2025-03-02 02:40:37,861 - DEBUG - results3
+2025-03-02 02:40:37,861 - DEBUG - results3
+2025-03-02 02:40:37,862 - DEBUG - results3
+2025-03-02 02:40:37,862 - DEBUG - results3
+2025-03-02 02:40:37,862 - DEBUG - results3
+2025-03-02 02:40:37,862 - DEBUG - results3
+2025-03-02 02:40:37,862 - DEBUG - results3
+2025-03-02 02:40:37,863 - DEBUG - results3
+2025-03-02 02:40:37,863 - DEBUG - results3
+2025-03-02 02:40:37,863 - DEBUG - results3
+2025-03-02 02:40:37,863 - DEBUG - results3
+2025-03-02 02:40:37,863 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,864 - DEBUG - results3
+2025-03-02 02:40:37,865 - DEBUG - results3
+2025-03-02 02:40:37,865 - DEBUG - results3
+2025-03-02 02:40:37,865 - DEBUG - results3
+2025-03-02 02:40:37,865 - DEBUG - results3
+2025-03-02 02:40:37,865 - DEBUG - results3
+2025-03-02 02:40:37,866 - DEBUG - results3
+2025-03-02 02:40:37,866 - DEBUG - results3
+2025-03-02 02:40:37,866 - DEBUG - results3
+2025-03-02 02:40:37,866 - DEBUG - results3
+2025-03-02 02:40:37,866 - DEBUG - results3
+2025-03-02 02:40:37,867 - DEBUG - results3
+2025-03-02 02:40:37,867 - DEBUG - results3
+2025-03-02 02:40:37,867 - DEBUG - results3
+2025-03-02 02:40:37,867 - DEBUG - results3
+2025-03-02 02:40:37,868 - DEBUG - results3
+2025-03-02 02:40:37,868 - DEBUG - results3
+2025-03-02 02:40:37,868 - DEBUG - results3
+2025-03-02 02:40:37,868 - DEBUG - results3
+2025-03-02 02:40:37,869 - DEBUG - results3
+2025-03-02 02:40:37,869 - DEBUG - results3
+2025-03-02 02:40:37,869 - DEBUG - results3
+2025-03-02 02:40:37,869 - DEBUG - results3
+2025-03-02 02:40:37,869 - DEBUG - results3
+2025-03-02 02:40:37,870 - DEBUG - results3
+2025-03-02 02:40:37,870 - DEBUG - results3
+2025-03-02 02:40:37,870 - DEBUG - results3
+2025-03-02 02:40:37,870 - DEBUG - results3
+2025-03-02 02:40:37,871 - DEBUG - results3
+2025-03-02 02:40:37,871 - DEBUG - results3
+2025-03-02 02:40:37,872 - DEBUG - results3
+2025-03-02 02:40:37,872 - DEBUG - results3
+2025-03-02 02:40:37,872 - DEBUG - results3
+2025-03-02 02:40:37,872 - DEBUG - results3
+2025-03-02 02:40:37,872 - DEBUG - results3
+2025-03-02 02:40:37,873 - DEBUG - results3
+2025-03-02 02:40:37,873 - DEBUG - results3
+2025-03-02 02:40:37,873 - DEBUG - results3
+2025-03-02 02:40:37,873 - DEBUG - results3
+2025-03-02 02:40:37,874 - DEBUG - results3
+2025-03-02 02:40:37,874 - DEBUG - results3
+2025-03-02 02:40:37,874 - DEBUG - results3
+2025-03-02 02:40:37,874 - DEBUG - results3
+2025-03-02 02:40:37,874 - DEBUG - results3
+2025-03-02 02:40:37,875 - DEBUG - results3
+2025-03-02 02:40:37,875 - DEBUG - results3
+2025-03-02 02:40:37,875 - DEBUG - results3
+2025-03-02 02:40:37,875 - DEBUG - results3
+2025-03-02 02:40:37,875 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,876 - DEBUG - results3
+2025-03-02 02:40:37,877 - DEBUG - results3
+2025-03-02 02:40:37,877 - DEBUG - results3
+2025-03-02 02:40:37,877 - DEBUG - results3
+2025-03-02 02:40:37,877 - DEBUG - results3
+2025-03-02 02:40:37,877 - DEBUG - results3
+2025-03-02 02:40:37,878 - DEBUG - results3
+2025-03-02 02:40:37,878 - DEBUG - results3
+2025-03-02 02:40:37,878 - DEBUG - results3
+2025-03-02 02:40:37,878 - DEBUG - results3
+2025-03-02 02:40:37,878 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,879 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,880 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,881 - DEBUG - results3
+2025-03-02 02:40:37,882 - DEBUG - results3
+2025-03-02 02:40:37,882 - DEBUG - results3
+2025-03-02 02:40:37,882 - DEBUG - results3
+2025-03-02 02:40:37,882 - DEBUG - results3
+2025-03-02 02:40:37,883 - DEBUG - results3
+2025-03-02 02:40:37,883 - DEBUG - results3
+2025-03-02 02:40:37,883 - DEBUG - results3
+2025-03-02 02:40:37,883 - DEBUG - results3
+2025-03-02 02:40:37,883 - DEBUG - results3
+2025-03-02 02:40:37,884 - DEBUG - results3
+2025-03-02 02:40:37,884 - DEBUG - results3
+2025-03-02 02:40:37,884 - DEBUG - results3
+2025-03-02 02:40:37,884 - DEBUG - results3
+2025-03-02 02:40:37,885 - DEBUG - results3
+2025-03-02 02:40:37,887 - DEBUG - results3
+2025-03-02 02:40:37,887 - DEBUG - results3
+2025-03-02 02:40:37,887 - DEBUG - results3
+2025-03-02 02:40:37,887 - DEBUG - results3
+2025-03-02 02:40:37,888 - DEBUG - results3
+2025-03-02 02:40:37,888 - DEBUG - results3
+2025-03-02 02:40:37,888 - DEBUG - results3
+2025-03-02 02:40:37,888 - DEBUG - results3
+2025-03-02 02:40:37,888 - DEBUG - results3
+2025-03-02 02:40:37,889 - DEBUG - results3
+2025-03-02 02:40:37,889 - DEBUG - results3
+2025-03-02 02:40:37,889 - DEBUG - results3
+2025-03-02 02:40:37,889 - DEBUG - results3
+2025-03-02 02:40:37,889 - DEBUG - results3
+2025-03-02 02:40:37,890 - DEBUG - results3
+2025-03-02 02:40:37,890 - DEBUG - results3
+2025-03-02 02:40:37,890 - DEBUG - results3
+2025-03-02 02:40:37,890 - DEBUG - results3
+2025-03-02 02:40:37,890 - DEBUG - results3
+2025-03-02 02:40:37,891 - DEBUG - results3
+2025-03-02 02:40:37,891 - DEBUG - results3
+2025-03-02 02:40:37,891 - DEBUG - results3
+2025-03-02 02:40:37,891 - DEBUG - results3
+2025-03-02 02:40:37,891 - DEBUG - results3
+2025-03-02 02:40:37,892 - DEBUG - results3
+2025-03-02 02:40:37,892 - DEBUG - results3
+2025-03-02 02:40:37,892 - DEBUG - results3
+2025-03-02 02:40:37,892 - DEBUG - results3
+2025-03-02 02:40:37,893 - DEBUG - results3
+2025-03-02 02:40:37,893 - DEBUG - results3
+2025-03-02 02:40:37,893 - DEBUG - results3
+2025-03-02 02:40:37,893 - DEBUG - results3
+2025-03-02 02:40:37,893 - DEBUG - results3
+2025-03-02 02:40:37,894 - DEBUG - results3
+2025-03-02 02:40:37,894 - DEBUG - results3
+2025-03-02 02:40:37,894 - DEBUG - results3
+2025-03-02 02:40:37,894 - DEBUG - results3
+2025-03-02 02:40:37,894 - DEBUG - results3
+2025-03-02 02:40:37,895 - DEBUG - results3
+2025-03-02 02:40:37,895 - DEBUG - results3
+2025-03-02 02:40:37,895 - DEBUG - results3
+2025-03-02 02:40:37,895 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,896 - DEBUG - results3
+2025-03-02 02:40:37,897 - DEBUG - results3
+2025-03-02 02:40:37,897 - DEBUG - results3
+2025-03-02 02:40:37,897 - DEBUG - results3
+2025-03-02 02:40:37,898 - DEBUG - results3
+2025-03-02 02:40:37,898 - DEBUG - results3
+2025-03-02 02:40:37,898 - DEBUG - results3
+2025-03-02 02:40:37,898 - DEBUG - results3
+2025-03-02 02:40:37,899 - DEBUG - results3
+2025-03-02 02:40:37,899 - DEBUG - results3
+2025-03-02 02:40:37,899 - DEBUG - results3
+2025-03-02 02:40:37,899 - DEBUG - results3
+2025-03-02 02:40:37,900 - DEBUG - results3
+2025-03-02 02:40:37,900 - DEBUG - results3
+2025-03-02 02:40:37,900 - DEBUG - results3
+2025-03-02 02:40:37,900 - DEBUG - results3
+2025-03-02 02:40:37,900 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,901 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,902 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,903 - DEBUG - results3
+2025-03-02 02:40:37,904 - DEBUG - results3
+2025-03-02 02:40:37,904 - DEBUG - results3
+2025-03-02 02:40:37,904 - DEBUG - results3
+2025-03-02 02:40:37,904 - DEBUG - results3
+2025-03-02 02:40:37,904 - DEBUG - results3
+2025-03-02 02:40:37,905 - DEBUG - results3
+2025-03-02 02:40:37,905 - DEBUG - results3
+2025-03-02 02:40:37,905 - DEBUG - results3
+2025-03-02 02:40:37,905 - DEBUG - results3
+2025-03-02 02:40:37,906 - DEBUG - results3
+2025-03-02 02:40:37,906 - DEBUG - results3
+2025-03-02 02:40:37,906 - DEBUG - results3
+2025-03-02 02:40:37,906 - DEBUG - results3
+2025-03-02 02:40:37,907 - DEBUG - results3
+2025-03-02 02:40:37,907 - DEBUG - results3
+2025-03-02 02:40:37,907 - DEBUG - results3
+2025-03-02 02:40:37,907 - DEBUG - results3
+2025-03-02 02:40:37,907 - DEBUG - results3
+2025-03-02 02:40:37,908 - DEBUG - results3
+2025-03-02 02:40:37,908 - DEBUG - results3
+2025-03-02 02:40:37,908 - DEBUG - results3
+2025-03-02 02:40:37,908 - DEBUG - results3
+2025-03-02 02:40:37,909 - DEBUG - results3
+2025-03-02 02:40:37,909 - DEBUG - results3
+2025-03-02 02:40:37,909 - DEBUG - results3
+2025-03-02 02:40:37,909 - DEBUG - results3
+2025-03-02 02:40:37,910 - DEBUG - results3
+2025-03-02 02:40:37,910 - DEBUG - results3
+2025-03-02 02:40:37,910 - DEBUG - results3
+2025-03-02 02:40:37,910 - DEBUG - results3
+2025-03-02 02:40:37,911 - DEBUG - results3
+2025-03-02 02:40:37,911 - DEBUG - results3
+2025-03-02 02:40:37,912 - DEBUG - results3
+2025-03-02 02:40:37,913 - DEBUG - results3
+2025-03-02 02:40:37,913 - DEBUG - results3
+2025-03-02 02:40:37,913 - DEBUG - results3
+2025-03-02 02:40:37,914 - DEBUG - results3
+2025-03-02 02:40:37,914 - DEBUG - results3
+2025-03-02 02:40:37,914 - DEBUG - results3
+2025-03-02 02:40:37,914 - DEBUG - results3
+2025-03-02 02:40:37,914 - DEBUG - results3
+2025-03-02 02:40:37,915 - DEBUG - results3
+2025-03-02 02:40:37,915 - DEBUG - results3
+2025-03-02 02:40:37,915 - DEBUG - results3
+2025-03-02 02:40:37,915 - DEBUG - results3
+2025-03-02 02:40:37,916 - DEBUG - results3
+2025-03-02 02:40:37,916 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,917 - DEBUG - results3
+2025-03-02 02:40:37,918 - DEBUG - results3
+2025-03-02 02:40:37,918 - DEBUG - results4
+2025-03-02 02:40:39,922 - DEBUG - Saved processed image to tmp/output_image_e62067fd-e47a-4339-8d41-1b06b2946d4f.jpg
+2025-03-02 02:41:30,412 - DEBUG - Starting image processing...
+2025-03-02 02:41:30,415 - DEBUG - Image decoded successfully.
+2025-03-02 02:41:30,421 - DEBUG - Processing image with YOLO.
+2025-03-02 02:41:30,502 - DEBUG - inferencing image...
+2025-03-02 02:41:32,303 - DEBUG - results
+2025-03-02 02:41:32,305 - DEBUG - results2
+2025-03-02 02:41:32,305 - DEBUG - results3
+2025-03-02 02:41:32,305 - DEBUG - results3
+2025-03-02 02:41:32,305 - DEBUG - results3
+2025-03-02 02:41:32,305 - DEBUG - results3
+2025-03-02 02:41:32,305 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,306 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,307 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,308 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,309 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,310 - DEBUG - results3
+2025-03-02 02:41:32,311 - DEBUG - results4
+2025-03-02 02:41:32,379 - DEBUG - inferencing image...
+2025-03-02 02:41:33,162 - DEBUG - results
+2025-03-02 02:41:33,162 - DEBUG - results2
+2025-03-02 02:41:33,162 - DEBUG - results3
+2025-03-02 02:41:33,163 - DEBUG - results3
+2025-03-02 02:41:33,163 - DEBUG - results3
+2025-03-02 02:41:33,163 - DEBUG - results3
+2025-03-02 02:41:33,163 - DEBUG - results3
+2025-03-02 02:41:33,163 - DEBUG - results3
+2025-03-02 02:41:33,164 - DEBUG - results3
+2025-03-02 02:41:33,164 - DEBUG - results3
+2025-03-02 02:41:33,164 - DEBUG - results3
+2025-03-02 02:41:33,164 - DEBUG - results3
+2025-03-02 02:41:33,164 - DEBUG - results4
+2025-03-02 02:41:33,320 - DEBUG - Saved processed image to tmp/output_image_e858a485-f3f4-4516-956f-1e20b4915e17.jpg
+2025-03-02 02:44:11,672 - DEBUG - Starting image processing...
+2025-03-02 02:44:11,674 - DEBUG - Image decoded successfully.
+2025-03-02 02:44:11,679 - DEBUG - Processing image with YOLO.
+2025-03-02 02:44:11,733 - DEBUG - inferencing image...
+2025-03-02 02:44:13,004 - DEBUG - results
+2025-03-02 02:44:13,004 - DEBUG - results2
+2025-03-02 02:44:13,004 - DEBUG - results3
+2025-03-02 02:44:13,004 - DEBUG - results3
+2025-03-02 02:44:13,004 - DEBUG - results3
+2025-03-02 02:44:13,005 - DEBUG - results3
+2025-03-02 02:44:13,005 - DEBUG - results3
+2025-03-02 02:44:13,005 - DEBUG - results3
+2025-03-02 02:44:13,005 - DEBUG - results3
+2025-03-02 02:44:13,006 - DEBUG - results3
+2025-03-02 02:44:13,006 - DEBUG - results3
+2025-03-02 02:44:13,006 - DEBUG - results3
+2025-03-02 02:44:13,006 - DEBUG - results3
+2025-03-02 02:44:13,007 - DEBUG - results3
+2025-03-02 02:44:13,007 - DEBUG - results3
+2025-03-02 02:44:13,007 - DEBUG - results3
+2025-03-02 02:44:13,007 - DEBUG - results3
+2025-03-02 02:44:13,007 - DEBUG - results3
+2025-03-02 02:44:13,008 - DEBUG - results3
+2025-03-02 02:44:13,008 - DEBUG - results3
+2025-03-02 02:44:13,008 - DEBUG - results3
+2025-03-02 02:44:13,008 - DEBUG - results3
+2025-03-02 02:44:13,008 - DEBUG - results3
+2025-03-02 02:44:13,009 - DEBUG - results3
+2025-03-02 02:44:13,009 - DEBUG - results3
+2025-03-02 02:44:13,009 - DEBUG - results3
+2025-03-02 02:44:13,009 - DEBUG - results3
+2025-03-02 02:44:13,010 - DEBUG - results3
+2025-03-02 02:44:13,010 - DEBUG - results3
+2025-03-02 02:44:13,010 - DEBUG - results3
+2025-03-02 02:44:13,011 - DEBUG - results4
+2025-03-02 02:44:13,076 - DEBUG - inferencing image...
+2025-03-02 02:44:13,468 - DEBUG - results
+2025-03-02 02:44:13,468 - DEBUG - results2
+2025-03-02 02:44:13,468 - DEBUG - results3
+2025-03-02 02:44:13,468 - DEBUG - results3
+2025-03-02 02:44:13,468 - DEBUG - results3
+2025-03-02 02:44:13,468 - DEBUG - results3
+2025-03-02 02:44:13,468 - DEBUG - results3
+2025-03-02 02:44:13,469 - DEBUG - results3
+2025-03-02 02:44:13,469 - DEBUG - results3
+2025-03-02 02:44:13,469 - DEBUG - results3
+2025-03-02 02:44:13,469 - DEBUG - results3
+2025-03-02 02:44:13,469 - DEBUG - results4
+2025-03-02 02:44:13,472 - DEBUG - Saved processed image to tmp/output_image_5db98f89-7cc1-44d7-a110-bd27ebed5f1e.jpg
+2025-03-02 02:53:51,167 - DEBUG - Starting image processing...
+2025-03-02 02:53:51,169 - DEBUG - Image decoded successfully.
+2025-03-02 02:53:51,177 - DEBUG - Processing image with YOLO.
+2025-03-02 02:53:51,249 - DEBUG - inferencing image...
+2025-03-02 02:53:53,060 - DEBUG - results
+2025-03-02 02:53:53,061 - DEBUG - results2
+2025-03-02 02:53:53,061 - DEBUG - results3
+2025-03-02 02:53:53,061 - DEBUG - results3
+2025-03-02 02:53:53,061 - DEBUG - results4
+2025-03-02 02:53:53,274 - DEBUG - Saved processed image to tmp/output_image_62d2e085-70cb-4bdf-80e0-8a9af321cfad.jpg
+2025-03-02 02:54:45,374 - DEBUG - Starting image processing...
+2025-03-02 02:54:45,376 - DEBUG - Image decoded successfully.
+2025-03-02 02:54:45,381 - DEBUG - Processing image with YOLO.
+2025-03-02 02:54:45,445 - DEBUG - inferencing image...
+2025-03-02 02:54:46,805 - DEBUG - results
+2025-03-02 02:54:46,805 - DEBUG - results2
+2025-03-02 02:54:46,805 - DEBUG - results3
+2025-03-02 02:54:46,806 - DEBUG - results3
+2025-03-02 02:54:46,806 - DEBUG - results3
+2025-03-02 02:54:46,806 - DEBUG - results3
+2025-03-02 02:54:46,806 - DEBUG - results3
+2025-03-02 02:54:46,806 - DEBUG - results3
+2025-03-02 02:54:46,807 - DEBUG - results3
+2025-03-02 02:54:46,807 - DEBUG - results3
+2025-03-02 02:54:46,807 - DEBUG - results3
+2025-03-02 02:54:46,807 - DEBUG - results4
+2025-03-02 02:54:47,018 - DEBUG - inferencing image...
+2025-03-02 02:54:47,472 - DEBUG - results
+2025-03-02 02:54:47,472 - DEBUG - results2
+2025-03-02 02:54:47,472 - DEBUG - results3
+2025-03-02 02:54:47,472 - DEBUG - results3
+2025-03-02 02:54:47,472 - DEBUG - results3
+2025-03-02 02:54:47,472 - DEBUG - results3
+2025-03-02 02:54:47,473 - DEBUG - results3
+2025-03-02 02:54:47,473 - DEBUG - results3
+2025-03-02 02:54:47,473 - DEBUG - results3
+2025-03-02 02:54:47,473 - DEBUG - results3
+2025-03-02 02:54:47,473 - DEBUG - results3
+2025-03-02 02:54:47,474 - DEBUG - results3
+2025-03-02 02:54:47,474 - DEBUG - results3
+2025-03-02 02:54:47,474 - DEBUG - results3
+2025-03-02 02:54:47,474 - DEBUG - results3
+2025-03-02 02:54:47,474 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,475 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,476 - DEBUG - results3
+2025-03-02 02:54:47,477 - DEBUG - results3
+2025-03-02 02:54:47,477 - DEBUG - results3
+2025-03-02 02:54:47,477 - DEBUG - results3
+2025-03-02 02:54:47,477 - DEBUG - results4
+2025-03-02 02:54:47,493 - ERROR - An error occurred during image processing: 'list' object has no attribute 'items'
+Traceback (most recent call last):
+  File "/home/runner/workspace/server/process_image.py", line 84, in process_screenshot
+    for class_id, coordinates in class_coordinates_final.items():
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+2025-03-02 02:59:06,667 - DEBUG - Starting image processing...
+2025-03-02 02:59:06,669 - DEBUG - Image decoded successfully.
+2025-03-02 02:59:06,673 - DEBUG - Processing image with YOLO.
+2025-03-02 02:59:06,733 - DEBUG - inferencing image...
+2025-03-02 02:59:08,062 - DEBUG - results
+2025-03-02 02:59:08,062 - DEBUG - results2
+2025-03-02 02:59:08,062 - DEBUG - results3
+2025-03-02 02:59:08,063 - DEBUG - results3
+2025-03-02 02:59:08,063 - DEBUG - results3
+2025-03-02 02:59:08,063 - DEBUG - results3
+2025-03-02 02:59:08,063 - DEBUG - results3
+2025-03-02 02:59:08,064 - DEBUG - results3
+2025-03-02 02:59:08,064 - DEBUG - results3
+2025-03-02 02:59:08,064 - DEBUG - results3
+2025-03-02 02:59:08,064 - DEBUG - results3
+2025-03-02 02:59:08,065 - DEBUG - results4
+2025-03-02 02:59:08,254 - DEBUG - inferencing image...
+2025-03-02 02:59:08,718 - DEBUG - results
+2025-03-02 02:59:08,718 - DEBUG - results2
+2025-03-02 02:59:08,719 - DEBUG - results3
+2025-03-02 02:59:08,719 - DEBUG - results3
+2025-03-02 02:59:08,719 - DEBUG - results3
+2025-03-02 02:59:08,719 - DEBUG - results3
+2025-03-02 02:59:08,720 - DEBUG - results3
+2025-03-02 02:59:08,720 - DEBUG - results3
+2025-03-02 02:59:08,720 - DEBUG - results3
+2025-03-02 02:59:08,720 - DEBUG - results3
+2025-03-02 02:59:08,720 - DEBUG - results3
+2025-03-02 02:59:08,721 - DEBUG - results3
+2025-03-02 02:59:08,721 - DEBUG - results3
+2025-03-02 02:59:08,721 - DEBUG - results3
+2025-03-02 02:59:08,721 - DEBUG - results3
+2025-03-02 02:59:08,721 - DEBUG - results3
+2025-03-02 02:59:08,722 - DEBUG - results3
+2025-03-02 02:59:08,722 - DEBUG - results3
+2025-03-02 02:59:08,722 - DEBUG - results3
+2025-03-02 02:59:08,722 - DEBUG - results3
+2025-03-02 02:59:08,722 - DEBUG - results3
+2025-03-02 02:59:08,723 - DEBUG - results3
+2025-03-02 02:59:08,723 - DEBUG - results3
+2025-03-02 02:59:08,723 - DEBUG - results3
+2025-03-02 02:59:08,723 - DEBUG - results3
+2025-03-02 02:59:08,723 - DEBUG - results3
+2025-03-02 02:59:08,724 - DEBUG - results3
+2025-03-02 02:59:08,724 - DEBUG - results3
+2025-03-02 02:59:08,724 - DEBUG - results3
+2025-03-02 02:59:08,724 - DEBUG - results3
+2025-03-02 02:59:08,724 - DEBUG - results3
+2025-03-02 02:59:08,725 - DEBUG - results4
+2025-03-02 02:59:08,743 - DEBUG - Saved processed image to tmp/output_image_3cca0b6d-570d-4741-9c3e-e16b40ded290.jpg
+2025-03-02 02:59:54,473 - DEBUG - Starting image processing...
+2025-03-02 02:59:54,474 - DEBUG - Image decoded successfully.
+2025-03-02 02:59:54,478 - DEBUG - Processing image with YOLO.
+2025-03-02 02:59:54,543 - DEBUG - inferencing image...
+2025-03-02 02:59:55,699 - DEBUG - results
+2025-03-02 02:59:55,699 - DEBUG - results2
+2025-03-02 02:59:55,699 - DEBUG - results3
+2025-03-02 02:59:55,699 - DEBUG - results3
+2025-03-02 02:59:55,699 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,700 - DEBUG - results3
+2025-03-02 02:59:55,701 - DEBUG - results3
+2025-03-02 02:59:55,701 - DEBUG - results3
+2025-03-02 02:59:55,701 - DEBUG - results3
+2025-03-02 02:59:55,701 - DEBUG - results3
+2025-03-02 02:59:55,701 - DEBUG - results3
+2025-03-02 02:59:55,702 - DEBUG - results3
+2025-03-02 02:59:55,702 - DEBUG - results3
+2025-03-02 02:59:55,702 - DEBUG - results3
+2025-03-02 02:59:55,702 - DEBUG - results3
+2025-03-02 02:59:55,702 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,703 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,704 - DEBUG - results3
+2025-03-02 02:59:55,705 - DEBUG - results3
+2025-03-02 02:59:55,705 - DEBUG - results3
+2025-03-02 02:59:55,705 - DEBUG - results3
+2025-03-02 02:59:55,705 - DEBUG - results3
+2025-03-02 02:59:55,705 - DEBUG - results3
+2025-03-02 02:59:55,706 - DEBUG - results3
+2025-03-02 02:59:55,706 - DEBUG - results3
+2025-03-02 02:59:55,706 - DEBUG - results3
+2025-03-02 02:59:55,706 - DEBUG - results3
+2025-03-02 02:59:55,706 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,707 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,708 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,709 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,710 - DEBUG - results3
+2025-03-02 02:59:55,711 - DEBUG - results3
+2025-03-02 02:59:55,711 - DEBUG - results3
+2025-03-02 02:59:55,711 - DEBUG - results3
+2025-03-02 02:59:55,711 - DEBUG - results3
+2025-03-02 02:59:55,711 - DEBUG - results3
+2025-03-02 02:59:55,712 - DEBUG - results3
+2025-03-02 02:59:55,712 - DEBUG - results3
+2025-03-02 02:59:55,712 - DEBUG - results3
+2025-03-02 02:59:55,712 - DEBUG - results3
+2025-03-02 02:59:55,712 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,713 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,714 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,715 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,716 - DEBUG - results3
+2025-03-02 02:59:55,717 - DEBUG - results3
+2025-03-02 02:59:55,717 - DEBUG - results3
+2025-03-02 02:59:55,717 - DEBUG - results3
+2025-03-02 02:59:55,717 - DEBUG - results3
+2025-03-02 02:59:55,717 - DEBUG - results3
+2025-03-02 02:59:55,718 - DEBUG - results4
+2025-03-02 02:59:55,962 - DEBUG - Saved processed image to tmp/output_image_2d142541-7dbe-4239-8db5-4e2226545655.jpg
+2025-03-02 03:07:17,934 - DEBUG - Starting image processing...
+2025-03-02 03:07:17,938 - DEBUG - Image decoded successfully.
+2025-03-02 03:07:17,943 - DEBUG - Processing image with YOLO.
+2025-03-02 03:07:18,048 - DEBUG - inferencing image...
+2025-03-02 03:07:20,290 - DEBUG - results
+2025-03-02 03:07:20,290 - DEBUG - results2
+2025-03-02 03:07:20,291 - DEBUG - results3
+2025-03-02 03:07:20,291 - DEBUG - results3
+2025-03-02 03:07:20,291 - DEBUG - results3
+2025-03-02 03:07:20,291 - DEBUG - results3
+2025-03-02 03:07:20,291 - DEBUG - results3
+2025-03-02 03:07:20,292 - DEBUG - results3
+2025-03-02 03:07:20,292 - DEBUG - results3
+2025-03-02 03:07:20,292 - DEBUG - results3
+2025-03-02 03:07:20,292 - DEBUG - results3
+2025-03-02 03:07:20,292 - DEBUG - results3
+2025-03-02 03:07:20,293 - DEBUG - results3
+2025-03-02 03:07:20,293 - DEBUG - results3
+2025-03-02 03:07:20,293 - DEBUG - results3
+2025-03-02 03:07:20,293 - DEBUG - results3
+2025-03-02 03:07:20,293 - DEBUG - results3
+2025-03-02 03:07:20,294 - DEBUG - results3
+2025-03-02 03:07:20,294 - DEBUG - results3
+2025-03-02 03:07:20,294 - DEBUG - results3
+2025-03-02 03:07:20,294 - DEBUG - results3
+2025-03-02 03:07:20,294 - DEBUG - results3
+2025-03-02 03:07:20,295 - DEBUG - results3
+2025-03-02 03:07:20,295 - DEBUG - results3
+2025-03-02 03:07:20,295 - DEBUG - results3
+2025-03-02 03:07:20,295 - DEBUG - results3
+2025-03-02 03:07:20,295 - DEBUG - results3
+2025-03-02 03:07:20,296 - DEBUG - results3
+2025-03-02 03:07:20,296 - DEBUG - results3
+2025-03-02 03:07:20,296 - DEBUG - results3
+2025-03-02 03:07:20,296 - DEBUG - results3
+2025-03-02 03:07:20,296 - DEBUG - results3
+2025-03-02 03:07:20,297 - DEBUG - results4
+2025-03-02 03:07:20,577 - DEBUG - inferencing image...
+2025-03-02 03:07:21,244 - DEBUG - results
+2025-03-02 03:07:21,244 - DEBUG - results2
+2025-03-02 03:07:21,244 - DEBUG - results3
+2025-03-02 03:07:21,244 - DEBUG - results3
+2025-03-02 03:07:21,245 - DEBUG - results3
+2025-03-02 03:07:21,245 - DEBUG - results3
+2025-03-02 03:07:21,245 - DEBUG - results3
+2025-03-02 03:07:21,245 - DEBUG - results3
+2025-03-02 03:07:21,246 - DEBUG - results3
+2025-03-02 03:07:21,246 - DEBUG - results3
+2025-03-02 03:07:21,246 - DEBUG - results3
+2025-03-02 03:07:21,246 - DEBUG - results3
+2025-03-02 03:07:21,246 - DEBUG - results3
+2025-03-02 03:07:21,247 - DEBUG - results3
+2025-03-02 03:07:21,247 - DEBUG - results3
+2025-03-02 03:07:21,247 - DEBUG - results3
+2025-03-02 03:07:21,248 - DEBUG - results3
+2025-03-02 03:07:21,248 - DEBUG - results3
+2025-03-02 03:07:21,248 - DEBUG - results4
+2025-03-02 03:07:21,256 - DEBUG - Saved processed image to tmp/processed/8a31a727-64c6-41cb-970c-ea400362dd94.jpg
+2025-03-02 03:09:06,281 - DEBUG - Starting image processing...
+2025-03-02 03:09:06,283 - DEBUG - Image decoded successfully.
+2025-03-02 03:09:06,290 - DEBUG - Processing image with YOLO.
+2025-03-02 03:09:06,377 - DEBUG - inferencing image...
+2025-03-02 03:09:08,310 - DEBUG - results
+2025-03-02 03:09:08,310 - DEBUG - results2
+2025-03-02 03:09:08,310 - DEBUG - results3
+2025-03-02 03:09:08,310 - DEBUG - results3
+2025-03-02 03:09:08,310 - DEBUG - results3
+2025-03-02 03:09:08,311 - DEBUG - results3
+2025-03-02 03:09:08,311 - DEBUG - results3
+2025-03-02 03:09:08,311 - DEBUG - results3
+2025-03-02 03:09:08,311 - DEBUG - results3
+2025-03-02 03:09:08,311 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,312 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,313 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,314 - DEBUG - results3
+2025-03-02 03:09:08,315 - DEBUG - results3
+2025-03-02 03:09:08,315 - DEBUG - results3
+2025-03-02 03:09:08,315 - DEBUG - results4
+2025-03-02 03:09:08,679 - DEBUG - inferencing image...
+2025-03-02 03:09:09,453 - DEBUG - results
+2025-03-02 03:09:09,453 - DEBUG - results2
+2025-03-02 03:09:09,453 - DEBUG - results3
+2025-03-02 03:09:09,454 - DEBUG - results3
+2025-03-02 03:09:09,454 - DEBUG - results3
+2025-03-02 03:09:09,454 - DEBUG - results3
+2025-03-02 03:09:09,454 - DEBUG - results3
+2025-03-02 03:09:09,454 - DEBUG - results3
+2025-03-02 03:09:09,455 - DEBUG - results3
+2025-03-02 03:09:09,455 - DEBUG - results3
+2025-03-02 03:09:09,455 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,456 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,457 - DEBUG - results3
+2025-03-02 03:09:09,458 - DEBUG - results3
+2025-03-02 03:09:09,458 - DEBUG - results3
+2025-03-02 03:09:09,458 - DEBUG - results3
+2025-03-02 03:09:09,458 - DEBUG - results3
+2025-03-02 03:09:09,458 - DEBUG - results3
+2025-03-02 03:09:09,459 - DEBUG - results3
+2025-03-02 03:09:09,460 - DEBUG - results3
+2025-03-02 03:09:09,460 - DEBUG - results3
+2025-03-02 03:09:09,460 - DEBUG - results4
+2025-03-02 03:09:09,482 - DEBUG - Saved processed image to tmp/processed/bbce5a5f-2c76-4774-bdb9-756471b2bede.jpg
+2025-03-02 03:10:44,800 - DEBUG - Starting image processing...
+2025-03-02 03:10:44,802 - DEBUG - Image decoded successfully.
+2025-03-02 03:10:44,809 - DEBUG - Processing image with YOLO.
+2025-03-02 03:10:44,867 - DEBUG - inferencing image...
+2025-03-02 03:10:46,130 - DEBUG - results
+2025-03-02 03:10:46,131 - DEBUG - results2
+2025-03-02 03:10:46,131 - DEBUG - results3
+2025-03-02 03:10:46,131 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,132 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,133 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,134 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,135 - DEBUG - results3
+2025-03-02 03:10:46,136 - DEBUG - results3
+2025-03-02 03:10:46,136 - DEBUG - results3
+2025-03-02 03:10:46,136 - DEBUG - results4
+2025-03-02 03:10:46,339 - DEBUG - inferencing image...
+2025-03-02 03:10:47,142 - DEBUG - results
+2025-03-02 03:10:47,142 - DEBUG - results2
+2025-03-02 03:10:47,142 - DEBUG - results3
+2025-03-02 03:10:47,143 - DEBUG - results3
+2025-03-02 03:10:47,143 - DEBUG - results3
+2025-03-02 03:10:47,143 - DEBUG - results3
+2025-03-02 03:10:47,143 - DEBUG - results3
+2025-03-02 03:10:47,144 - DEBUG - results3
+2025-03-02 03:10:47,144 - DEBUG - results3
+2025-03-02 03:10:47,144 - DEBUG - results3
+2025-03-02 03:10:47,145 - DEBUG - results3
+2025-03-02 03:10:47,145 - DEBUG - results3
+2025-03-02 03:10:47,145 - DEBUG - results3
+2025-03-02 03:10:47,145 - DEBUG - results3
+2025-03-02 03:10:47,146 - DEBUG - results3
+2025-03-02 03:10:47,146 - DEBUG - results3
+2025-03-02 03:10:47,146 - DEBUG - results3
+2025-03-02 03:10:47,147 - DEBUG - results3
+2025-03-02 03:10:47,147 - DEBUG - results3
+2025-03-02 03:10:47,147 - DEBUG - results3
+2025-03-02 03:10:47,148 - DEBUG - results3
+2025-03-02 03:10:47,148 - DEBUG - results3
+2025-03-02 03:10:47,148 - DEBUG - results3
+2025-03-02 03:10:47,148 - DEBUG - results3
+2025-03-02 03:10:47,149 - DEBUG - results3
+2025-03-02 03:10:47,149 - DEBUG - results3
+2025-03-02 03:10:47,149 - DEBUG - results3
+2025-03-02 03:10:47,149 - DEBUG - results3
+2025-03-02 03:10:47,150 - DEBUG - results4
+2025-03-02 03:10:47,167 - DEBUG - Saved processed image to tmp/processed/22044d81-e5aa-4fa9-8a0b-b1c24e14c65f.jpg
+2025-03-02 03:15:41,418 - DEBUG - Starting image processing...
+2025-03-02 03:15:41,420 - DEBUG - Image decoded successfully.
+2025-03-02 03:15:41,427 - DEBUG - Processing image with YOLO.
+2025-03-02 03:15:41,490 - DEBUG - inferencing image...
+2025-03-02 03:15:42,675 - DEBUG - results
+2025-03-02 03:15:42,676 - DEBUG - results2
+2025-03-02 03:15:42,676 - DEBUG - results3
+2025-03-02 03:15:42,676 - DEBUG - results3
+2025-03-02 03:15:42,676 - DEBUG - results3
+2025-03-02 03:15:42,676 - DEBUG - results3
+2025-03-02 03:15:42,676 - DEBUG - results3
+2025-03-02 03:15:42,677 - DEBUG - results3
+2025-03-02 03:15:42,677 - DEBUG - results3
+2025-03-02 03:15:42,677 - DEBUG - results3
+2025-03-02 03:15:42,677 - DEBUG - results3
+2025-03-02 03:15:42,677 - DEBUG - results3
+2025-03-02 03:15:42,678 - DEBUG - results3
+2025-03-02 03:15:42,678 - DEBUG - results3
+2025-03-02 03:15:42,678 - DEBUG - results3
+2025-03-02 03:15:42,678 - DEBUG - results3
+2025-03-02 03:15:42,678 - DEBUG - results3
+2025-03-02 03:15:42,679 - DEBUG - results3
+2025-03-02 03:15:42,679 - DEBUG - results3
+2025-03-02 03:15:42,679 - DEBUG - results3
+2025-03-02 03:15:42,679 - DEBUG - results3
+2025-03-02 03:15:42,679 - DEBUG - results3
+2025-03-02 03:15:42,680 - DEBUG - results3
+2025-03-02 03:15:42,680 - DEBUG - results3
+2025-03-02 03:15:42,680 - DEBUG - results3
+2025-03-02 03:15:42,680 - DEBUG - results3
+2025-03-02 03:15:42,680 - DEBUG - results3
+2025-03-02 03:15:42,681 - DEBUG - results3
+2025-03-02 03:15:42,681 - DEBUG - results3
+2025-03-02 03:15:42,681 - DEBUG - results4
+2025-03-02 03:15:42,875 - DEBUG - inferencing image...
+2025-03-02 03:15:43,272 - DEBUG - results
+2025-03-02 03:15:43,273 - DEBUG - results2
+2025-03-02 03:15:43,274 - DEBUG - results3
+2025-03-02 03:15:43,275 - DEBUG - results3
+2025-03-02 03:15:43,275 - DEBUG - results3
+2025-03-02 03:15:43,275 - DEBUG - results3
+2025-03-02 03:15:43,275 - DEBUG - results3
+2025-03-02 03:15:43,275 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,276 - DEBUG - results3
+2025-03-02 03:15:43,277 - DEBUG - results3
+2025-03-02 03:15:43,277 - DEBUG - results4
+2025-03-02 03:15:43,283 - DEBUG - Saved processed image to tmp/processed/f87d8742-525a-4b64-9985-5a74974ab69e.jpg
+2025-03-02 03:16:32,149 - DEBUG - Starting image processing...
+2025-03-02 03:16:32,150 - DEBUG - Image decoded successfully.
+2025-03-02 03:16:32,157 - DEBUG - Processing image with YOLO.
+2025-03-02 03:16:32,213 - DEBUG - inferencing image...
+2025-03-02 03:16:33,322 - DEBUG - results
+2025-03-02 03:16:33,322 - DEBUG - results2
+2025-03-02 03:16:33,322 - DEBUG - results3
+2025-03-02 03:16:33,322 - DEBUG - results3
+2025-03-02 03:16:33,322 - DEBUG - results3
+2025-03-02 03:16:33,323 - DEBUG - results3
+2025-03-02 03:16:33,323 - DEBUG - results3
+2025-03-02 03:16:33,323 - DEBUG - results3
+2025-03-02 03:16:33,323 - DEBUG - results3
+2025-03-02 03:16:33,323 - DEBUG - results3
+2025-03-02 03:16:33,324 - DEBUG - results3
+2025-03-02 03:16:33,324 - DEBUG - results3
+2025-03-02 03:16:33,324 - DEBUG - results3
+2025-03-02 03:16:33,324 - DEBUG - results3
+2025-03-02 03:16:33,324 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,325 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,326 - DEBUG - results3
+2025-03-02 03:16:33,327 - DEBUG - results3
+2025-03-02 03:16:33,327 - DEBUG - results3
+2025-03-02 03:16:33,327 - DEBUG - results3
+2025-03-02 03:16:33,327 - DEBUG - results3
+2025-03-02 03:16:33,327 - DEBUG - results3
+2025-03-02 03:16:33,328 - DEBUG - results3
+2025-03-02 03:16:33,328 - DEBUG - results3
+2025-03-02 03:16:33,328 - DEBUG - results3
+2025-03-02 03:16:33,328 - DEBUG - results3
+2025-03-02 03:16:33,328 - DEBUG - results3
+2025-03-02 03:16:33,329 - DEBUG - results3
+2025-03-02 03:16:33,329 - DEBUG - results3
+2025-03-02 03:16:33,329 - DEBUG - results3
+2025-03-02 03:16:33,329 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,330 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,331 - DEBUG - results3
+2025-03-02 03:16:33,332 - DEBUG - results3
+2025-03-02 03:16:33,332 - DEBUG - results3
+2025-03-02 03:16:33,332 - DEBUG - results3
+2025-03-02 03:16:33,332 - DEBUG - results3
+2025-03-02 03:16:33,332 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,333 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,334 - DEBUG - results3
+2025-03-02 03:16:33,335 - DEBUG - results3
+2025-03-02 03:16:33,335 - DEBUG - results3
+2025-03-02 03:16:33,335 - DEBUG - results3
+2025-03-02 03:16:33,335 - DEBUG - results3
+2025-03-02 03:16:33,335 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,336 - DEBUG - results3
+2025-03-02 03:16:33,337 - DEBUG - results3
+2025-03-02 03:16:33,337 - DEBUG - results3
+2025-03-02 03:16:33,337 - DEBUG - results3
+2025-03-02 03:16:33,337 - DEBUG - results3
+2025-03-02 03:16:33,337 - DEBUG - results3
+2025-03-02 03:16:33,338 - DEBUG - results3
+2025-03-02 03:16:33,338 - DEBUG - results3
+2025-03-02 03:16:33,338 - DEBUG - results3
+2025-03-02 03:16:33,338 - DEBUG - results3
+2025-03-02 03:16:33,338 - DEBUG - results3
+2025-03-02 03:16:33,339 - DEBUG - results3
+2025-03-02 03:16:33,339 - DEBUG - results3
+2025-03-02 03:16:33,339 - DEBUG - results3
+2025-03-02 03:16:33,339 - DEBUG - results3
+2025-03-02 03:16:33,339 - DEBUG - results3
+2025-03-02 03:16:33,340 - DEBUG - results3
+2025-03-02 03:16:33,340 - DEBUG - results3
+2025-03-02 03:16:33,340 - DEBUG - results3
+2025-03-02 03:16:33,340 - DEBUG - results3
+2025-03-02 03:16:33,340 - DEBUG - results3
+2025-03-02 03:16:33,341 - DEBUG - results3
+2025-03-02 03:16:33,341 - DEBUG - results3
+2025-03-02 03:16:33,341 - DEBUG - results3
+2025-03-02 03:16:33,341 - DEBUG - results3
+2025-03-02 03:16:33,341 - DEBUG - results3
+2025-03-02 03:16:33,342 - DEBUG - results3
+2025-03-02 03:16:33,342 - DEBUG - results3
+2025-03-02 03:16:33,342 - DEBUG - results3
+2025-03-02 03:16:33,342 - DEBUG - results3
+2025-03-02 03:16:33,342 - DEBUG - results3
+2025-03-02 03:16:33,343 - DEBUG - results3
+2025-03-02 03:16:33,343 - DEBUG - results3
+2025-03-02 03:16:33,343 - DEBUG - results3
+2025-03-02 03:16:33,343 - DEBUG - results3
+2025-03-02 03:16:33,343 - DEBUG - results3
+2025-03-02 03:16:33,344 - DEBUG - results3
+2025-03-02 03:16:33,344 - DEBUG - results3
+2025-03-02 03:16:33,344 - DEBUG - results3
+2025-03-02 03:16:33,344 - DEBUG - results3
+2025-03-02 03:16:33,344 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,345 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,346 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,347 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,348 - DEBUG - results3
+2025-03-02 03:16:33,349 - DEBUG - results3
+2025-03-02 03:16:33,349 - DEBUG - results3
+2025-03-02 03:16:33,349 - DEBUG - results3
+2025-03-02 03:16:33,349 - DEBUG - results3
+2025-03-02 03:16:33,349 - DEBUG - results3
+2025-03-02 03:16:33,350 - DEBUG - results3
+2025-03-02 03:16:33,350 - DEBUG - results3
+2025-03-02 03:16:33,350 - DEBUG - results3
+2025-03-02 03:16:33,350 - DEBUG - results3
+2025-03-02 03:16:33,350 - DEBUG - results3
+2025-03-02 03:16:33,351 - DEBUG - results3
+2025-03-02 03:16:33,351 - DEBUG - results3
+2025-03-02 03:16:33,351 - DEBUG - results3
+2025-03-02 03:16:33,351 - DEBUG - results3
+2025-03-02 03:16:33,351 - DEBUG - results3
+2025-03-02 03:16:33,352 - DEBUG - results3
+2025-03-02 03:16:33,352 - DEBUG - results3
+2025-03-02 03:16:33,352 - DEBUG - results4
+2025-03-02 03:16:33,904 - DEBUG - Saved processed image to tmp/processed/a6838048-da0d-43fa-b68a-5d777160e8c2.jpg
+2025-03-02 03:23:01,035 - DEBUG - Starting image processing...
+2025-03-02 03:23:01,037 - DEBUG - Image decoded successfully.
+2025-03-02 03:23:01,044 - DEBUG - Processing image with YOLO.
+2025-03-02 03:23:01,102 - DEBUG - inferencing image...
+2025-03-02 03:23:02,199 - DEBUG - results
+2025-03-02 03:23:02,199 - DEBUG - results2
+2025-03-02 03:23:02,200 - DEBUG - results4
+2025-03-02 03:23:02,386 - DEBUG - inferencing image...
+2025-03-02 03:23:02,747 - DEBUG - results
+2025-03-02 03:23:02,747 - DEBUG - results2
+2025-03-02 03:23:02,748 - DEBUG - results4
+2025-03-02 03:23:02,800 - DEBUG - inferencing image...
+2025-03-02 03:23:03,091 - DEBUG - results
+2025-03-02 03:23:03,091 - DEBUG - results2
+2025-03-02 03:23:03,091 - DEBUG - results4
+2025-03-02 03:23:03,094 - DEBUG - Saved processed image to tmp/processed/45462839-86bf-4e2b-95a6-363e98b632e6.jpg
+2025-03-02 18:55:14,534 - DEBUG - Starting image processing...
+2025-03-02 18:55:14,542 - DEBUG - Image decoded successfully.
+2025-03-02 18:55:14,589 - DEBUG - Processing image with YOLO.
+2025-03-02 18:55:15,233 - DEBUG - inferencing image...
+2025-03-02 18:55:23,925 - DEBUG - results
+2025-03-02 18:55:23,925 - DEBUG - results2
+2025-03-02 18:55:23,925 - DEBUG - results3
+2025-03-02 18:55:23,925 - DEBUG - results3
+2025-03-02 18:55:23,925 - DEBUG - results3
+2025-03-02 18:55:23,925 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,926 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,927 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,928 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,929 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,930 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,931 - DEBUG - results3
+2025-03-02 18:55:23,932 - DEBUG - results4
+2025-03-02 18:55:26,312 - DEBUG - Saved processed image to tmp/processed/f7250843-30e8-4f17-97c4-152079e1b081.jpg
+2025-03-05 15:25:27,402 - DEBUG - Starting image processing...
+2025-03-05 15:25:27,404 - DEBUG - Image decoded successfully.
+2025-03-05 15:25:27,453 - DEBUG - Processing image with YOLO.
+2025-03-05 15:25:27,744 - DEBUG - inferencing image...
+2025-03-05 15:25:36,673 - DEBUG - results
+2025-03-05 15:25:36,673 - DEBUG - results2
+2025-03-05 15:25:36,673 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,674 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,675 - DEBUG - results3
+2025-03-05 15:25:36,676 - DEBUG - results3
+2025-03-05 15:25:36,676 - DEBUG - results3
+2025-03-05 15:25:36,676 - DEBUG - results3
+2025-03-05 15:25:36,676 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,677 - DEBUG - results3
+2025-03-05 15:25:36,678 - DEBUG - results3
+2025-03-05 15:25:36,678 - DEBUG - results3
+2025-03-05 15:25:36,678 - DEBUG - results3
+2025-03-05 15:25:36,678 - DEBUG - results3
+2025-03-05 15:25:36,678 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,679 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results3
+2025-03-05 15:25:36,680 - DEBUG - results4
+2025-03-05 15:25:38,739 - DEBUG - Saved processed image to tmp/processed/e9c814dc-54ae-43ba-a99c-f9ecbef638f8.jpg
+2025-03-05 15:26:49,939 - DEBUG - Starting image processing...
+2025-03-05 15:26:49,941 - DEBUG - Image decoded successfully.
+2025-03-05 15:26:49,949 - DEBUG - Processing image with YOLO.
+2025-03-05 15:26:50,021 - DEBUG - inferencing image...
+2025-03-05 15:26:51,302 - DEBUG - results
+2025-03-05 15:26:51,302 - DEBUG - results2
+2025-03-05 15:26:51,302 - DEBUG - results3
+2025-03-05 15:26:51,303 - DEBUG - results3
+2025-03-05 15:26:51,303 - DEBUG - results3
+2025-03-05 15:26:51,303 - DEBUG - results3
+2025-03-05 15:26:51,303 - DEBUG - results3
+2025-03-05 15:26:51,303 - DEBUG - results3
+2025-03-05 15:26:51,304 - DEBUG - results3
+2025-03-05 15:26:51,304 - DEBUG - results3
+2025-03-05 15:26:51,304 - DEBUG - results3
+2025-03-05 15:26:51,305 - DEBUG - results3
+2025-03-05 15:26:51,305 - DEBUG - results3
+2025-03-05 15:26:51,305 - DEBUG - results3
+2025-03-05 15:26:51,305 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,306 - DEBUG - results3
+2025-03-05 15:26:51,307 - DEBUG - results3
+2025-03-05 15:26:51,307 - DEBUG - results3
+2025-03-05 15:26:51,307 - DEBUG - results3
+2025-03-05 15:26:51,307 - DEBUG - results3
+2025-03-05 15:26:51,307 - DEBUG - results3
+2025-03-05 15:26:51,308 - DEBUG - results3
+2025-03-05 15:26:51,308 - DEBUG - results4
+2025-03-05 15:26:51,467 - DEBUG - Saved processed image to tmp/processed/bd61fe76-745e-4b1c-a464-a41e9cd15eda.jpg
+2025-03-05 15:27:21,086 - DEBUG - Starting image processing...
+2025-03-05 15:27:21,090 - DEBUG - Image decoded successfully.
+2025-03-05 15:27:21,104 - DEBUG - Processing image with YOLO.
+2025-03-05 15:27:21,211 - DEBUG - inferencing image...
+2025-03-05 15:27:23,349 - DEBUG - results
+2025-03-05 15:27:23,349 - DEBUG - results2
+2025-03-05 15:27:23,349 - DEBUG - results3
+2025-03-05 15:27:23,350 - DEBUG - results3
+2025-03-05 15:27:23,350 - DEBUG - results3
+2025-03-05 15:27:23,350 - DEBUG - results3
+2025-03-05 15:27:23,350 - DEBUG - results3
+2025-03-05 15:27:23,351 - DEBUG - results3
+2025-03-05 15:27:23,351 - DEBUG - results3
+2025-03-05 15:27:23,351 - DEBUG - results3
+2025-03-05 15:27:23,351 - DEBUG - results3
+2025-03-05 15:27:23,352 - DEBUG - results3
+2025-03-05 15:27:23,352 - DEBUG - results3
+2025-03-05 15:27:23,352 - DEBUG - results3
+2025-03-05 15:27:23,352 - DEBUG - results3
+2025-03-05 15:27:23,352 - DEBUG - results3
+2025-03-05 15:27:23,353 - DEBUG - results3
+2025-03-05 15:27:23,353 - DEBUG - results3
+2025-03-05 15:27:23,353 - DEBUG - results3
+2025-03-05 15:27:23,353 - DEBUG - results3
+2025-03-05 15:27:23,353 - DEBUG - results3
+2025-03-05 15:27:23,354 - DEBUG - results3
+2025-03-05 15:27:23,354 - DEBUG - results3
+2025-03-05 15:27:23,354 - DEBUG - results3
+2025-03-05 15:27:23,355 - DEBUG - results3
+2025-03-05 15:27:23,355 - DEBUG - results3
+2025-03-05 15:27:23,355 - DEBUG - results3
+2025-03-05 15:27:23,355 - DEBUG - results3
+2025-03-05 15:27:23,355 - DEBUG - results3
+2025-03-05 15:27:23,356 - DEBUG - results4
+2025-03-05 15:27:23,583 - DEBUG - Saved processed image to tmp/processed/35de96a1-f428-4921-a3fe-a6fde59352f6.jpg
+2025-03-05 15:31:02,868 - DEBUG - Starting image processing...
+2025-03-05 15:31:02,870 - DEBUG - Image decoded successfully.
+2025-03-05 15:31:02,883 - DEBUG - Processing image with YOLO.
+2025-03-05 15:31:03,005 - DEBUG - inferencing image...
+2025-03-05 15:31:05,286 - DEBUG - results
+2025-03-05 15:31:05,287 - DEBUG - results2
+2025-03-05 15:31:05,287 - DEBUG - results3
+2025-03-05 15:31:05,287 - DEBUG - results3
+2025-03-05 15:31:05,288 - DEBUG - results3
+2025-03-05 15:31:05,288 - DEBUG - results3
+2025-03-05 15:31:05,289 - DEBUG - results3
+2025-03-05 15:31:05,289 - DEBUG - results3
+2025-03-05 15:31:05,289 - DEBUG - results3
+2025-03-05 15:31:05,289 - DEBUG - results3
+2025-03-05 15:31:05,290 - DEBUG - results3
+2025-03-05 15:31:05,290 - DEBUG - results3
+2025-03-05 15:31:05,290 - DEBUG - results3
+2025-03-05 15:31:05,291 - DEBUG - results3
+2025-03-05 15:31:05,291 - DEBUG - results3
+2025-03-05 15:31:05,291 - DEBUG - results3
+2025-03-05 15:31:05,291 - DEBUG - results3
+2025-03-05 15:31:05,292 - DEBUG - results3
+2025-03-05 15:31:05,292 - DEBUG - results3
+2025-03-05 15:31:05,292 - DEBUG - results3
+2025-03-05 15:31:05,292 - DEBUG - results3
+2025-03-05 15:31:05,293 - DEBUG - results3
+2025-03-05 15:31:05,293 - DEBUG - results3
+2025-03-05 15:31:05,293 - DEBUG - results3
+2025-03-05 15:31:05,294 - DEBUG - results4
+2025-03-05 15:31:05,525 - DEBUG - Saved processed image to tmp/processed/346c17f3-bc0d-4dbf-85ac-9a4bcdd82818.jpg
+2025-03-05 15:32:01,240 - DEBUG - Starting image processing...
+2025-03-05 15:32:01,243 - DEBUG - Image decoded successfully.
+2025-03-05 15:32:01,253 - DEBUG - Processing image with YOLO.
+2025-03-05 15:32:01,337 - DEBUG - inferencing image...
+2025-03-05 15:32:03,363 - DEBUG - results
+2025-03-05 15:32:03,363 - DEBUG - results2
+2025-03-05 15:32:03,363 - DEBUG - results3
+2025-03-05 15:32:03,364 - DEBUG - results3
+2025-03-05 15:32:03,364 - DEBUG - results3
+2025-03-05 15:32:03,367 - DEBUG - results3
+2025-03-05 15:32:03,367 - DEBUG - results3
+2025-03-05 15:32:03,367 - DEBUG - results3
+2025-03-05 15:32:03,368 - DEBUG - results3
+2025-03-05 15:32:03,368 - DEBUG - results3
+2025-03-05 15:32:03,368 - DEBUG - results3
+2025-03-05 15:32:03,369 - DEBUG - results3
+2025-03-05 15:32:03,369 - DEBUG - results3
+2025-03-05 15:32:03,372 - DEBUG - results3
+2025-03-05 15:32:03,372 - DEBUG - results3
+2025-03-05 15:32:03,376 - DEBUG - results3
+2025-03-05 15:32:03,376 - DEBUG - results3
+2025-03-05 15:32:03,376 - DEBUG - results3
+2025-03-05 15:32:03,377 - DEBUG - results3
+2025-03-05 15:32:03,384 - DEBUG - results3
+2025-03-05 15:32:03,384 - DEBUG - results3
+2025-03-05 15:32:03,384 - DEBUG - results3
+2025-03-05 15:32:03,384 - DEBUG - results3
+2025-03-05 15:32:03,385 - DEBUG - results3
+2025-03-05 15:32:03,385 - DEBUG - results3
+2025-03-05 15:32:03,385 - DEBUG - results4
+2025-03-05 15:32:03,642 - DEBUG - Saved processed image to tmp/processed/d1c9511c-1b57-45fe-97d8-6d5c7b414dda.jpg
+2025-03-05 15:32:33,777 - DEBUG - Starting image processing...
+2025-03-05 15:32:33,779 - DEBUG - Image decoded successfully.
+2025-03-05 15:32:33,786 - DEBUG - Processing image with YOLO.
+2025-03-05 15:32:33,875 - DEBUG - inferencing image...
+2025-03-05 15:32:35,521 - DEBUG - results
+2025-03-05 15:32:35,522 - DEBUG - results2
+2025-03-05 15:32:35,522 - DEBUG - results3
+2025-03-05 15:32:35,523 - DEBUG - results3
+2025-03-05 15:32:35,523 - DEBUG - results3
+2025-03-05 15:32:35,523 - DEBUG - results3
+2025-03-05 15:32:35,523 - DEBUG - results3
+2025-03-05 15:32:35,524 - DEBUG - results3
+2025-03-05 15:32:35,524 - DEBUG - results3
+2025-03-05 15:32:35,524 - DEBUG - results3
+2025-03-05 15:32:35,524 - DEBUG - results3
+2025-03-05 15:32:35,524 - DEBUG - results3
+2025-03-05 15:32:35,525 - DEBUG - results3
+2025-03-05 15:32:35,525 - DEBUG - results3
+2025-03-05 15:32:35,525 - DEBUG - results3
+2025-03-05 15:32:35,525 - DEBUG - results3
+2025-03-05 15:32:35,525 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,526 - DEBUG - results3
+2025-03-05 15:32:35,527 - DEBUG - results3
+2025-03-05 15:32:35,527 - DEBUG - results3
+2025-03-05 15:32:35,527 - DEBUG - results3
+2025-03-05 15:32:35,527 - DEBUG - results3
+2025-03-05 15:32:35,527 - DEBUG - results3
+2025-03-05 15:32:35,528 - DEBUG - results3
+2025-03-05 15:32:35,528 - DEBUG - results4
+2025-03-05 15:32:35,693 - DEBUG - Saved processed image to tmp/processed/9e02d9bc-da19-4935-88b6-3bd9efd7fc8f.jpg
+2025-03-05 15:33:44,710 - DEBUG - Starting image processing...
+2025-03-05 15:33:44,712 - DEBUG - Image decoded successfully.
+2025-03-05 15:33:44,720 - DEBUG - Processing image with YOLO.
+2025-03-05 15:33:44,779 - DEBUG - inferencing image...
+2025-03-05 15:33:46,258 - DEBUG - results
+2025-03-05 15:33:46,258 - DEBUG - results2
+2025-03-05 15:33:46,258 - DEBUG - results3
+2025-03-05 15:33:46,258 - DEBUG - results3
+2025-03-05 15:33:46,259 - DEBUG - results3
+2025-03-05 15:33:46,259 - DEBUG - results3
+2025-03-05 15:33:46,259 - DEBUG - results3
+2025-03-05 15:33:46,259 - DEBUG - results3
+2025-03-05 15:33:46,260 - DEBUG - results3
+2025-03-05 15:33:46,260 - DEBUG - results3
+2025-03-05 15:33:46,260 - DEBUG - results3
+2025-03-05 15:33:46,260 - DEBUG - results3
+2025-03-05 15:33:46,260 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,261 - DEBUG - results3
+2025-03-05 15:33:46,262 - DEBUG - results3
+2025-03-05 15:33:46,262 - DEBUG - results3
+2025-03-05 15:33:46,262 - DEBUG - results3
+2025-03-05 15:33:46,262 - DEBUG - results3
+2025-03-05 15:33:46,263 - DEBUG - results3
+2025-03-05 15:33:46,263 - DEBUG - results3
+2025-03-05 15:33:46,263 - DEBUG - results4
+2025-03-05 15:33:46,417 - DEBUG - Saved processed image to tmp/processed/cfca3960-a1d2-4825-93ea-4a65f27d2543.jpg
+2025-03-05 15:36:09,339 - DEBUG - Starting image processing...
+2025-03-05 15:36:09,341 - DEBUG - Image decoded successfully.
+2025-03-05 15:36:09,351 - DEBUG - Processing image with YOLO.
+2025-03-05 15:36:09,436 - DEBUG - inferencing image...
+2025-03-05 15:36:11,757 - DEBUG - results
+2025-03-05 15:36:11,757 - DEBUG - results2
+2025-03-05 15:36:11,757 - DEBUG - results3
+2025-03-05 15:36:11,758 - DEBUG - results3
+2025-03-05 15:36:11,758 - DEBUG - results3
+2025-03-05 15:36:11,758 - DEBUG - results3
+2025-03-05 15:36:11,758 - DEBUG - results3
+2025-03-05 15:36:11,758 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,759 - DEBUG - results3
+2025-03-05 15:36:11,760 - DEBUG - results3
+2025-03-05 15:36:11,760 - DEBUG - results3
+2025-03-05 15:36:11,760 - DEBUG - results3
+2025-03-05 15:36:11,760 - DEBUG - results3
+2025-03-05 15:36:11,760 - DEBUG - results3
+2025-03-05 15:36:11,761 - DEBUG - results3
+2025-03-05 15:36:11,761 - DEBUG - results3
+2025-03-05 15:36:11,761 - DEBUG - results4
+2025-03-05 15:36:11,974 - DEBUG - Saved processed image to tmp/processed/e1f000fa-e69e-4cfe-8d58-08cf1357700d.jpg
+2025-03-05 15:40:02,743 - DEBUG - Starting image processing...
+2025-03-05 15:40:02,745 - DEBUG - Image decoded successfully.
+2025-03-05 15:40:02,754 - DEBUG - Processing image with YOLO.
+2025-03-05 15:40:02,829 - DEBUG - inferencing image...
+2025-03-05 15:40:04,255 - DEBUG - results
+2025-03-05 15:40:04,255 - DEBUG - results2
+2025-03-05 15:40:04,255 - DEBUG - results3
+2025-03-05 15:40:04,255 - DEBUG - results3
+2025-03-05 15:40:04,255 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,256 - DEBUG - results3
+2025-03-05 15:40:04,257 - DEBUG - results3
+2025-03-05 15:40:04,257 - DEBUG - results3
+2025-03-05 15:40:04,257 - DEBUG - results3
+2025-03-05 15:40:04,257 - DEBUG - results3
+2025-03-05 15:40:04,257 - DEBUG - results3
+2025-03-05 15:40:04,258 - DEBUG - results3
+2025-03-05 15:40:04,258 - DEBUG - results3
+2025-03-05 15:40:04,258 - DEBUG - results3
+2025-03-05 15:40:04,258 - DEBUG - results3
+2025-03-05 15:40:04,258 - DEBUG - results3
+2025-03-05 15:40:04,259 - DEBUG - results4
+2025-03-05 15:40:04,483 - DEBUG - inferencing image...
+2025-03-05 15:40:05,101 - DEBUG - results
+2025-03-05 15:40:05,101 - DEBUG - results2
+2025-03-05 15:40:05,101 - DEBUG - results3
+2025-03-05 15:40:05,101 - DEBUG - results3
+2025-03-05 15:40:05,101 - DEBUG - results3
+2025-03-05 15:40:05,101 - DEBUG - results3
+2025-03-05 15:40:05,102 - DEBUG - results3
+2025-03-05 15:40:05,102 - DEBUG - results3
+2025-03-05 15:40:05,102 - DEBUG - results3
+2025-03-05 15:40:05,102 - DEBUG - results3
+2025-03-05 15:40:05,102 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,103 - DEBUG - results3
+2025-03-05 15:40:05,104 - DEBUG - results3
+2025-03-05 15:40:05,104 - DEBUG - results3
+2025-03-05 15:40:05,104 - DEBUG - results4
+2025-03-05 15:40:05,199 - DEBUG - inferencing image...
+2025-03-05 15:40:05,885 - DEBUG - results
+2025-03-05 15:40:05,885 - DEBUG - results2
+2025-03-05 15:40:05,885 - DEBUG - results3
+2025-03-05 15:40:05,885 - DEBUG - results3
+2025-03-05 15:40:05,886 - DEBUG - results3
+2025-03-05 15:40:05,886 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,887 - DEBUG - results3
+2025-03-05 15:40:05,888 - DEBUG - results3
+2025-03-05 15:40:05,888 - DEBUG - results3
+2025-03-05 15:40:05,888 - DEBUG - results3
+2025-03-05 15:40:05,888 - DEBUG - results3
+2025-03-05 15:40:05,889 - DEBUG - results3
+2025-03-05 15:40:05,889 - DEBUG - results3
+2025-03-05 15:40:05,889 - DEBUG - results3
+2025-03-05 15:40:05,889 - DEBUG - results3
+2025-03-05 15:40:05,889 - DEBUG - results4
+2025-03-05 15:40:05,897 - DEBUG - Saved processed image to tmp/processed/409deb18-fb58-4784-af6c-deb40ceeaa9f.jpg
+2025-03-05 15:45:48,912 - DEBUG - Starting image processing...
+2025-03-05 15:45:48,914 - DEBUG - Image decoded successfully.
+2025-03-05 15:45:48,922 - DEBUG - Processing image with YOLO.
+2025-03-05 15:45:49,017 - DEBUG - inferencing image...
+2025-03-05 15:45:50,724 - DEBUG - results
+2025-03-05 15:45:50,724 - DEBUG - results2
+2025-03-05 15:45:50,724 - DEBUG - results3
+2025-03-05 15:45:50,725 - DEBUG - results3
+2025-03-05 15:45:50,725 - DEBUG - results3
+2025-03-05 15:45:50,725 - DEBUG - results3
+2025-03-05 15:45:50,725 - DEBUG - results3
+2025-03-05 15:45:50,725 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,726 - DEBUG - results3
+2025-03-05 15:45:50,727 - DEBUG - results3
+2025-03-05 15:45:50,727 - DEBUG - results3
+2025-03-05 15:45:50,727 - DEBUG - results3
+2025-03-05 15:45:50,727 - DEBUG - results3
+2025-03-05 15:45:50,727 - DEBUG - results3
+2025-03-05 15:45:50,728 - DEBUG - results3
+2025-03-05 15:45:50,728 - DEBUG - results3
+2025-03-05 15:45:50,728 - DEBUG - results3
+2025-03-05 15:45:50,728 - DEBUG - results3
+2025-03-05 15:45:50,729 - DEBUG - results3
+2025-03-05 15:45:50,729 - DEBUG - results3
+2025-03-05 15:45:50,729 - DEBUG - results3
+2025-03-05 15:45:50,729 - DEBUG - results3
+2025-03-05 15:45:50,729 - DEBUG - results3
+2025-03-05 15:45:50,730 - DEBUG - results3
+2025-03-05 15:45:50,730 - DEBUG - results3
+2025-03-05 15:45:50,730 - DEBUG - results3
+2025-03-05 15:45:50,730 - DEBUG - results3
+2025-03-05 15:45:50,730 - DEBUG - results3
+2025-03-05 15:45:50,731 - DEBUG - results3
+2025-03-05 15:45:50,731 - DEBUG - results3
+2025-03-05 15:45:50,731 - DEBUG - results3
+2025-03-05 15:45:50,731 - DEBUG - results3
+2025-03-05 15:45:50,731 - DEBUG - results3
+2025-03-05 15:45:50,732 - DEBUG - results3
+2025-03-05 15:45:50,732 - DEBUG - results3
+2025-03-05 15:45:50,732 - DEBUG - results3
+2025-03-05 15:45:50,732 - DEBUG - results3
+2025-03-05 15:45:50,732 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,733 - DEBUG - results3
+2025-03-05 15:45:50,734 - DEBUG - results3
+2025-03-05 15:45:50,734 - DEBUG - results3
+2025-03-05 15:45:50,734 - DEBUG - results3
+2025-03-05 15:45:50,734 - DEBUG - results3
+2025-03-05 15:45:50,734 - DEBUG - results3
+2025-03-05 15:45:50,735 - DEBUG - results3
+2025-03-05 15:45:50,735 - DEBUG - results3
+2025-03-05 15:45:50,735 - DEBUG - results3
+2025-03-05 15:45:50,735 - DEBUG - results3
+2025-03-05 15:45:50,735 - DEBUG - results3
+2025-03-05 15:45:50,736 - DEBUG - results3
+2025-03-05 15:45:50,736 - DEBUG - results3
+2025-03-05 15:45:50,736 - DEBUG - results3
+2025-03-05 15:45:50,736 - DEBUG - results3
+2025-03-05 15:45:50,736 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,737 - DEBUG - results3
+2025-03-05 15:45:50,740 - DEBUG - results3
+2025-03-05 15:45:50,740 - DEBUG - results3
+2025-03-05 15:45:50,740 - DEBUG - results3
+2025-03-05 15:45:50,740 - DEBUG - results3
+2025-03-05 15:45:50,740 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,741 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,742 - DEBUG - results3
+2025-03-05 15:45:50,743 - DEBUG - results4
+2025-03-05 15:45:51,154 - DEBUG - inferencing image...
+2025-03-05 15:45:51,870 - DEBUG - results
+2025-03-05 15:45:51,870 - DEBUG - results2
+2025-03-05 15:45:51,871 - DEBUG - results3
+2025-03-05 15:45:51,871 - DEBUG - results3
+2025-03-05 15:45:51,871 - DEBUG - results3
+2025-03-05 15:45:51,871 - DEBUG - results3
+2025-03-05 15:45:51,871 - DEBUG - results3
+2025-03-05 15:45:51,872 - DEBUG - results3
+2025-03-05 15:45:51,872 - DEBUG - results4
+2025-03-05 15:45:51,877 - DEBUG - Saved processed image to tmp/processed/f377a2b5-1c2a-4f6c-b590-327e3cd93d79.jpg
+2025-03-08 12:24:52,271 - DEBUG - Starting image processing...
+2025-03-08 12:24:52,278 - DEBUG - Image decoded successfully.
+2025-03-08 12:24:52,334 - DEBUG - Processing image with YOLO.
+2025-03-08 12:24:52,570 - DEBUG - inferencing image...
+2025-03-08 12:25:00,944 - DEBUG - results
+2025-03-08 12:25:00,944 - DEBUG - results2
+2025-03-08 12:25:00,944 - DEBUG - results3
+2025-03-08 12:25:00,945 - DEBUG - results3
+2025-03-08 12:25:00,945 - DEBUG - results3
+2025-03-08 12:25:00,945 - DEBUG - results3
+2025-03-08 12:25:00,945 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,946 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,947 - DEBUG - results3
+2025-03-08 12:25:00,948 - DEBUG - results3
+2025-03-08 12:25:00,948 - DEBUG - results3
+2025-03-08 12:25:00,948 - DEBUG - results3
+2025-03-08 12:25:00,948 - DEBUG - results3
+2025-03-08 12:25:00,948 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,949 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,950 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,951 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,952 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,953 - DEBUG - results3
+2025-03-08 12:25:00,954 - DEBUG - results3
+2025-03-08 12:25:00,954 - DEBUG - results3
+2025-03-08 12:25:00,954 - DEBUG - results3
+2025-03-08 12:25:00,954 - DEBUG - results3
+2025-03-08 12:25:00,955 - DEBUG - results3
+2025-03-08 12:25:00,957 - DEBUG - results4
+2025-03-08 12:25:01,708 - DEBUG - Saved processed image to tmp/processed/cdbb1f64-5883-423d-91fe-c22b0aa3733f.jpg
+2025-03-08 13:45:46,951 - DEBUG - Starting image processing...
+2025-03-08 13:45:46,957 - DEBUG - Image decoded successfully.
+2025-03-08 13:45:47,010 - DEBUG - Processing image with YOLO.
+2025-03-08 13:45:47,200 - DEBUG - inferencing image...
+2025-03-08 13:45:49,887 - DEBUG - results
+2025-03-08 13:45:49,888 - DEBUG - results2
+2025-03-08 13:45:49,888 - DEBUG - results3
+2025-03-08 13:45:49,889 - DEBUG - results3
+2025-03-08 13:45:49,889 - DEBUG - results3
+2025-03-08 13:45:49,889 - DEBUG - results3
+2025-03-08 13:45:49,889 - DEBUG - results3
+2025-03-08 13:45:49,890 - DEBUG - results3
+2025-03-08 13:45:49,890 - DEBUG - results3
+2025-03-08 13:45:49,893 - DEBUG - results4
+2025-03-08 13:45:50,387 - DEBUG - Saved processed image to tmp/processed/651616d2-0359-4a89-80ca-86d264f46bfd.jpg
+2025-03-08 13:49:37,392 - DEBUG - Starting image processing...
+2025-03-08 13:49:37,399 - DEBUG - Image decoded successfully.
+2025-03-08 13:49:37,428 - DEBUG - Processing image with YOLO.
+2025-03-08 13:49:37,506 - DEBUG - inferencing image...
+2025-03-08 13:49:39,005 - DEBUG - results
+2025-03-08 13:49:39,006 - DEBUG - results2
+2025-03-08 13:49:39,006 - DEBUG - results3
+2025-03-08 13:49:39,006 - DEBUG - results3
+2025-03-08 13:49:39,006 - DEBUG - results3
+2025-03-08 13:49:39,006 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,007 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,008 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,009 - DEBUG - results3
+2025-03-08 13:49:39,010 - DEBUG - results3
+2025-03-08 13:49:39,010 - DEBUG - results3
+2025-03-08 13:49:39,010 - DEBUG - results3
+2025-03-08 13:49:39,010 - DEBUG - results3
+2025-03-08 13:49:39,010 - DEBUG - results3
+2025-03-08 13:49:39,011 - DEBUG - results3
+2025-03-08 13:49:39,011 - DEBUG - results3
+2025-03-08 13:49:39,011 - DEBUG - results3
+2025-03-08 13:49:39,011 - DEBUG - results3
+2025-03-08 13:49:39,011 - DEBUG - results3
+2025-03-08 13:49:39,012 - DEBUG - results3
+2025-03-08 13:49:39,012 - DEBUG - results3
+2025-03-08 13:49:39,012 - DEBUG - results3
+2025-03-08 13:49:39,012 - DEBUG - results3
+2025-03-08 13:49:39,012 - DEBUG - results3
+2025-03-08 13:49:39,013 - DEBUG - results3
+2025-03-08 13:49:39,013 - DEBUG - results3
+2025-03-08 13:49:39,013 - DEBUG - results3
+2025-03-08 13:49:39,013 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,014 - DEBUG - results3
+2025-03-08 13:49:39,015 - DEBUG - results3
+2025-03-08 13:49:39,015 - DEBUG - results3
+2025-03-08 13:49:39,015 - DEBUG - results3
+2025-03-08 13:49:39,015 - DEBUG - results3
+2025-03-08 13:49:39,015 - DEBUG - results3
+2025-03-08 13:49:39,016 - DEBUG - results3
+2025-03-08 13:49:39,016 - DEBUG - results3
+2025-03-08 13:49:39,016 - DEBUG - results3
+2025-03-08 13:49:39,016 - DEBUG - results3
+2025-03-08 13:49:39,016 - DEBUG - results3
+2025-03-08 13:49:39,017 - DEBUG - results3
+2025-03-08 13:49:39,017 - DEBUG - results3
+2025-03-08 13:49:39,017 - DEBUG - results3
+2025-03-08 13:49:39,017 - DEBUG - results3
+2025-03-08 13:49:39,017 - DEBUG - results3
+2025-03-08 13:49:39,018 - DEBUG - results3
+2025-03-08 13:49:39,018 - DEBUG - results3
+2025-03-08 13:49:39,018 - DEBUG - results3
+2025-03-08 13:49:39,018 - DEBUG - results3
+2025-03-08 13:49:39,018 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,019 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,020 - DEBUG - results3
+2025-03-08 13:49:39,021 - DEBUG - results3
+2025-03-08 13:49:39,021 - DEBUG - results3
+2025-03-08 13:49:39,021 - DEBUG - results3
+2025-03-08 13:49:39,021 - DEBUG - results3
+2025-03-08 13:49:39,022 - DEBUG - results3
+2025-03-08 13:49:39,022 - DEBUG - results3
+2025-03-08 13:49:39,022 - DEBUG - results3
+2025-03-08 13:49:39,022 - DEBUG - results3
+2025-03-08 13:49:39,022 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,023 - DEBUG - results3
+2025-03-08 13:49:39,024 - DEBUG - results3
+2025-03-08 13:49:39,024 - DEBUG - results3
+2025-03-08 13:49:39,024 - DEBUG - results3
+2025-03-08 13:49:39,024 - DEBUG - results3
+2025-03-08 13:49:39,024 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,025 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,026 - DEBUG - results3
+2025-03-08 13:49:39,027 - DEBUG - results3
+2025-03-08 13:49:39,027 - DEBUG - results3
+2025-03-08 13:49:39,027 - DEBUG - results3
+2025-03-08 13:49:39,027 - DEBUG - results3
+2025-03-08 13:49:39,027 - DEBUG - results3
+2025-03-08 13:49:39,028 - DEBUG - results3
+2025-03-08 13:49:39,028 - DEBUG - results3
+2025-03-08 13:49:39,028 - DEBUG - results3
+2025-03-08 13:49:39,028 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,029 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,030 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,031 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,032 - DEBUG - results3
+2025-03-08 13:49:39,033 - DEBUG - results3
+2025-03-08 13:49:39,033 - DEBUG - results3
+2025-03-08 13:49:39,033 - DEBUG - results3
+2025-03-08 13:49:39,033 - DEBUG - results3
+2025-03-08 13:49:39,033 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,034 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,035 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,036 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,037 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,038 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,039 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,040 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,041 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,042 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,043 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,044 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,045 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,046 - DEBUG - results3
+2025-03-08 13:49:39,047 - DEBUG - results3
+2025-03-08 13:49:39,047 - DEBUG - results3
+2025-03-08 13:49:39,047 - DEBUG - results3
+2025-03-08 13:49:39,047 - DEBUG - results3
+2025-03-08 13:49:39,048 - DEBUG - results3
+2025-03-08 13:49:39,048 - DEBUG - results3
+2025-03-08 13:49:39,048 - DEBUG - results3
+2025-03-08 13:49:39,048 - DEBUG - results3
+2025-03-08 13:49:39,048 - DEBUG - results3
+2025-03-08 13:49:39,049 - DEBUG - results3
+2025-03-08 13:49:39,049 - DEBUG - results3
+2025-03-08 13:49:39,049 - DEBUG - results3
+2025-03-08 13:49:39,049 - DEBUG - results3
+2025-03-08 13:49:39,049 - DEBUG - results3
+2025-03-08 13:49:39,050 - DEBUG - results3
+2025-03-08 13:49:39,050 - DEBUG - results3
+2025-03-08 13:49:39,050 - DEBUG - results3
+2025-03-08 13:49:39,050 - DEBUG - results3
+2025-03-08 13:49:39,050 - DEBUG - results3
+2025-03-08 13:49:39,051 - DEBUG - results3
+2025-03-08 13:49:39,051 - DEBUG - results3
+2025-03-08 13:49:39,051 - DEBUG - results3
+2025-03-08 13:49:39,051 - DEBUG - results3
+2025-03-08 13:49:39,051 - DEBUG - results3
+2025-03-08 13:49:39,052 - DEBUG - results3
+2025-03-08 13:49:39,052 - DEBUG - results3
+2025-03-08 13:49:39,052 - DEBUG - results3
+2025-03-08 13:49:39,052 - DEBUG - results3
+2025-03-08 13:49:39,052 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,053 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,054 - DEBUG - results3
+2025-03-08 13:49:39,055 - DEBUG - results3
+2025-03-08 13:49:39,055 - DEBUG - results3
+2025-03-08 13:49:39,055 - DEBUG - results3
+2025-03-08 13:49:39,055 - DEBUG - results3
+2025-03-08 13:49:39,056 - DEBUG - results3
+2025-03-08 13:49:39,056 - DEBUG - results3
+2025-03-08 13:49:39,056 - DEBUG - results3
+2025-03-08 13:49:39,056 - DEBUG - results3
+2025-03-08 13:49:39,056 - DEBUG - results3
+2025-03-08 13:49:39,057 - DEBUG - results3
+2025-03-08 13:49:39,057 - DEBUG - results3
+2025-03-08 13:49:39,057 - DEBUG - results3
+2025-03-08 13:49:39,057 - DEBUG - results3
+2025-03-08 13:49:39,057 - DEBUG - results3
+2025-03-08 13:49:39,058 - DEBUG - results3
+2025-03-08 13:49:39,058 - DEBUG - results3
+2025-03-08 13:49:39,058 - DEBUG - results3
+2025-03-08 13:49:39,058 - DEBUG - results3
+2025-03-08 13:49:39,059 - DEBUG - results3
+2025-03-08 13:49:39,059 - DEBUG - results3
+2025-03-08 13:49:39,059 - DEBUG - results3
+2025-03-08 13:49:39,059 - DEBUG - results3
+2025-03-08 13:49:39,059 - DEBUG - results3
+2025-03-08 13:49:39,060 - DEBUG - results3
+2025-03-08 13:49:39,060 - DEBUG - results3
+2025-03-08 13:49:39,060 - DEBUG - results3
+2025-03-08 13:49:39,060 - DEBUG - results3
+2025-03-08 13:49:39,060 - DEBUG - results3
+2025-03-08 13:49:39,061 - DEBUG - results4
+2025-03-08 13:49:41,038 - DEBUG - Saved processed image to tmp/processed/ca808133-72ed-4186-a563-47bc330f2312.jpg
+2025-03-08 13:55:04,075 - DEBUG - Starting image processing...
+2025-03-08 13:55:04,085 - DEBUG - Image decoded successfully.
+2025-03-08 13:55:04,120 - DEBUG - Processing image with YOLO.
+2025-03-08 13:55:04,328 - DEBUG - inferencing image...
+2025-03-08 13:55:06,415 - DEBUG - results
+2025-03-08 13:55:06,415 - DEBUG - results2
+2025-03-08 13:55:06,415 - DEBUG - results3
+2025-03-08 13:55:06,416 - DEBUG - results3
+2025-03-08 13:55:06,416 - DEBUG - results3
+2025-03-08 13:55:06,416 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,417 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,418 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,419 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,420 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,421 - DEBUG - results3
+2025-03-08 13:55:06,422 - DEBUG - results3
+2025-03-08 13:55:06,422 - DEBUG - results3
+2025-03-08 13:55:06,422 - DEBUG - results3
+2025-03-08 13:55:06,422 - DEBUG - results3
+2025-03-08 13:55:06,422 - DEBUG - results3
+2025-03-08 13:55:06,423 - DEBUG - results3
+2025-03-08 13:55:06,423 - DEBUG - results3
+2025-03-08 13:55:06,423 - DEBUG - results3
+2025-03-08 13:55:06,423 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,424 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,425 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,426 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,427 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,428 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,429 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,430 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,431 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,432 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,433 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,434 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,435 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,436 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,437 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,438 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,439 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,440 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,441 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,442 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,443 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,444 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,445 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,446 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,447 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,448 - DEBUG - results3
+2025-03-08 13:55:06,449 - DEBUG - results4
+2025-03-08 13:55:07,601 - DEBUG - Saved processed image to tmp/processed/e04c7b29-038f-4f2f-af41-1d11bd9d5630.jpg
+2025-03-08 14:17:40,604 - DEBUG - Starting image processing...
+2025-03-08 14:17:40,611 - DEBUG - Image decoded successfully.
+2025-03-08 14:17:40,635 - DEBUG - Processing image with YOLO.
+2025-03-08 14:17:40,701 - DEBUG - inferencing image...
+2025-03-08 14:17:42,466 - DEBUG - results
+2025-03-08 14:17:42,466 - DEBUG - results2
+2025-03-08 14:17:42,466 - DEBUG - results3
+2025-03-08 14:17:42,467 - DEBUG - results3
+2025-03-08 14:17:42,467 - DEBUG - results3
+2025-03-08 14:17:42,467 - DEBUG - results3
+2025-03-08 14:17:42,467 - DEBUG - results3
+2025-03-08 14:17:42,468 - DEBUG - results3
+2025-03-08 14:17:42,468 - DEBUG - results3
+2025-03-08 14:17:42,468 - DEBUG - results3
+2025-03-08 14:17:42,468 - DEBUG - results3
+2025-03-08 14:17:42,468 - DEBUG - results3
+2025-03-08 14:17:42,469 - DEBUG - results3
+2025-03-08 14:17:42,469 - DEBUG - results3
+2025-03-08 14:17:42,469 - DEBUG - results3
+2025-03-08 14:17:42,469 - DEBUG - results3
+2025-03-08 14:17:42,469 - DEBUG - results3
+2025-03-08 14:17:42,470 - DEBUG - results3
+2025-03-08 14:17:42,470 - DEBUG - results3
+2025-03-08 14:17:42,470 - DEBUG - results3
+2025-03-08 14:17:42,470 - DEBUG - results3
+2025-03-08 14:17:42,470 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,471 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,472 - DEBUG - results3
+2025-03-08 14:17:42,473 - DEBUG - results3
+2025-03-08 14:17:42,473 - DEBUG - results3
+2025-03-08 14:17:42,473 - DEBUG - results3
+2025-03-08 14:17:42,473 - DEBUG - results3
+2025-03-08 14:17:42,473 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,474 - DEBUG - results3
+2025-03-08 14:17:42,475 - DEBUG - results3
+2025-03-08 14:17:42,475 - DEBUG - results3
+2025-03-08 14:17:42,475 - DEBUG - results3
+2025-03-08 14:17:42,475 - DEBUG - results3
+2025-03-08 14:17:42,475 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,476 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,477 - DEBUG - results3
+2025-03-08 14:17:42,478 - DEBUG - results3
+2025-03-08 14:17:42,478 - DEBUG - results3
+2025-03-08 14:17:42,478 - DEBUG - results3
+2025-03-08 14:17:42,478 - DEBUG - results3
+2025-03-08 14:17:42,478 - DEBUG - results3
+2025-03-08 14:17:42,479 - DEBUG - results3
+2025-03-08 14:17:42,479 - DEBUG - results3
+2025-03-08 14:17:42,479 - DEBUG - results3
+2025-03-08 14:17:42,479 - DEBUG - results3
+2025-03-08 14:17:42,479 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,480 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,481 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,482 - DEBUG - results3
+2025-03-08 14:17:42,483 - DEBUG - results3
+2025-03-08 14:17:42,483 - DEBUG - results3
+2025-03-08 14:17:42,483 - DEBUG - results3
+2025-03-08 14:17:42,483 - DEBUG - results3
+2025-03-08 14:17:42,483 - DEBUG - results3
+2025-03-08 14:17:42,484 - DEBUG - results3
+2025-03-08 14:17:42,484 - DEBUG - results3
+2025-03-08 14:17:42,484 - DEBUG - results3
+2025-03-08 14:17:42,484 - DEBUG - results3
+2025-03-08 14:17:42,484 - DEBUG - results3
+2025-03-08 14:17:42,485 - DEBUG - results3
+2025-03-08 14:17:42,485 - DEBUG - results3
+2025-03-08 14:17:42,485 - DEBUG - results3
+2025-03-08 14:17:42,485 - DEBUG - results3
+2025-03-08 14:17:42,485 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,486 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,487 - DEBUG - results3
+2025-03-08 14:17:42,488 - DEBUG - results3
+2025-03-08 14:17:42,488 - DEBUG - results3
+2025-03-08 14:17:42,488 - DEBUG - results3
+2025-03-08 14:17:42,488 - DEBUG - results3
+2025-03-08 14:17:42,488 - DEBUG - results3
+2025-03-08 14:17:42,489 - DEBUG - results3
+2025-03-08 14:17:42,489 - DEBUG - results3
+2025-03-08 14:17:42,489 - DEBUG - results3
+2025-03-08 14:17:42,489 - DEBUG - results3
+2025-03-08 14:17:42,489 - DEBUG - results3
+2025-03-08 14:17:42,490 - DEBUG - results3
+2025-03-08 14:17:42,490 - DEBUG - results4
+2025-03-08 14:17:43,033 - DEBUG - Saved processed image to tmp/processed/c3666526-b265-4803-a90f-c05bd8dd076e.jpg
+2025-03-08 14:38:25,919 - DEBUG - Starting image processing...
+2025-03-08 14:38:25,927 - DEBUG - Image decoded successfully.
+2025-03-08 14:38:25,966 - DEBUG - Processing image with YOLO.
+2025-03-08 14:38:26,151 - DEBUG - inferencing image...
+2025-03-08 14:38:29,247 - DEBUG - results
+2025-03-08 14:38:29,248 - DEBUG - results2
+2025-03-08 14:38:29,248 - DEBUG - results3
+2025-03-08 14:38:29,248 - DEBUG - results3
+2025-03-08 14:38:29,249 - DEBUG - results3
+2025-03-08 14:38:29,249 - DEBUG - results3
+2025-03-08 14:38:29,250 - DEBUG - results3
+2025-03-08 14:38:29,258 - DEBUG - results3
+2025-03-08 14:38:29,259 - DEBUG - results3
+2025-03-08 14:38:29,271 - DEBUG - results4
+2025-03-08 14:38:29,757 - DEBUG - Saved processed image to tmp/processed/919f4be7-c95c-4d72-9f3f-702877497df9.jpg
+2025-03-08 14:41:55,300 - DEBUG - Starting image processing...
+2025-03-08 14:41:55,308 - DEBUG - Image decoded successfully.
+2025-03-08 14:41:55,340 - DEBUG - Image dimensions: 1280x1280
+2025-03-08 14:41:55,418 - DEBUG - inferencing image...
+2025-03-08 14:41:57,582 - DEBUG - results
+2025-03-08 14:41:57,583 - DEBUG - results2
+2025-03-08 14:41:57,583 - DEBUG - results3
+2025-03-08 14:41:57,583 - DEBUG - results3
+2025-03-08 14:41:57,583 - DEBUG - results3
+2025-03-08 14:41:57,584 - DEBUG - results3
+2025-03-08 14:41:57,584 - DEBUG - results3
+2025-03-08 14:41:57,584 - DEBUG - results3
+2025-03-08 14:41:57,584 - DEBUG - results3
+2025-03-08 14:41:57,585 - DEBUG - results4
+2025-03-08 14:41:57,792 - DEBUG - Saved processed image to tmp/processed/ad8fd538-1312-4ee9-806f-7b5c2f61a9a0.jpg

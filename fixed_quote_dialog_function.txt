@@ -1,0 +1,46 @@
+  // Function to capture screenshot and convert to base64
+  const captureMapScreenshot = async () => {
+    try {
+      // Enhanced selector strategy to find the processed image container with markers
+      // First try the map canvas with points on it
+      const processedCanvas = document.querySelector('canvas.processed-map') ||
+                             document.querySelector('canvas.map-canvas') ||
+                             document.querySelector('#mapCanvas');
+                             
+      if (processedCanvas && processedCanvas instanceof HTMLCanvasElement) {
+        // If we found a canvas, use its toDataURL method directly
+        const base64Image = processedCanvas.toDataURL('image/png');
+        console.log('Successfully captured processed map canvas directly');
+        return base64Image;
+      }
+      
+      // Fall back to container capture if no canvas found
+      // Prioritize containers that are most likely to contain the processed map with markers
+      const mapContainer = document.querySelector('.map-container') ||
+                          document.querySelector('.relative.w-full.h-\[600px\]') || 
+                          document.querySelector('.relative') ||
+                          document.querySelector('#map');
+      
+      if (!mapContainer) {
+        console.warn('No map container found for screenshot');
+        return null;
+      }
+      
+      // Use html2canvas to take a screenshot of the map container
+      const canvas = await window.html2canvas(mapContainer as HTMLElement, {
+        useCORS: true,
+        scale: 1,
+        logging: true,
+        allowTaint: true,
+        backgroundColor: null
+      });
+      
+      // Convert the canvas to a base64 image
+      const base64Image = canvas.toDataURL('image/png');
+      console.log('Successfully captured map screenshot with html2canvas');
+      return base64Image;
+    } catch (error) {
+      console.error('Error capturing screenshot:', error);
+      return null;
+    }
+  };
