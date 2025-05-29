@@ -1,5 +1,5 @@
 import express, { type Express, type Request, Response, NextFunction } from "express";
-import { registerRoutes } from "../server/routes";
+import { registerRoutes } from "../server/routes.ts";
 import path from "path";
 import dotenv from 'dotenv';
 
