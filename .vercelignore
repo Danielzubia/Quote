@@ -1,0 +1,67 @@
+# Ignore large model files
+models/
+*.pt
+
+# Ignore video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Ignore attached assets directory (these should be served from CDN)
+attached_assets/
+
+# Ignore temporary files and logs
+tmp/
+*.log
+image_processing.log
+*.txt
+
+# Ignore development files
+.replit
+replit.nix
+pyproject.toml
+uv.lock
+
+# Ignore UUID-named files (these appear to be temporary)
+06233978-c57b-42be-b522-bc5cef1ff33c
+0e750fac-b749-42c3-a2e6-0870ebc3acab
+1482c09c-9a8d-48cb-9381-dd075273af63
+4411540b-b8f6-4beb-9da2-77d6b64d960b
+4dab4237-a55a-4fc6-8109-baecb577ac8d
+526e8141-ece1-40fa-9fff-59a327ab1e07
+58afbbb0-98ad-4f6f-af07-d9e3e5379147
+595a15fa-8071-4481-ab0f-21fb09c8b084
+5ac2c08a-d63a-49e2-85d9-98f844b75426
+5eb11309-b16c-4299-9c2f-613510e4feea
+66fac775-6d7b-49e0-a778-bf509418238c
+85f8e6e6-9df1-41f5-9002-fd56af8b4022
+8a0ba6f9-ec70-44d3-871a-6c0d0973e9e8
+90ac6404-4ed5-45f9-b995-c041feb93000
+953fec02-7fd3-44bf-b2f1-7e84fe5a62a2
+aa58d69b-f68f-4ce0-8710-4eed8a50f325
+ac1b11d9-cb53-41ba-ace9-03561baaef54
+aebeef6d-17f9-43a7-8bd2-ae483dc9173e
+b89adea6-417b-4fee-b255-72313d5e177d
+ba163c24-79c4-4294-8303-389cdbc64417
+ddb8d9cf-15c3-4954-bcb7-77d4d9cda073
+e35ec9c4-88f1-4d29-a7e0-edbf1ab253fc
+ed3d3b64-cda5-4f3f-91c8-53a9d5aca000
+ed7349f6-d293-46a7-bcf3-38cd0b2bd4e0
+f40ff809-bc51-472b-9096-4525ac327c0d
+
+# Ignore other temporary/development files
+base64_encoded_image.txt
+before_inference.jpg
+captureMapScreenshot.txt
+fixed_quote_dialog_function.txt
+generated-icon.png
+sample.mp4
+
+# Git and other version control
+.git/
+.gitignore
+
+# Build artifacts that should be regenerated
+dist/
+build/
