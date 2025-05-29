@@ -71,60 +71,21 @@ export default function PaymentPlanPage() {
     if (errorMessage) setErrorMessage(null);
   };
 
-  const handleContinue = async () => {
-    try {
-      setIsLoading(true);
+
+const handleContinue = async () => {
+  try {
+    setIsLoading(true);
+    
+    // Handle free plan selection specially
+    if (selectedPlan === 'free') {
+      console.log('Free plan selected - processing...');
       
-      // Handle free plan selection specially
-      if (selectedPlan === 'free') {
-        console.log('Free plan selected - processing...');
-        
-        // Update user's payment plan in our local DB
-        const response = await apiRequest("PATCH", `/api/user/payment-plan`, { plan: selectedPlan });
-        
-        if (!response.ok) {
-          throw new Error("Failed to update payment plan");
-        }
-        
-        // If user has email (they should have), register them in Supabase as well
-        if (user && user.username) {
-          console.log(`Registering user ${user.username} in Supabase with plan ${selectedPlan}`);
-          
-          try {
-            // Register the user in Supabase
-            const supabaseResponse = await apiRequest("POST", "/api/supabase/register-user", {
-              email: user.username, // Using username as email
-              role: selectedPlan,
-            });
-            
-            if (!supabaseResponse.ok) {
-              // Log the error but don't throw - this is just supplementary registration
-              console.warn("Failed to register user in Supabase, but continuing with plan selection");
-            } else {
-              console.log("Successfully registered user in Supabase");
-            }
-          } catch (supabaseError) {
-            // Log but don't interrupt the flow - the local DB registration is the primary one
-            console.error("Error registering in Supabase:", supabaseError);
-          }
-        } else {
-          console.warn("No username/email available to register in Supabase");
-        }
-        
-        toast({
-          title: "Free plan selected",
-          description: "You've successfully registered for the FREE plan. Redirecting to home page..."
-        });
-        
-        // Navigate to home page using our special redirect route
-        console.log('Redirecting to home page via special redirect route...');
-        window.location.href = '/redirect-home';
-        return;
+      // Update user's payment plan in our local DB
+      const response = await apiRequest("PATCH", `/api/user/payment-plan`, { plan: selectedPlan });
+      
+      if (!response.ok) {
+        throw new Error("Failed to update payment plan");
       }
-      
-      // For paid plans (pro/team)
-      // We won't update the payment plan locally immediately because they haven't paid yet
-      // Instead, we'll proceed directly to Stripe checkout, and update the plan after payment
       
       // If user has email (they should have), register them in Supabase as well
       if (user && user.username) {
@@ -152,96 +113,149 @@ export default function PaymentPlanPage() {
       }
       
       toast({
-        title: "Payment plan selected",
-        description: `You've selected the ${selectedPlan.toUpperCase()} plan. Proceeding to payment.`
+        title: "Free plan selected",
+        description: "You've successfully registered for the FREE plan. Redirecting to home page..."
       });
       
-      // For paid plans, use the new checkout session redirect flow
-      // If user is authenticated, we'll use their email/username, otherwise we'll ask for email
-      let userEmail = user?.username || '';
-      
-      // If no user email is available, prompt the user for their email before proceeding
-      if (!userEmail) {
-        const emailPrompt = prompt('Please enter your email address to continue with checkout:');
-        if (!emailPrompt) {
-          // User cancelled the prompt
-          setIsLoading(false);
-          toast({
-            title: "Checkout cancelled",
-            description: "Email is required for checkout. Please try again."
-          });
-          return;
-        }
-        
-        // Basic email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(emailPrompt)) {
-          setIsLoading(false);
-          toast({
-            title: "Invalid email",
-            description: "Please enter a valid email address.",
-            variant: "destructive"
-          });
-          return;
-        }
-        
-        userEmail = emailPrompt;
-      }
+      // Navigate to home page using our special redirect route
+      console.log('Redirecting to home page via special redirect route...');
+      window.location.href = '/redirect-home';
+      return;
+    }
+    
+    // For paid plans (pro/team)
+    // UPDATE: We should update the local payment plan immediately, even before payment
+    // This ensures the user's session reflects their intended plan
+    console.log(`Updating local payment plan to ${selectedPlan} before payment`);
+    
+    const localUpdateResponse = await apiRequest("PATCH", `/api/user/payment-plan`, { 
+      plan: selectedPlan,
+      paymentVerified: false // Indicate this is pre-payment
+    });
+    
+    if (!localUpdateResponse.ok) {
+      console.warn("Failed to update local payment plan, but continuing with checkout");
+    } else {
+      console.log("Successfully updated local payment plan");
+    }
+    
+    // If user has email (they should have), register them in Supabase as well
+    if (user && user.username) {
+      console.log(`Registering user ${user.username} in Supabase with plan ${selectedPlan}`);
       
       try {
-        console.log(`Creating checkout session for email: ${userEmail}...`);
-        const response = await fetch('/api/stripe/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            email: userEmail,
-            plan: selectedPlan
-          }),
-          credentials: 'same-origin' // Include cookies in the request
-        });
-
-        if (!response.ok) {
-          const errorData = await response.json();
-          console.error('Checkout session error:', errorData);
-          throw new Error(errorData.message || 'Failed to create checkout session');
-        }
-
-        const data = await response.json();
-        console.log('Redirecting to Stripe checkout:', data.url);
-        if (data.url) {
-          window.location.href = data.url; // this opens the Stripe payment page
-        } else {
-          throw new Error('No checkout URL returned from server');
-        }
-      } catch (checkoutError) {
-        console.error('Error creating checkout session:', checkoutError);
-        toast({
-          title: "Error",
-          description: "Failed to create checkout session. Please try again.",
-          variant: "destructive",
+        // Register the user in Supabase
+        const supabaseResponse = await apiRequest("POST", "/api/supabase/register-user", {
+          email: user.username, // Using username as email
+          role: selectedPlan,
         });
         
-        // Fallback to the old payment flow if checkout creation fails
-        console.log('Falling back to old payment flow via direct navigation...');
-        window.location.href = `/payment-processing/${selectedPlan}`;
+        if (!supabaseResponse.ok) {
+          // Log the error but don't throw - this is just supplementary registration
+          console.warn("Failed to register user in Supabase, but continuing with plan selection");
+        } else {
+          console.log("Successfully registered user in Supabase");
+        }
+      } catch (supabaseError) {
+        // Log but don't interrupt the flow - the local DB registration is the primary one
+        console.error("Error registering in Supabase:", supabaseError);
       }
-    } catch (error) {
-      console.error("Error updating payment plan:", error);
-      // Get error message
-      const errorMsg = error instanceof Error ? error.message : "There was an error selecting your payment plan.";
+    } else {
+      console.warn("No username/email available to register in Supabase");
+    }
+    
+    toast({
+      title: "Payment plan selected",
+      description: `You've selected the ${selectedPlan.toUpperCase()} plan. Proceeding to payment.`
+    });
+    
+    // For paid plans, use the new checkout session redirect flow
+    // If user is authenticated, we'll use their email/username, otherwise we'll ask for email
+    let userEmail = user?.username || '';
+    
+    // If no user email is available, prompt the user for their email before proceeding
+    if (!userEmail) {
+      const emailPrompt = prompt('Please enter your email address to continue with checkout:');
+      if (!emailPrompt) {
+        // User cancelled the prompt
+        setIsLoading(false);
+        toast({
+          title: "Checkout cancelled",
+          description: "Email is required for checkout. Please try again."
+        });
+        return;
+      }
       
-      // Set the error message state
-      setErrorMessage(errorMsg);
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailPrompt)) {
+        setIsLoading(false);
+        toast({
+          title: "Invalid email",
+          description: "Please enter a valid email address.",
+          variant: "destructive"
+        });
+        return;
+      }
       
+      userEmail = emailPrompt;
+    }
+    
+    try {
+      console.log(`Creating checkout session for email: ${userEmail}...`);
+      const response = await fetch('/api/stripe/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: userEmail,
+          plan: selectedPlan
+        }),
+        credentials: 'same-origin' // Include cookies in the request
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Checkout session error:', errorData);
+        throw new Error(errorData.message || 'Failed to create checkout session');
+      }
+
+      const data = await response.json();
+      console.log('Redirecting to Stripe checkout:', data.url);
+      if (data.url) {
+        window.location.href = data.url; // this opens the Stripe payment page
+      } else {
+        throw new Error('No checkout URL returned from server');
+      }
+    } catch (checkoutError) {
+      console.error('Error creating checkout session:', checkoutError);
       toast({
         title: "Error",
-        description: errorMsg,
+        description: "Failed to create checkout session. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setIsLoading(false);
+      
+      // Fallback to the old payment flow if checkout creation fails
+      console.log('Falling back to old payment flow via direct navigation...');
+      window.location.href = `/payment-processing/${selectedPlan}`;
     }
-  };
+  } catch (error) {
+    console.error("Error updating payment plan:", error);
+    // Get error message
+    const errorMsg = error instanceof Error ? error.message : "There was an error selecting your payment plan.";
+    
+    // Set the error message state
+    setErrorMessage(errorMsg);
+    
+    toast({
+      title: "Error",
+      description: errorMsg,
+      variant: "destructive",
+    });
+  } finally {
+    setIsLoading(false);
+  }
+};
+
 
   // Temporarily disabled for debugging
   /*

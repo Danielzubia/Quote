@@ -609,28 +609,75 @@ export function setupAuth(app: Express) {
   });
   
   // Verify reset token endpoint
-  app.get("/api/reset-password/:token", async (req, res) => {
-    try {
-      const { token } = req.params;
-      
-      if (!token) {
-        return res.status(400).json({ error: "Reset token is required" });
+
+// Update user payment plan
+app.patch("/api/user/payment-plan", async (req, res) => {
+  if (!req.isAuthenticated()) return res.sendStatus(401);
+  
+  const { plan, paymentVerified } = req.body;
+  if (!plan || !["free", "pro", "team"].includes(plan)) {
+    return res.status(400).json({ error: "Invalid plan selected" });
+  }
+  
+  try {
+    // Current user data
+    const currentUser = req.user!;
+    
+    // For free plan, always allow selection
+    if (plan === 'free') {
+      console.log('Free plan selected, updating immediately');
+      const updatedUser = await storage.updateUserPaymentPlan(currentUser.id, plan);
+      if (!updatedUser) {
+        return res.status(500).json({ error: "Failed to update payment plan" });
       }
       
-      // Check if the token is valid and not expired
-      const user = await storage.getUserByResetToken(token);
-      
-      if (!user) {
-        return res.status(400).json({ error: "Invalid or expired reset token" });
-      }
-      
-      // Token is valid
-      res.json({ valid: true, username: user.username });
-    } catch (error) {
-      console.error("Error verifying reset token:", error);
-      res.status(500).json({ error: "Failed to verify reset token" });
+      // Update the user in the session
+      req.login(updatedUser, (err) => {
+        if (err) return res.status(500).json({ error: "Failed to update session" });
+        res.json(updatedUser);
+      });
+      return;
     }
-  });
+    
+    // For paid plans, allow immediate update if paymentVerified is false (pre-payment)
+    // or if paymentVerified is true (post-payment confirmation)
+    if (plan === 'pro' || plan === 'team') {
+      if (paymentVerified === false) {
+        console.log(`Pre-payment plan selection: updating user ${currentUser.id} to ${plan} plan`);
+      } else if (paymentVerified === true) {
+        console.log(`Post-payment confirmation: updating user ${currentUser.id} to ${plan} plan`);
+      } else {
+        // Legacy behavior - require payment verification for paid plans
+        return res.status(400).json({ 
+          error: "Payment verification required for paid plans",
+          message: "Please complete payment before updating to a paid plan"
+        });
+      }
+      
+      const updatedUser = await storage.updateUserPaymentPlan(currentUser.id, plan);
+      if (!updatedUser) {
+        return res.status(500).json({ error: "Failed to update payment plan" });
+      }
+      
+      // Log the change
+      console.log(`Updated user ${updatedUser.username} to ${plan} plan`);
+      
+      // Update the user in the session
+      req.login(updatedUser, (err) => {
+        if (err) return res.status(500).json({ error: "Failed to update session" });
+        res.json(updatedUser);
+      });
+      return;
+    }
+    
+    return res.status(400).json({ error: "Invalid plan selection" });
+    
+  } catch (error) {
+    console.error("Error updating payment plan:", error);
+    res.status(500).json({ error: "Failed to update payment plan" });
+  }
+});
+
   
   // Reset password endpoint
   app.post("/api/reset-password/:token", async (req, res) => {
