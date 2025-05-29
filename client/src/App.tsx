@@ -25,7 +25,7 @@ import { ProtectedRoute } from "./lib/protected-route";
 function Router() {
   return (
     <Switch>
-      {/* Special route to handle redirection from payment plan page .*/}
+      {/* Special route to handle redirection from payment plan page.. .*/}
       <Route path="/redirect-home">
         {() => {
           // This route exists just to break the loop
