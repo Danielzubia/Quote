@@ -103,6 +103,8 @@ export const insertUserSchema = createInsertSchema(users).pick({
   firstName: true,
   lastName: true,
   supabaseId: true,
+  paymentPlan: true,
+  hasSeenPlanSelection: true,
 });
 
 // Modified validation schema with more lenient email validation

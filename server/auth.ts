@@ -74,13 +74,11 @@ export function setupAuth(app: Express) {
         password,
         firstName,
         lastName
-      );
-
-      if (authError) {
+      );      if (authError) {
         console.error('Registration error:', authError);
         return res.status(400).json({
           error: "Registration failed",
-          message: authError.message || "Failed to create account"
+          message: (authError as any).message || "Failed to create account"
         });
       }      console.log("Successfully authenticated user:", authData?.user?.email);
       
@@ -91,17 +89,16 @@ export function setupAuth(app: Express) {
         // Before creating new user, check their plan in Supabase
         let userPlan = 'free';
         let hasSeenPlanSelection = false;
-        
-        try {
+          try {
           const { supabase } = await import('./supabase');
-          const { data: supabaseUser } = await supabase
+          const { data: supabaseUserData } = await supabase
             .from('users')
             .select('plan, registration_status')
             .eq('email', username)
             .single();
           
-          if (supabaseUser?.plan) {
-            userPlan = supabaseUser.plan;
+          if (supabaseUserData?.plan) {
+            userPlan = supabaseUserData.plan;
             console.log(`Found existing Supabase user with plan: ${userPlan}`);
             
             // If they have a paid plan, they've already seen plan selection during payment
@@ -124,31 +121,38 @@ export function setupAuth(app: Express) {
           paymentPlan: userPlan,
           hasSeenPlanSelection: hasSeenPlanSelection
         });
-        console.log(`Created new user in local system with plan ${userPlan}:`, user.id);
-      } else if (user && authData?.user && !user.supabaseId) {
+        console.log(`Created new user in local system with plan ${userPlan}:`, user.id);      } else if (user && authData?.user && !user.supabaseId) {
         // Update existing user with Supabase ID and sync plan
-        user = await storage.updateSupabaseId(user.id, authData.user.id);
+        const updatedUser = await storage.updateSupabaseId(user.id, authData.user.id);
+        if (updatedUser) {
+          user = updatedUser;
+        }
         
         // Also sync the payment plan from Supabase if different
-        try {
-          const { supabase } = await import('./supabase');
-          const { data: supabaseUser } = await supabase
-            .from('users')
-            .select('plan')
-            .eq('email', username)
-            .single();
-          
-          if (supabaseUser?.plan && supabaseUser.plan !== user.paymentPlan) {
-            console.log(`Syncing payment plan from Supabase: ${supabaseUser.plan} (was ${user.paymentPlan})`);
-            user = await storage.updateUserPaymentPlan(user.id, supabaseUser.plan);
+        if (user) {
+          try {
+            const { supabase } = await import('./supabase');
+            const { data: supabaseUser } = await supabase
+              .from('users')
+              .select('plan')
+              .eq('email', username)
+              .single();
             
-            // If they have a paid plan, mark that they've seen plan selection
-            if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
-              await storage.updateUserHasSeenPlanSelection(user.id);
+            if (supabaseUser?.plan && supabaseUser.plan !== user.paymentPlan) {
+              console.log(`Syncing payment plan from Supabase: ${supabaseUser.plan} (was ${user.paymentPlan})`);
+              const planUpdatedUser = await storage.updateUserPaymentPlan(user.id, supabaseUser.plan);
+              if (planUpdatedUser) {
+                user = planUpdatedUser;
+              }
+              
+              // If they have a paid plan, mark that they've seen plan selection
+              if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+                await storage.updateUserHasSeenPlanSelection(user.id);
+              }
             }
+          } catch (syncError) {
+            console.log('Error syncing payment plan from Supabase:', syncError);
           }
-        } catch (syncError) {
-          console.log('Error syncing payment plan from Supabase:', syncError);
         }
         
         console.log('Updated existing user with Supabase ID and synced plan');
@@ -207,34 +211,33 @@ export function setupAuth(app: Express) {
           if (userBySupabaseId) {
           // User exists in our system, sync their payment plan from Supabase before login
           let finalUser = userBySupabaseId;
-          
-          try {
+            try {
             const { supabase } = await import('./supabase');
-            const { data: supabaseUser } = await supabase
+            const { data: supabaseUserData } = await supabase
               .from('users')
               .select('plan, stripe_customer_id')
               .eq('id', supabaseUser.id)
               .single();
             
-            if (supabaseUser?.plan && supabaseUser.plan !== finalUser.paymentPlan) {
-              console.log(`Syncing payment plan from Supabase via token auth: ${supabaseUser.plan} (was ${finalUser.paymentPlan})`);
-              const updatedUser = await storage.updateUserPaymentPlan(finalUser.id, supabaseUser.plan);
+            if (supabaseUserData?.plan && supabaseUserData.plan !== finalUser.paymentPlan) {
+              console.log(`Syncing payment plan from Supabase via token auth: ${supabaseUserData.plan} (was ${finalUser.paymentPlan})`);
+              const updatedUser = await storage.updateUserPaymentPlan(finalUser.id, supabaseUserData.plan);
               if (updatedUser) {
                 finalUser = updatedUser;
-                console.log(`Successfully synced payment plan for user ${finalUser.id} to: ${supabaseUser.plan}`);
+                console.log(`Successfully synced payment plan for user ${finalUser.id} to: ${supabaseUserData.plan}`);
               }
               
               // If they have a paid plan, mark that they've seen plan selection
-              if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+              if (supabaseUserData.plan === 'pro' || supabaseUserData.plan === 'team') {
                 await storage.updateUserHasSeenPlanSelection(finalUser.id);
               }
             }
             
             // Also sync Stripe customer ID if available
-            if (supabaseUser?.stripe_customer_id && !finalUser.stripeCustomerId) {
-              console.log(`Syncing Stripe customer ID via token auth: ${supabaseUser.stripe_customer_id}`);
+            if (supabaseUserData?.stripe_customer_id && !finalUser.stripeCustomerId) {
+              console.log(`Syncing Stripe customer ID via token auth: ${supabaseUserData.stripe_customer_id}`);
               const updatedUser = await storage.updateUserStripeInfo(finalUser.id, {
-                stripeCustomerId: supabaseUser.stripe_customer_id,
+                stripeCustomerId: supabaseUserData.stripe_customer_id,
                 stripeSubscriptionId: finalUser.stripeSubscriptionId || ''
               });
               if (updatedUser) {

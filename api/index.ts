@@ -17,7 +17,7 @@ app.use('/attached_assets', express.static(path.join(process.cwd(), 'attached_as
 
 // Handle PayloadTooLargeError specifically
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
-  if (err instanceof SyntaxError && err.status === 413) {
+  if (err instanceof SyntaxError && 'status' in err && (err as any).status === 413) {
     return res.status(413).json({
       error: 'Request entity too large',
       message: 'The image file size is too large. Please try a smaller image.'
