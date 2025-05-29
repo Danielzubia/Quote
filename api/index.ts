@@ -57,9 +57,66 @@ app.use((req, res, next) => {
   next();
 });
 
-// Initialize routes
+// Export the app for Vercel
+let app: express.Application;
+
 const initializeApp = async () => {
+  if (app) {
+    return app;
+  }
+  
   try {
+    app = express();
+    
+    // Increase body size limit to handle larger images (50MB)
+    app.use(express.json({ limit: '50mb' }));
+    app.use(express.urlencoded({ extended: false, limit: '50mb' }));
+
+    // Serve attached assets
+    app.use('/attached_assets', express.static(path.join(process.cwd(), 'attached_assets')));
+
+    // Handle PayloadTooLargeError specifically
+    app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+      if (err instanceof SyntaxError && 'status' in err && (err as any).status === 413) {
+        return res.status(413).json({
+          error: 'Request entity too large',
+          message: 'The image file size is too large. Please try a smaller image.'
+        });
+      }
+      next(err);
+    });
+
+    // Logging middleware
+    app.use((req, res, next) => {
+      const start = Date.now();
+      const path = req.path;
+      let capturedJsonResponse: Record<string, any> | undefined = undefined;
+
+      const originalResJson = res.json;
+      res.json = function (bodyJson, ...args) {
+        capturedJsonResponse = bodyJson;
+        return originalResJson.apply(res, [bodyJson, ...args]);
+      };
+
+      res.on("finish", () => {
+        const duration = Date.now() - start;
+        if (path.startsWith("/api")) {
+          let logLine = `${req.method} ${path} ${res.statusCode} in ${duration}ms`;
+          if (capturedJsonResponse) {
+            logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
+          }
+
+          if (logLine.length > 80) {
+            logLine = logLine.slice(0, 79) + "…";
+          }
+
+          console.log(logLine);
+        }
+      });
+
+      next();
+    });
+
     await registerRoutes(app);
 
     // Error handling middleware
@@ -78,7 +135,6 @@ const initializeApp = async () => {
   }
 };
 
-// Export the app for Vercel
 export default async (req: any, res: any) => {
   const initializedApp = await initializeApp();
   return initializedApp(req, res);
