@@ -71,15 +71,43 @@ export default function PaymentSuccessPage() {
             console.log('Customer email found:', userData.email);
             setEmail(userData.email);
           }
-          
-          // Refresh user data to get updated subscription details
+            // Refresh user data to get updated subscription details
           queryClient.invalidateQueries({ queryKey: ['/api/user'] });
           console.log('User data invalidated, subscription should be updated');
           console.log('UserData', userData);
+          
           // Update local cache directly if we have user data
           if (userData.user) {
             console.log('Updating user data in cache:', userData.user);
             queryClient.setQueryData(['/api/user'], userData.user);
+          }
+          
+          // CRITICAL: Sync user data from Supabase to ensure local storage is updated
+          try {
+            console.log('Syncing user data from Supabase after payment...');
+            const syncResponse = await fetch('/api/user/sync', {
+              method: 'POST',
+              credentials: 'include',
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            });
+            
+            if (syncResponse.ok) {
+              const syncData = await syncResponse.json();
+              console.log('User data sync successful:', syncData);
+              
+              // Update the user data in the cache with the synced version
+              if (syncData.user) {
+                queryClient.setQueryData(['/api/user'], syncData.user);
+                console.log(`User payment plan synced to: ${syncData.user.paymentPlan}`);
+              }
+            } else {
+              console.warn('User data sync failed, but continuing...');
+            }
+          } catch (syncError) {
+            console.error('Error syncing user data:', syncError);
+            // Continue anyway - the invalidation should eventually refresh the data
           }
           
           // Only auto-redirect if the user is already authenticated

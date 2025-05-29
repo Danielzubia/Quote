@@ -82,29 +82,76 @@ export function setupAuth(app: Express) {
           error: "Registration failed",
           message: authError.message || "Failed to create account"
         });
-      }
-
-      console.log("Successfully authenticated user:", authData?.user?.email);
+      }      console.log("Successfully authenticated user:", authData?.user?.email);
       
       // Check if user exists in our local system
       let user = await storage.getUserByUsername(username);
       
       if (!user && authData?.user) {
-        // Create new user in local system
+        // Before creating new user, check their plan in Supabase
+        let userPlan = 'free';
+        let hasSeenPlanSelection = false;
+        
+        try {
+          const { supabase } = await import('./supabase');
+          const { data: supabaseUser } = await supabase
+            .from('users')
+            .select('plan, registration_status')
+            .eq('email', username)
+            .single();
+          
+          if (supabaseUser?.plan) {
+            userPlan = supabaseUser.plan;
+            console.log(`Found existing Supabase user with plan: ${userPlan}`);
+            
+            // If they have a paid plan, they've already seen plan selection during payment
+            if (userPlan === 'pro' || userPlan === 'team') {
+              hasSeenPlanSelection = true;
+            }
+          }
+        } catch (supabaseError) {
+          console.log('No existing Supabase user found or error retrieving plan:', supabaseError);
+          // Continue with default 'free' plan
+        }
+        
+        // Create new user in local system with correct plan
         user = await storage.createUser({
           username: username,
           password: await hashPassword(password),
           firstName: firstName || '',
           lastName: lastName || '',
           supabaseId: authData.user.id,
-          paymentPlan: 'free',
-          hasSeenPlanSelection: false
+          paymentPlan: userPlan,
+          hasSeenPlanSelection: hasSeenPlanSelection
         });
-        console.log('Created new user in local system:', user.id);
+        console.log(`Created new user in local system with plan ${userPlan}:`, user.id);
       } else if (user && authData?.user && !user.supabaseId) {
-        // Update existing user with Supabase ID
+        // Update existing user with Supabase ID and sync plan
         user = await storage.updateSupabaseId(user.id, authData.user.id);
-        console.log('Updated existing user with Supabase ID');
+        
+        // Also sync the payment plan from Supabase if different
+        try {
+          const { supabase } = await import('./supabase');
+          const { data: supabaseUser } = await supabase
+            .from('users')
+            .select('plan')
+            .eq('email', username)
+            .single();
+          
+          if (supabaseUser?.plan && supabaseUser.plan !== user.paymentPlan) {
+            console.log(`Syncing payment plan from Supabase: ${supabaseUser.plan} (was ${user.paymentPlan})`);
+            user = await storage.updateUserPaymentPlan(user.id, supabaseUser.plan);
+            
+            // If they have a paid plan, mark that they've seen plan selection
+            if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+              await storage.updateUserHasSeenPlanSelection(user.id);
+            }
+          }
+        } catch (syncError) {
+          console.log('Error syncing payment plan from Supabase:', syncError);
+        }
+        
+        console.log('Updated existing user with Supabase ID and synced plan');
       }
       
       if (!user) {
@@ -157,20 +204,61 @@ export function setupAuth(app: Express) {
       if (supabaseUser) {
         // Look up our user by Supabase ID
         const userBySupabaseId = await storage.getUserBySupabaseId(supabaseUser.id);
-        
-        if (userBySupabaseId) {
-          // User exists in our system, log them in
-          req.login(userBySupabaseId, async (loginErr) => {
+          if (userBySupabaseId) {
+          // User exists in our system, sync their payment plan from Supabase before login
+          let finalUser = userBySupabaseId;
+          
+          try {
+            const { supabase } = await import('./supabase');
+            const { data: supabaseUser } = await supabase
+              .from('users')
+              .select('plan, stripe_customer_id')
+              .eq('id', supabaseUser.id)
+              .single();
+            
+            if (supabaseUser?.plan && supabaseUser.plan !== finalUser.paymentPlan) {
+              console.log(`Syncing payment plan from Supabase via token auth: ${supabaseUser.plan} (was ${finalUser.paymentPlan})`);
+              const updatedUser = await storage.updateUserPaymentPlan(finalUser.id, supabaseUser.plan);
+              if (updatedUser) {
+                finalUser = updatedUser;
+                console.log(`Successfully synced payment plan for user ${finalUser.id} to: ${supabaseUser.plan}`);
+              }
+              
+              // If they have a paid plan, mark that they've seen plan selection
+              if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+                await storage.updateUserHasSeenPlanSelection(finalUser.id);
+              }
+            }
+            
+            // Also sync Stripe customer ID if available
+            if (supabaseUser?.stripe_customer_id && !finalUser.stripeCustomerId) {
+              console.log(`Syncing Stripe customer ID via token auth: ${supabaseUser.stripe_customer_id}`);
+              const updatedUser = await storage.updateUserStripeInfo(finalUser.id, {
+                stripeCustomerId: supabaseUser.stripe_customer_id,
+                stripeSubscriptionId: finalUser.stripeSubscriptionId || ''
+              });
+              if (updatedUser) {
+                finalUser = updatedUser;
+              }
+            }
+          } catch (syncError) {
+            console.log('Error syncing user data from Supabase via token auth:', syncError);
+            // Continue with login even if sync fails
+          }
+          
+          // User exists in our system, log them in with synced data
+          req.login(finalUser, async (loginErr) => {
             if (loginErr) return next(loginErr);
             
             try {
               // Record the user sign-in for analytics
-              await storage.recordUserSignIn(userBySupabaseId.id, req.ip, req.get('User-Agent'));
+              await storage.recordUserSignIn(finalUser.id, req.ip, req.get('User-Agent'));
             } catch (trackingError) {
               console.error("Error recording user sign-in:", trackingError);
             }
             
-            return res.status(200).json(userBySupabaseId);
+            console.log(`User ${finalUser.id} logged in via token with payment plan: ${finalUser.paymentPlan}`);
+            return res.status(200).json(finalUser);
           });
           return;
         }
@@ -268,16 +356,47 @@ export function setupAuth(app: Express) {
       
       // Find the user in our local system
       const user = await storage.getUserByUsername(username);
-      
-      if (!user) {
+        if (!user) {
         // User exists in Supabase but not in our local system - create local record
         console.log('User exists in Supabase but not locally, creating local record');
+        
+        // Before creating the user, check their payment plan in Supabase
+        let userPlan = 'free';
+        let stripeCustomerId = null;
+        let hasSeenPlanSelection = false;
+        
+        try {
+          const { supabase } = await import('./supabase');
+          const { data: supabaseUser } = await supabase
+            .from('users')
+            .select('plan, stripe_customer_id')
+            .eq('email', username)
+            .single();
+          
+          if (supabaseUser?.plan) {
+            userPlan = supabaseUser.plan;
+            stripeCustomerId = supabaseUser.stripe_customer_id;
+            console.log(`Found existing Supabase user with plan: ${userPlan}`);
+            
+            // If they have a paid plan, they've already seen plan selection during payment
+            if (userPlan === 'pro' || userPlan === 'team') {
+              hasSeenPlanSelection = true;
+            }
+          }
+        } catch (supabaseError) {
+          console.log('No existing Supabase user found or error retrieving plan:', supabaseError);
+          // Continue with default 'free' plan
+        }
+        
         const newUser = await storage.createUser({
           username: username,
           password: await hashPassword(password), // Store locally hashed password as backup
           firstName: authData.user?.user_metadata?.first_name || '',
           lastName: authData.user?.user_metadata?.last_name || '',
           supabaseId: authData.user?.id,
+          paymentPlan: userPlan,
+          hasSeenPlanSelection: hasSeenPlanSelection,
+          stripeCustomerId: stripeCustomerId
         });
         
         req.login(newUser, async (loginErr) => {
@@ -290,33 +409,76 @@ export function setupAuth(app: Express) {
             console.error("Error recording user sign-in:", trackingError);
           }
           
+          console.log(`New user ${newUser.id} created and logged in with payment plan: ${newUser.paymentPlan}`);
           res.status(200).json(newUser);
         });
         return;
       }
+        // If we get here, the user exists both in Supabase and locally
+      // Update local record with Supabase ID if not already set and sync payment plan
+      let finalUser = user;
       
-      // If we get here, the user exists both in Supabase and locally
-      // Update local record with Supabase ID if not already set
-      // Update logic for the Supabase ID - since it's not yet implemented in our storage
-      // In a full implementation, we would update the user record with the Supabase ID
       if (!user.supabaseId && authData.user?.id) {
-        console.log('Would update Supabase ID for user', user.id, 'to', authData.user.id);
-        // Commented out until we implement this method
-        // await storage.updateSupabaseId(user.id, authData.user.id);
+        console.log('Updating Supabase ID for user', user.id, 'to', authData.user.id);
+        finalUser = await storage.updateSupabaseId(user.id, authData.user.id);
+        if (!finalUser) {
+          console.error('Failed to update Supabase ID');
+          finalUser = user;
+        }
       }
       
-      // Log in the user with our local session
-      req.login(user, async (loginErr) => {
+      // CRITICAL: Sync payment plan from Supabase to local storage
+      try {
+        const { supabase } = await import('./supabase');
+        const { data: supabaseUser } = await supabase
+          .from('users')
+          .select('plan, stripe_customer_id')
+          .eq('email', username)
+          .single();
+        
+        if (supabaseUser?.plan && supabaseUser.plan !== finalUser.paymentPlan) {
+          console.log(`Syncing payment plan from Supabase: ${supabaseUser.plan} (was ${finalUser.paymentPlan})`);
+          const updatedUser = await storage.updateUserPaymentPlan(finalUser.id, supabaseUser.plan);
+          if (updatedUser) {
+            finalUser = updatedUser;
+            console.log(`Successfully synced payment plan for user ${finalUser.id} to: ${supabaseUser.plan}`);
+          }
+          
+          // If they have a paid plan, mark that they've seen plan selection
+          if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+            await storage.updateUserHasSeenPlanSelection(finalUser.id);
+          }
+        }
+        
+        // Also sync Stripe customer ID if available
+        if (supabaseUser?.stripe_customer_id && !finalUser.stripeCustomerId) {
+          console.log(`Syncing Stripe customer ID: ${supabaseUser.stripe_customer_id}`);
+          const updatedUser = await storage.updateUserStripeInfo(finalUser.id, {
+            stripeCustomerId: supabaseUser.stripe_customer_id,
+            stripeSubscriptionId: finalUser.stripeSubscriptionId || ''
+          });
+          if (updatedUser) {
+            finalUser = updatedUser;
+          }
+        }
+      } catch (syncError) {
+        console.log('Error syncing user data from Supabase during login:', syncError);
+        // Continue with login even if sync fails
+      }
+      
+      // Log in the user with our local session using the final (potentially updated) user data
+      req.login(finalUser, async (loginErr) => {
         if (loginErr) return next(loginErr);
         
         try {
           // Record the user sign-in for analytics
-          await storage.recordUserSignIn(user.id, req.ip, req.get('User-Agent'));
+          await storage.recordUserSignIn(finalUser.id, req.ip, req.get('User-Agent'));
         } catch (trackingError) {
           console.error("Error recording user sign-in:", trackingError);
         }
         
-        res.status(200).json(user);
+        console.log(`User ${finalUser.id} logged in successfully with payment plan: ${finalUser.paymentPlan}`);
+        res.status(200).json(finalUser);
       });
       
     } catch (error: any) {
@@ -331,10 +493,78 @@ export function setupAuth(app: Express) {
       res.sendStatus(200);
     });
   });
-
   app.get("/api/user", (req, res) => {
     if (!req.isAuthenticated()) return res.sendStatus(401);
     res.json(req.user);
+  });
+  
+  // Sync user data from Supabase endpoint - useful after payment completion
+  app.post("/api/user/sync", async (req, res) => {
+    if (!req.isAuthenticated()) return res.sendStatus(401);
+    
+    try {
+      const currentUser = req.user!;
+      let updatedUser = currentUser;
+      
+      // Sync data from Supabase
+      const { supabase } = await import('./supabase');
+      const { data: supabaseUser } = await supabase
+        .from('users')
+        .select('plan, stripe_customer_id, stripe_subscription_id')
+        .eq('email', currentUser.username)
+        .single();
+      
+      if (supabaseUser) {
+        let hasUpdates = false;
+        
+        // Sync payment plan
+        if (supabaseUser.plan && supabaseUser.plan !== currentUser.paymentPlan) {
+          console.log(`Syncing payment plan from Supabase: ${supabaseUser.plan} (was ${currentUser.paymentPlan})`);
+          const planUpdatedUser = await storage.updateUserPaymentPlan(currentUser.id, supabaseUser.plan);
+          if (planUpdatedUser) {
+            updatedUser = planUpdatedUser;
+            hasUpdates = true;
+            
+            // If they have a paid plan, mark that they've seen plan selection
+            if (supabaseUser.plan === 'pro' || supabaseUser.plan === 'team') {
+              await storage.updateUserHasSeenPlanSelection(currentUser.id);
+            }
+          }
+        }
+        
+        // Sync Stripe info
+        if (supabaseUser.stripe_customer_id && supabaseUser.stripe_customer_id !== currentUser.stripeCustomerId) {
+          console.log(`Syncing Stripe customer ID: ${supabaseUser.stripe_customer_id}`);
+          const stripeUpdatedUser = await storage.updateUserStripeInfo(updatedUser.id, {
+            stripeCustomerId: supabaseUser.stripe_customer_id,
+            stripeSubscriptionId: supabaseUser.stripe_subscription_id || updatedUser.stripeSubscriptionId || ''
+          });
+          if (stripeUpdatedUser) {
+            updatedUser = stripeUpdatedUser;
+            hasUpdates = true;
+          }
+        }
+        
+        // Update session if there were changes
+        if (hasUpdates) {
+          req.login(updatedUser, (loginErr) => {
+            if (loginErr) {
+              console.error('Error updating session after sync:', loginErr);
+              return res.status(500).json({ error: "Failed to update session" });
+            }
+            console.log(`Successfully synced user ${updatedUser.id} data from Supabase`);
+            return res.json({ success: true, user: updatedUser });
+          });
+        } else {
+          return res.json({ success: true, user: updatedUser, message: "No updates needed" });
+        }
+      } else {
+        return res.json({ success: true, user: updatedUser, message: "No Supabase user found" });
+      }
+    } catch (error) {
+      console.error('Error syncing user data:', error);
+      res.status(500).json({ error: "Failed to sync user data" });
+    }
   });
   
   // Password reset request endpoint

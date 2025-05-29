@@ -35,10 +35,27 @@ const handleSubscriptionCreated = async (subscription: Stripe.Subscription) => {
                    priceId === 'price_1PDCVxEtSCIE3SCWqizdK0h4') {
           plan = 'team';
         }
-        
-        if (plan !== 'free') {
+          if (plan !== 'free') {
           await storage.updateUserPaymentPlan(matchedUser.id, plan);
           console.log(`Updated user ${matchedUser.id} to ${plan} plan based on subscription webhook`);
+          
+          // Also update Supabase to keep it in sync
+          try {
+            const { supabase } = await import('../supabase');
+            await supabase
+              .from('users')
+              .upsert({
+                email: matchedUser.username,
+                plan: plan,
+                stripe_customer_id: customerId,
+                stripe_subscription_id: subscription.id,
+                registration_status: 'active'
+              });
+            console.log(`Updated Supabase user ${matchedUser.username} to ${plan} plan via webhook`);
+          } catch (supabaseError) {
+            console.error('Error updating Supabase via webhook:', supabaseError);
+            // Continue anyway - local DB is primary
+          }
         }
       }
     } else {
@@ -85,11 +102,26 @@ const handleSubscriptionDeleted = async (subscription: Stripe.Subscription) => {
     // Find all users with this stripeCustomerId
     const users = await storage.getAllUsers();
     const matchedUser = users.find(user => user.stripeCustomerId === customerId);
-    
-    if (matchedUser) {
+      if (matchedUser) {
       // Update user to free plan
       await storage.updateUserPaymentPlan(matchedUser.id, 'free');
       console.log(`Updated user ${matchedUser.id} to free plan based on subscription deleted webhook`);
+      
+      // Also update Supabase to keep it in sync
+      try {
+        const { supabase } = await import('../supabase');
+        await supabase
+          .from('users')
+          .update({
+            plan: 'free',
+            stripe_subscription_id: null
+          })
+          .eq('email', matchedUser.username);
+        console.log(`Updated Supabase user ${matchedUser.username} to free plan via deletion webhook`);
+      } catch (supabaseError) {
+        console.error('Error updating Supabase via deletion webhook:', supabaseError);
+        // Continue anyway - local DB is primary
+      }
     } else {
       console.log(`No user found for Stripe customer ID: ${customerId}`);
     }

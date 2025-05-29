@@ -247,7 +247,7 @@ export class MemStorage implements IStorage {
   async updateUserPaymentPlan(userId: number, plan: string): Promise<User | undefined> {
     const user = this.users.get(userId);
     if (user) {
-      const updatedUser = { ...user, paymentplan: plan, hasSeenPlanSelection: true };
+      const updatedUser = { ...user, paymentPlan: plan, hasSeenPlanSelection: true };
       this.users.set(userId, updatedUser);
       return updatedUser;
     }

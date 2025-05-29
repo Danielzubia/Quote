@@ -363,8 +363,7 @@ router.get('/confirm-subscription', async (req: Request, res: Response) => {
         // Continue anyway, this is optional information
       }
     }
-    
-    // If user is authenticated, update their local account immediately
+      // If user is authenticated, update their local account immediately
     if (req.user) {
       console.log(`Authenticated user ${req.user.id} completed payment for plan: ${plan}`);
       
@@ -385,6 +384,18 @@ router.get('/confirm-subscription', async (req: Request, res: Response) => {
         
         // Mark that they've seen plan selection
         await storage.updateUserHasSeenPlanSelection(req.user.id);
+        
+        // Refresh the user session with updated data
+        const finalUpdatedUser = await storage.getUser(req.user.id);
+        if (finalUpdatedUser) {
+          req.login(finalUpdatedUser, (loginErr) => {
+            if (loginErr) {
+              console.error('Error refreshing user session after payment:', loginErr);
+            } else {
+              console.log(`Successfully refreshed session for user ${req.user!.id} with updated payment plan: ${finalUpdatedUser.paymentPlan}`);
+            }
+          });
+        }
         
       } catch (updateError) {
         console.error('Error updating authenticated user after payment:', updateError);
