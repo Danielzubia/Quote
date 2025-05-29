@@ -105,6 +105,8 @@ export const insertUserSchema = createInsertSchema(users).pick({
   supabaseId: true,
   paymentPlan: true,
   hasSeenPlanSelection: true,
+  stripeCustomerId: true,
+  stripeSubscriptionId: true,
 });
 
 // Modified validation schema with more lenient email validation

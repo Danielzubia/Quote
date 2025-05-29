@@ -420,13 +420,14 @@ export function setupAuth(app: Express) {
         // If we get here, the user exists both in Supabase and locally
       // Update local record with Supabase ID if not already set and sync payment plan
       let finalUser = user;
-      
-      if (!user.supabaseId && authData.user?.id) {
+        if (!user.supabaseId && authData.user?.id) {
         console.log('Updating Supabase ID for user', user.id, 'to', authData.user.id);
-        finalUser = await storage.updateSupabaseId(user.id, authData.user.id);
-        if (!finalUser) {
+        const updatedUser = await storage.updateSupabaseId(user.id, authData.user.id);
+        if (!updatedUser) {
           console.error('Failed to update Supabase ID');
           finalUser = user;
+        } else {
+          finalUser = updatedUser;
         }
       }
       
